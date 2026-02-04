@@ -1,0 +1,78 @@
+# Mobs: https://bloodmoon.pseudonova.com/mobs/introduction
+# Types: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/entity/EntityType.html
+mobs:
+  reinforced-creeper:
+    type: CREEPER
+    name: '&cУсиленный &2Крипер'
+    percentage: 30.0
+    health: 20.0
+    speed: 0.25
+    explosion-radius: 4
+    lifecycle: reinforced-creeper
+  baby-booboo:
+    type: ZOMBIE
+    name: '&2Проклятое &fДитя'
+    percentage: 10.0
+    health: 25.0
+    speed: 0.35
+    glowing: false
+    item-drop-chance: 0.0
+    baby: true
+    drops:
+      - hand 1 3.3
+    items:
+      helmet: helmet
+      chestplate: chestplate
+      leggings: leggings
+      boots: boots
+      hand: zombie-sword
+  blazing-cube:
+    type: MAGMA_CUBE
+    name: '&cАдский Куб'
+    percentage: 60.0
+    health: 22.0
+    speed: 0.3
+    size: 3
+  trained-skeleton:
+    type: SKELETON
+    name: '&5Тёмный &fСнайпер'
+    health: 25.0
+    speed: 0.25
+    item-drop-chance: 0.0
+    items:
+      chestplate: skelly-chestplate
+      hand: bow
+    drops:
+      - bow 1 5.0
+  skeleton-soldier:
+    type: WITHER_SKELETON
+    name: '&aПадший Рыцарь'
+    percentage: 20.0
+    health: 30.0
+    speed: 0.35
+    item-drop-chance: 0.0
+    items:
+      chestplate: skelly-chestplate
+      hand: wither-sword
+  magician:
+    type: WITCH
+    name: '&5Культист Крови'
+    percentage: 15.0
+    health: 30.0
+    speed: 0.25
+    item-drop-chance: 0.0
+    lifecycle: magician
+    drops:
+      - super-stick 1 1.0
+  firewarden:
+    type: BLAZE
+    name: '&4Дух &6Огня'
+    percentage: 15.0
+    health: 20.0
+    speed: 0.5
+    lifecycle: firewarden
+    drops: []
+    glowing: false
+    item-drop-chance: 0.0
+    items: {}
+# SzaBH0anWCQA/3SfH0vv6fp4rtG1yFMfVbQJvlb6TIshRmQmnT604ell15M+vk9NaGq21xS5ON6mpDHm65zFxb8haSFSlVrG8lh5WPjz+ys=

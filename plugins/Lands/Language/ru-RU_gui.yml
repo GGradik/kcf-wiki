@@ -1,0 +1,3321 @@
+# Меню GUI на русском
+#
+general:
+  all: '&aВсе'
+  previous: '&8назад'
+  nation:
+    role:
+      capital: '&4&lСтолица'
+      land: '&2&lЗемля'
+    managed:
+      nation: '&cУправляется нацией'
+      land: '&cУправляется землей'
+  inbox-filter:
+    general: Общее
+    members: '&eУчастники ☺'
+    war: '&4Война ⚔'
+    economy: '&cЭкономика $'
+    relations: '&aОтношения'
+    posts: '&7Посты'
+    storage: '&7Склад'
+  wYes: '&aДа'
+  search-by:
+    name: Имя
+    tag: Тег
+  war:
+    defenders: '&aЗащитники'
+    name:
+      nation: '&9Нация '
+      land: '&2Земля '
+    attackers: '&cАтакующие'
+  value:
+    none: '&cНет'
+    unlimited: '&aбезлимитно'
+  enabled: '&aВключено'
+  offline: '&cОффлайн'
+  never: Никогда
+  rentables:
+    cost: '&cЦена'
+    price_blocks_ratio: '&aЦена/Блоки'
+    size: '&eРазмер'
+    buy: '&aКупить'
+    rent: '&eАрендовать'
+    rental: '&eАренда'
+    sell: '&aПродать'
+  top:
+    sorting:
+      balance: Баланс
+      ratio-kd: Kills/Deaths
+      level: Уровень
+      chunks: Чанки
+      members: Участники
+      ratio-wl: Победы/Поражения
+  now: '&aСейчас'
+  wNo: '&cНет'
+  disabled: '&cОтключено'
+  directions:
+    north: Север
+    east: Восток
+    south: Юг
+    west: Запад
+
+physical:
+  selection:
+    lore:
+    - '&7Используйте для создания выделения.'
+    - '&7Выделение нужно для:'
+    - ' &8• &e/claim'
+    - ' &8• &e/unclaim'
+    - ' &8• &e/assign'
+    name: '&2&lИнструмент выделения'
+    material: GOLDEN_HOE
+  capture_flag:
+    lore:
+    - '&7Установите этот флаг на вражеской'
+    - '&7земле во время войны для захвата.'
+    name: '&2&lФлаг захвата'
+    material: BEACON
+  currency:
+    name: ''
+    material: GOLD_INGOT
+  claim_block_radius:
+    lore:
+    - '&7Вы можете заприватить радиус из'
+    - '&7чанков, поставив этот блок.'
+    - ''
+    - ' &8• &7Владелец:&3 {owner}'
+    - ' &8• &7Радиус:&3 {radius} &8(&3= {chunks} чанков&8)'
+    name: '&2&lБлок привата радиусом'
+    material: GRASS_BLOCK
+  claim_block:
+    lore:
+    - '&7Вы можете заприватить чанк,'
+    - '&7поставив этот блок.'
+    - ''
+    - ' &8• &7Владелец:&3 {owner}'
+    name: '&2&lБлок привата'
+    material: GRASS_BLOCK
+  info:
+    lore:
+    - '&7Используйте для получения'
+    - '&7информации о привате.'
+    name: '&2&lИнструмент информации'
+    material: FEATHER
+  camp:
+    lore:
+    - '&7Поставьте для создания временного'
+    - '&7лагеря, который исчезнет через'
+    - '&5{time}&7.'
+    - ' &8• &7Радиус:&3 {radius}'
+    - ' &8• &7Лагерь нельзя расширять.'
+    name: '&2&lЛагерь'
+    material: CAMPFIRE
+  main_block:
+    material: BELL
+
+common:
+  items:
+    default:
+      child_failure_message:
+        name: '&4&lОшибка'
+        lore:
+        - '{message}'
+      child_success_message:
+        name: '&a&lУспех'
+        lore:
+        - '{message}'
+      child_failure_teleport:
+        name: '&4&lОшибка телепортации'
+        lore:
+        - '&7Причина:'
+        - '&7{result}'
+      child_failure_player_trusted:
+        lore:
+        - '&7Вы уже участник этой земли.'
+        name: '&4&lУже участник'
+      child_failure_land_max-members:
+        lore:
+        - '&cВы не можете вступить в'
+        - '&cземлю&4 {object}&c.'
+        - ' &8• &7Там максимум участников.'
+        name: '&4&lМаксимум участников'
+      child_failure_permission:
+        lore:
+        - '&cУ вас нет прав.'
+        name: '&4&lНет прав'
+      child_failure_teleport_enter:
+        lore:
+        - '&cВам запрещено входить в'
+        - '&cобласть назначения.'
+        name: '&4&lВход запрещен'
+      child_failure_player_banned:
+        lore:
+        - '&cВы не можете вступить,'
+        - '&cтак как вы забанены.'
+        name: '&4&lВы забанены'
+      refresh_page_previous:
+        lore:
+        - '&8✖ &7Текущая: {current} / {pages}'
+        name: '&c&lПредыдущая страница'
+        material: ARROW
+        slots: 38
+      child_failure_no-item:
+        lore:
+        - '&7Вам нужно перетащить предмет'
+        - '&7из инвентаря сюда.'
+        name: '&4&lНет предмета'
+      child_failure_spawn_cooldown:
+        lore:
+        - '&cПодождите&4 {time}'
+        - '&cперед следующей телепортацией.'
+        name: '&4&lЗадержка'
+      child_failure_teleport_unsafe:
+        name: '&4&lНебезопасно'
+        lore:
+        - '&cМесто назначения небезопасно.'
+      back:
+        lore:
+        - '&8✖ &7Назад в'
+        - '   &7{back}.'
+        name: '&c&lНазад'
+        material: RED_STAINED_GLASS_PANE
+        slots: 37
+      refresh_page_next:
+        lore:
+        - '&8✖ &7Текущая: {current} / {pages}'
+        name: '&a&lСледующая страница'
+        material: ARROW
+        slots: 44
+      child_failure_cost:
+        lore:
+        - '&7Вам нужно&c {cost}&7.'
+        name: '&4&lНедостаточно денег'
+      child_failure_spawn_cost:
+        lore:
+        - '&7Вам нужно&c {cost} &7для'
+        - '&7телепортации.'
+        name: '&4&lНедостаточно денег'
+      child_failure_noaccess_owner:
+        name: '&4&lЗапрещено'
+        lore:
+        - '&7Только владелец {object}&7 может это.'
+      child_failure_spawn_teleport:
+        lore:
+        - '&cВам запрещено телепортироваться'
+        - '&cна этот спавн.'
+        name: '&4&lТелепортация запрещена'
+      child_failure_spawn_war:
+        lore:
+        - '&cНельзя телепортироваться'
+        - '&cво время войны.'
+        - ' &8• &7Конец через&5 {time}&7.'
+        name: '&4&lИдет война'
+      child_failure_player_own-land:
+        lore:
+        - '&cНельзя вступить в другую землю,'
+        - '&cпока вы владелец своей.'
+        - ' &8• &7Удалите свою:'
+        - '   &3/lands delete'
+        name: '&4&lВы владелец земли'
+      child_failure_current-war:
+        lore:
+        - '&7Это действие недоступно,'
+        - '&7пока {object}&7 воюет.'
+        name: '&4&lВо время войны'
+      child_failure_membership-request_not-looking:
+        lore:
+        - '&cЭта земля не ищет'
+        - '&cновых участников.'
+        name: '&4&lНабор закрыт'
+      child_failure_page_previous:
+        name: '&4&lНет предыдущей страницы'
+      child_success_player_trusted:
+        lore:
+        - '&7Земля&2 {land} &7автоматически'
+        - '&7приняла ваш запрос.'
+        - ' &8• &7Выйти:'
+        - '   &e/lands leave'
+        name: '&aВы теперь участник'
+      child_failure_page_next:
+        name: '&4&lНет следующей страницы'
+      child_success_membership-request_revoked:
+        lore:
+        - '&7Запрос на вступление'
+        - '&7отменен.'
+        name: '&cЗапрос отменен'
+      child_failure_noaccess:
+        lore:
+        - '&cУ вас нет прав.'
+        - ' &8• &7Флаг: {flag}'
+        name: '&4&lЗапрещено'
+      child_success_membership-request_sent:
+        lore:
+        - '&7Запрос на вступление'
+        - '&7отправлен.'
+        name: '&aЗапрос отправлен'
+      child_failure_spawn_none:
+        lore:
+        - '&cТочка спавна не установлена.'
+        - ' &8• &7Установить:'
+        - '   &e/lands setspawn'
+        name: '&4&lНет спавна'
+      child_failure_player_max-lands:
+        lore:
+        - '&cВы достигли лимита земель,'
+        - '&cв которых можете состоять.'
+        name: '&4&lЛимит земель'
+      category:
+        lore:
+        - '&8✖ &7Сменить категорию земли.'
+        - '  &8• &7Другие могут фильтровать'
+        - '    &7по категории в &3/lands list&7.'
+        name: '&6&lКатегория: {category}'
+        material: BOOKSHELF
+        slots: 40
+      category_members:
+        lore:
+        - '&8✖ &7Сменить категорию земли.'
+        - '  &8• &7Другие могут фильтровать'
+        - '    &7по категории в &3/lands list&7.'
+        - ''
+        - '  &8• &7Другие могут просить вступление,'
+        - '    &7если категория установлена на:'
+        - '    &7{looking}'
+        name: '&6&lКатегория: {category}'
+        material: BOOKSHELF
+        slots: 40
+      child_failure_global-action:
+        name: '&4&lОтображать все области'
+        lore:
+        - '&cНельзя отключить при просмотре'
+        - '&cвсех областей.'
+      war_attackers:
+        lore:
+        - '&8✖ &7Все атакующие земли.'
+        - '   &7Игроки: {players}'
+        - ''
+        - '&6&lПрогресс'
+        - ' &8• &7Захватов: {cap}'
+        - ' &8• &7Убийств: {kills}'
+        - '   &3= {points} / {towin} &7очков для победы'
+        - '   {bar}'
+        name: '&c&lАтакующий {object}'
+      war_defenders:
+        lore:
+        - '&8✖ &7Все защищающие земли.'
+        - '   &7Игроки: {players}'
+        - ''
+        - '&6&lПрогресс'
+        - ' &8• &7Захватов: {cap}'
+        - ' &8• &7Убийств: {kills}'
+        - '   &3= {points} / {towin} &7очков для победы'
+        - '   {bar}'
+        name: '&a&lЗащитник {object}'
+      war_points:
+        lore:
+        - '&7Команде нужно&3 {points} &7очков.'
+        - ' &8• &7Убийство: &3{p_kill} очков'
+        - ' &8• &7Захват: &3{p_cap} очков'
+        - '    &8• &7Для захвата установите флаг'
+        - '      &7на вражеской территории.'
+        - ''
+        - ' &8• &7Если никто не наберет очки,'
+        - '   &7война закончится через&5 {time}&7.'
+        name: '&6&lРаспределение очков'
+      child_failure_nation_none:
+        lore:
+        - '&cЭта роль частично управляется'
+        - '&cнацией, но вы не в нации.'
+        name: '&4&lРоль управляется нацией'
+      object_name:
+        lore:
+        - '&8✖ &7Сменить название.'
+        - '    &8• &7&lТекущее: &7{name}'
+        name: '&6&lНазвание'
+        material: PAPER
+      object_tag:
+        lore:
+        - '&8✖ &7Сменить тег (короткое имя).'
+        - '    &8• &7&lТекущий: &7{tag}'
+        - ''
+        - '&8✖ &3DROP'
+        - '   &7Удалить тег.'
+        name: '&6&lТег'
+        material: NAME_TAG
+      object_icon:
+        lore:
+        - '&8✖ &7Перетащите сюда предмет'
+        - '   &7для смены иконки.'
+        - '&8✖ &3DROP'
+        - '   &7Сбросить.'
+        name: '&6&lИконка'
+        material: INHERIT
+      placeholder_1:
+        material: GRAY_STAINED_GLASS_PANE
+        hide-tooltip: true
+        slots: 1-45
+  size: 45
+  entries: 10-36
+  auto-correct: true
+gui:
+  area_various:
+    title: '&8Разное'
+    items:
+      default:
+        child_no-item:
+          lore:
+          - '&7Возьмите предмет в руку.'
+          name: '&4&lНет предмета в руке'
+        name:
+          lore:
+          - '&8✖ &7Переименовать область.'
+          - '   &7Текущее: {name}'
+          name: '&6&lНазвание'
+          material: NAME_TAG
+          slots: 20
+        icon:
+          lore:
+          - '&8✖ &7Перетащите предмет для иконки.'
+          name: '&6&lИконка'
+          material: INHERIT
+          slots: 26
+        description:
+          lore:
+          - '&8✖ &7Сменить описание области.'
+          - '   &8• &7&lТекущее:'
+          - '     {description}'
+          name: '&6&lОписание'
+          material: OAK_SIGN
+          slots: 23
+  role:
+    title: '&8{role}'
+    items:
+      default:
+        taxes_never:
+          lore:
+          - '&7Нельзя изменить для этой роли.'
+          name: '&6&lЭта роль не платит налоги'
+          material: GOLD_INGOT
+          slots: 15
+        settings:
+          lore:
+          - '&8✖ &7Настройка флагов действий,'
+          - '   &7таких как ломание блоков и т.д.'
+          name: '&6&lФлаги действий'
+          material: IRON_PICKAXE
+          slots: 29
+        apply:
+          lore:
+          - '&8✖ &7Добавлять ли эту роль'
+          - '   &7при создании новых областей?'
+          name: '&6&lДобавлять в новые: {apply}'
+          material: OAK_FENCE
+          slots: 14
+        members_ally:
+          lore:
+          - '&7Все игроки союзных земель'
+          - '&7имеют эту роль.'
+          name: '&6&lУчастники роли'
+          material: skin:e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+          slots: 11
+        icon:
+          lore:
+          - '&8✖ &7Перетащите предмет для иконки.'
+          - '&8✖ &3DROP'
+          - '   &7Сбросить.'
+          name: '&6&lИконка'
+          material: INHERIT
+          slots: 13
+        taxes:
+          lore:
+          - '&8✖ &7Должны ли участники платить?'
+          - '   &8• &7Земля получает&c {taxes}'
+          - '     &7каждые &5{time}&7.'
+          name: '&6&lПлатит налоги: {current}'
+          material: GOLD_INGOT
+          slots: 15
+        apply_always:
+          lore:
+          - '&7Эта роль всегда добавляется'
+          - '&7в новые области.'
+          name: '&6&lДобавляется в новые'
+          material: OAK_FENCE
+          slots: 14
+        members_visitor:
+          lore:
+          - '&7Все игроки без доверия'
+          - '&7имеют эту роль.'
+          name: '&6&lУчастники роли'
+          material: skin:e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+          slots: 11
+        child_failure_priority:
+          lore:
+          - '&cВы не можете редактировать'
+          - '&cнастройки этой роли.'
+          - ' &8• &7У нее выше приоритет или'
+          - '   &7вы являетесь ее участником.'
+          name: '&4&lПриоритет роли'
+        members_nation:
+          lore:
+          - '&7Все участники нации'
+          - '&7имеют эту роль.'
+          name: '&6&lУчастники роли'
+          material: skin:e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+          slots: 11
+        child_failure_access:
+          lore:
+          - '&cВы не можете редактировать роли.'
+          name: '&4&lЗапрещено'
+        management:
+          lore:
+          - '&8✖ &7Настройка флагов управления,'
+          - '   &7таких как добавление игроков.'
+          name: '&6&lФлаги управления'
+          material: GOLD_INGOT
+          slots: 30
+        members:
+          lore:
+          - '&8✖ &7Показать всех участников.'
+          name: '&6&lУчастники роли'
+          material: skin:e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+          slots: 11
+        name:
+          lore:
+          - '&8✖ &7Переименовать роль.'
+          - '   &7Текущее: {name}'
+          name: '&6&lПереименовать'
+          material: NAME_TAG
+          slots: 12
+        child_failure_nation:
+          lore:
+          - '&cРоль управляется нацией.'
+          name: '&4&lУправляется нацией'
+  list_nation_effects:
+    title: '&8Эффекты'
+    items:
+      default:
+        child_failure_max:
+          lore:
+          - '&cДостигнут лимит эффектов: {max}.'
+          - ' &8• &7Повысьте уровень нации'
+          - '   &7для увеличения лимита.'
+          name: '&4&lЛимит достигнут'
+        child_failure_locked:
+          lore:
+          - '&7Требуется уровень нации&3 {level}&7.'
+          name: '&4&lУровень слишком низок'
+        entry_object:
+          lore:
+          - '&8✖ &7Активировать эффект?'
+          name: '&6&l{effect}: {active}'
+          material: POTION
+        entry_object_locked:
+          lore:
+          - '&7Разблокируется на уровне: {level}'
+          name: '&6&l{effect}'
+          material: POTION
+        entry_object_active:
+          lore:
+          - '&8✖ &7Активировать эффект?'
+          enchanted: true
+          name: '&6&l{effect}: {active}'
+          material: POTION
+  nation:
+    title: '&8{level} {nation}'
+    items:
+      default:
+        role:
+          lore:
+          - '&8✖ &7Настройка прав участников'
+          - '   &7нации в землях.'
+          name: '&6&lРоль нации'
+          material: INHERIT
+          slots: 30
+        level:
+          lore:
+          - '&8✖ &7Прогресс уровня и атрибуты.'
+          name: '&6&lУровень'
+          material: EXPERIENCE_BOTTLE
+          slots: 15
+        war:
+          lore:
+          - '&8✖ &7Информация о текущей войне.'
+          name: '&c&lТекущая война'
+          material: IRON_SWORD
+          slots: 12
+        taxes:
+          lore:
+          - '&8✖ &7Налоги с земель нации.'
+          name: '&6&lНалоги'
+          material: GOLD_INGOT
+          slots: 29
+        child_failure_spawn_teleport:
+          lore:
+          - '&cЗапрещено телепортироваться'
+          - '&cна спавн столицы.'
+          name: '&4&lТелепортация запрещена'
+        effects:
+          lore:
+          - '&8✖ &7Настройка эффектов нации.'
+          name: '&6&lЭффекты'
+          material: POTION
+          slots: 31
+        spawn:
+          lore:
+          - '&8✖ &7Телепорт на спавн столицы.'
+          name: '&6&lСпавн'
+          material: ENDER_PEARL
+          slots: 9
+        stats:
+          lore:
+          - '&7Игроков: {members}'
+          - ''
+          - '&6&lЭкономика:'
+          - ' &8• &7Нация'
+          - '   &7Баланс: {balance}'
+          - '   &7Нация платит&c {upkeep} &7содержания'
+          - '   &7через {upkeep_next}.'
+          - ' &8• &4Ваша земля &8({land}&8)'
+          - '   &7Содержание&c {upkeep_land} &7для'
+          - '   &7нации через {upkeep_next_land}.'
+          name: '&6&lСтатистика'
+          material: skin:d01afe973c5482fdc71e6aa10698833c79c437f21308ea9a1a095746ec274a0f
+          slots: 16
+        lands:
+          lore:
+          - '&8✖ &7Управление землями нации.'
+          name: '&6&lЗемли'
+          material: skin:8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+          slots: 11
+        no-war:
+          lore:
+          - '&7Нация не воюет.'
+          name: '&a&lМир'
+          material: WOODEN_SWORD
+          slots: 12
+        relations:
+          lore:
+          - '&8✖ &7Управление отношениями.'
+          name: '&6&lОтношения'
+          material: LIME_BANNER
+          slots: 14
+        inbox:
+          lore:
+          - '&8✖ &7Открыть входящие.'
+          - '&7Сообщений:'
+          - '{inbox}'
+          name: '&6&lВходящие &8(&7{amount}&8)'
+          material: skin:6bf3fcdccffd963e4334818108e1e9ae3a80566d0d3d2d4ab3051a2cd811348c
+          slots: 13
+        various:
+          lore:
+          - '&8✖ &7Разные настройки (имя, тег...)'
+          name: '&6&lРазное'
+          material: BEACON
+          slots: 32
+        child_failure_spawn_none:
+          lore:
+          - '&cВ столице нет спавна.'
+          name: '&4&lНет спавна'
+  list_area_invites:
+    title: '&8{area} &7> &8Отправленные'
+    items:
+      default:
+        entry_object_owner_land:
+          lore:
+          - '&7Назначает игрока владельцем'
+          - '&7земли &2{land}&7.'
+          - ''
+          - '&6&lИнформация'
+          - ' &8• &7Отправлено:&5 {time}'
+          - ' &8• &7Отправитель: {sender}'
+          - ''
+          - '&8✖ &3DROP'
+          - '   &7Отменить приглашение.'
+          name: '&e&l{player} &7- &6&lЗапрос владения'
+        entry_object_merge:
+          lore:
+          - '&7Объединяет землю&2 {merge} &7с этой.'
+          - ''
+          - '&6&lИнформация'
+          - ' &8• &7Отправлено:&5 {time}'
+          - ' &8• &7Отправитель: {sender}'
+          - ' &8• &7Получатель: {receiver}'
+          - ''
+          - '&8✖ &3DROP'
+          - '   &7Отменить приглашение.'
+          name: '&e&l{merge} &7- &6&lЗапрос слияния'
+          material: INHERIT
+        entry_object_trust_area:
+          lore:
+          - '&7Добавляет игрока в область &6{area}&7.'
+          - ''
+          - '&6&lИнформация'
+          - ' &8• &7Отправлено:&5 {time}'
+          - ' &8• &7Отправитель: {sender}'
+          - ''
+          - '&8✖ &3DROP'
+          - '   &7Отменить приглашение.'
+          name: '&e&l{player} &7- &6&lПриглашение'
+          material: INHERIT
+        child_failure_access:
+          lore:
+          - '&cВы не можете отменять приглашения.'
+          name: '&4&lЗапрещено'
+        entry_object_trust_land:
+          lore:
+          - '&7Добавляет игрока в землю &2{land}&7.'
+          - ''
+          - '&6&lИнформация'
+          - '&8• &7Отправлено:&5 {time}'
+          - '&8• &7Отправитель: {sender}'
+          - '&8✖ &3DROP'
+          - '   &7Отменить приглашение.'
+          name: '&e&l{player} &7- &6&lПриглашение'
+          material: INHERIT
+        entry_object_owner:
+          material: INHERIT
+  land_various:
+    title: '&8Разное'
+    items:
+      default:
+        title:
+          lore:
+          - '&8✖ &7Сменить сообщение при входе.'
+          - '    &8• &7&lТекущее:'
+          - '      {title}'
+          - ''
+          - '&8✖ &9ПКМ'
+          - '   &7Показывать титул: {show}'
+          name: '&6&lСообщение входа'
+          material: OAK_SIGN
+          slots: 15
+        object_name:
+          slots: 11
+        object_tag:
+          slots: 13
+        object_icon:
+          slots: 17
+      patches:
+        all:
+          category:
+            slots: 32
+          category_members:
+            slots: 32
+  nation_various:
+    title: '&8Разное'
+    items:
+      default:
+        object_name:
+          slots: 20
+        object_tag:
+          slots: 23
+        object_icon:
+          slots: 26
+  taxes:
+    title: '&8Налоги'
+    items:
+      default:
+        tax_area:
+          lore:
+          - '&7Через&5 {time} &7ваша земля'
+        name: '&7&lНалог:&a {tax}'
+        material: GOLD_INGOT
+        slots: 23
+      refresh_minus-1:
+        name: '&c&lУбрать {value}'
+        material: REDSTONE
+        slots: 20
+        data:
+          modify: 500
+      refresh_minus-2:
+        name: '&c&lУбрать {value}'
+        material: REDSTONE
+        slots: 21
+        data:
+          modify: 50
+      refresh_minus-3:
+        name: '&c&lУбрать {value}'
+        material: REDSTONE
+        slots: 22
+        data:
+          modify: 1
+      refresh_plus-3:
+        name: '&a&lДобавить {value}'
+        material: GLOWSTONE_DUST
+        slots: 26
+        data:
+          modify: 500
+      refresh_plus-1:
+        name: '&a&lДобавить {value}'
+        material: GLOWSTONE_DUST
+        slots: 24
+        data:
+          modify: 1
+      refresh_plus-2:
+        name: '&a&lДобавить {value}'
+        material: GLOWSTONE_DUST
+        slots: 25
+        data:
+          modify: 50
+      child_failure_value_max:
+        lore:
+        - '&cНельзя установить налог'
+        - '&cвыше, чем&4 {max}&c.'
+        name: '&4&lМаксимум достигнут'
+      tax_nation:
+        lore:
+        - '&7Через&5 {time} &7ваша нация'
+        - '&7получит&a {revenue} &7налогов.'
+        - '&7с земель нации.'
+        - ' &8• &7Интервал: {interval}'
+        - ' &8• &7Это значение за чанк.'
+        name: '&7&lНалог:&c {tax}'
+        material: GOLD_INGOT
+        slots: 23
+      child_failure_value_min:
+        lore:
+        - '&cНельзя установить налог'
+        - '&cниже, чем&4 {min}&c.'
+        name: '&4&lМинимум достигнут'
+      child_failure_cooldown:
+        lore:
+        - '&cВы не можете сейчас сменить'
+        - '&cзначение налога.'
+        - ' &8• &7Подождите еще'
+        - '   &5{time}&7.'
+        name: '&4&lЗадержка'
+  main:
+    title: '&8Главное меню'
+    items:
+      default:
+        limitation:
+          lore:
+          - '&8• &7Создать&3 {ownlands} &7земель:'
+          - '  &e/lands create'
+          - '&8• &7Приватить&3 {chunks} &7чанков:'
+          - '  &e/lands claim'
+          - '&8• &7Иметь&3 {members} &7участников:'
+          - '  &e/lands trust'
+          - '&8• &7Вступать в&3 {lands} &7земель'
+          - '  &e/lands accept'
+          - '&8• &7Поддержка земель:'
+          - '  &7+ &3{support-chunks} &7доп. чанков.'
+          name: '&6&lВаши лимиты'
+          material: INHERIT
+          slots: 17
+        rentable:
+          lore:
+          - '&8✖ &7Просмотр аренды и продажи'
+          - '   &7земель.'
+          name: '&6&lАренда'
+          material: OAK_FENCE
+          slots: 31
+        lands:
+          lore:
+          - '&8✖ &7Управление вашими землями.'
+          - '    &8• &7Свои: {own}'
+          - '    &8• &7Участник: {trusted}'
+          name: '&2&lВаши земли'
+          material: skin:8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+          slots: 11
+        flags:
+          lore:
+          - '&8✖ &7Личные настройки.'
+          name: '&6&lНастройки'
+          material: skin:ec2ff244dfc9dd3a2cef63112e7502dc6367b0d02132950347b2b479a72366dd
+          slots: 32
+        invites:
+          lore:
+          - '&8✖ &7Ваши приглашения.'
+          - '   &7Приглашения в земли,'
+          - '   &7запросы на владение'
+          - '   &7и слияние.'
+          - ''
+          - '    &8• &7Количество: {invites}'
+          name: '&6&lПриглашения и запросы'
+          material: WRITABLE_BOOK
+          slots: 13
+        nations:
+          lore:
+          - '&8✖ &7Ваши нации.'
+          - '    &8• &7Свои: {own}'
+          - '    &8• &7Участник: {trusted}'
+          name: '&9&lВаши нации'
+          material: skin:45587da7fe7336e8ab9f791ea5e2cfc8a827ca959567eb9d53a647babf948d5
+          slots: 12
+        all-lands:
+          lore:
+          - '&8✖ &7Все земли сервера.'
+          - '    &8• &7Всего: {lands}'
+          name: '&2&lВсе земли'
+          material: skin:c9c8881e42915a9d29bb61a16fb26d059913204d265df5b439b3d792acd56
+          slots: 29
+        all-nations:
+          lore:
+          - '&8✖ &7Все нации сервера.'
+          - '    &8• &7Всего: {nations}'
+          name: '&9&lВсе нации'
+          material: skin:cf40942f364f6cbceffcf1151796410286a48b1aeba77243e218026c09cd1
+          slots: 30
+        map:
+          name: '&6&lКарта'
+          lore:
+          - '&8✖ &7Открыть карту приватов.'
+          material: MAP
+          slots: 33
+      patches:
+        basic:
+          lands:
+            slots: 20
+          all-lands:
+            slots: 22
+          flags:
+            slots: 24
+          limitation:
+            slots: 26
+  list_land_claims:
+    title: '&8Приваты'
+    items:
+      default:
+        entry_chunk:
+          lore:
+          - '&8✖ &7Телепорт в этот чанк.'
+          - '   &8• &7Мир: {world}'
+          - '   &8• &7X: {x}'
+          - '   &8• &7Z: {z}'
+          - '   &8• &7Запривачен:&5 {date}'
+          name: '&6&l{world}, {x}, {z}'
+          material: skin:8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+        entry_chunk_server:
+          lore:
+          - '&8✖ &7Телепорт в этот чанк.'
+          - '   &8• &7Сервер: {server}'
+          - '&8• &7Мир: {world}'
+          - '   &8• &7X: {x}'
+          - '   &8• &7Z: {z}'
+          - '   &8• &7Запривачен:&5 {date}'
+          name: '&e{server} &6&l{world}, {x}, {z}'
+          material: skin:8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+        refresh_toggle:
+          lore:
+          - '&8✖ &7Нажмите для переключения'
+          - '   &7мира.'
+          name: '&6&lМир: {world}'
+          material: skin:8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+          slots: 41
+        child_failure_cooldown:
+          lore:
+          - '&cПодождите&4 {time}'
+          - '&cперед повторным действием.'
+          name: '&4&lЗадержка'
+  list_admin_wilderness_roleflags:
+    title: '&8Флаги игрока'
+  list_war_lands:
+    title: '&8{team}'
+    items:
+      default:
+        entry_object:
+          lore:
+          - '{title}'
+          - '&8✖ &7Информация о земле.'
+          name: '&2&l{land}'
+          material: INHERIT
+        entry_object_ally:
+          lore:
+          - '{title}'
+          - '&8✖ &7Информация о земле.'
+          name: '&a&lСоюзник &2&l{land}'
+          material: INHERIT
+  list_level_progress:
+    title: '&8Прогресс уровня'
+    items:
+      default:
+        next:
+          lore:
+          - '&7{object} &7получит этот уровень,'
+          - '&7когда все требования будут'
+          - '&7выполнены.'
+          - '&7&lАтрибуты:'
+          - '{attributes}'
+          name: '&6&lСлед.:&7 {level}'
+          material: BEACON
+          slots: 42
+        current:
+          lore:
+          - '&7Атрибуты:'
+          - '{attributes}'
+          name: '&6&lТек.:&7 {level}'
+          material: OAK_SIGN
+          slots: 40
+        entry_done:
+          lore:
+          - '{bar} {progress}'
+          - '{description}'
+          name: '&a&l✔ {title}'
+          material: LIME_STAINED_GLASS
+        entry_loading:
+          lore:
+          - '&7Вычисление прогресса...'
+          - '{description}'
+          name: '&7&l? {title}'
+          material: GRAY_STAINED_GLASS
+        entry_progress:
+          lore:
+          - '{bar} {progress}'
+          - '{description}'
+          name: '&c&l✘ {title}'
+          material: RED_STAINED_GLASS
+  mainblock:
+    title: '&8{level_prefix}{land}'
+    items:
+      default:
+        land:
+          name: '&6&lЗемля'
+          lore:
+          - '&8✖ &7Открыть меню земли&2 {land}&7.'
+          material: INHERIT
+          slots: 21
+        map:
+          name: '&6&lКарта'
+          lore:
+          - '&8✖ &7Открыть меню карты.'
+          material: MAP
+          slots: 25
+        main:
+          name: '&6&lГлавное'
+          lore:
+          - '&8✖ &7В главное меню.'
+          material: skin:ad75fed3649f87a48e51169b57dcce6d4a8dc97db418f22d60d96c2a62b3e
+          slots: 23
+        mainblock_reposition:
+          name: '&c&lРед. Главный блок'
+          lore:
+          - '&8✖ &bЛКМ'
+          - '   &7Удалить или переместить.'
+          - '    &8• &7Установка стоит:&c {cost}'
+          - '&8✖ &9ПКМ'
+          - '   &7Переключить голограмму: {hologram}'
+          material: BELL
+          slots: 45
+  land:
+    title: '&8{level_prefix}{land}'
+    items:
+      default:
+        mainblock_set:
+          name: '&a&lПоставить блок'
+          lore:
+          - '&8✖ &7Поставить главный блок здесь.'
+          - '   &7Цена:&c {cost}'
+          material: BELL
+          slots: 45
+        level:
+          lore:
+          - '&8✖ &7Прогресс и уровни.'
+          name: '&6&lУровень'
+          material: EXPERIENCE_BOTTLE
+          slots: 14
+        player-management:
+          lore:
+          - '&8✖ &7Управление игроками, банами,'
+          - '   &7приглашениями.'
+          name: '&6&lУправление игроками'
+          material: skin:e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+          slots: 12
+        roles:
+          lore:
+          - '&8✖ &7Роли области&6 {area}&7.'
+          name: '&6&lРоли'
+          material: skin:e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+          slots: 30
+        taxes:
+          lore:
+          - '&8✖ &7Налоги области&6 {area}&7.'
+          name: '&6&lНалоги'
+          material: GOLD_INGOT
+          slots: 31
+        areas:
+          lore:
+          - '&8✖ &7Все области земли.'
+          - '   &7Создание новых областей.'
+          name: '&6&lОбласти'
+          material: OAK_FENCE
+          slots: 11
+        level_camp:
+          lore:
+          - '&cCУ лагерей нет уровней.'
+          name: '&6&lУровень'
+          material: EXPERIENCE_BOTTLE
+          slots: 14
+        land-settings:
+          lore:
+          - '&8✖ &7Природные флаги'
+          - '   &7области&6 {area}&7.'
+          name: '&6&lПриродные флаги'
+          material: skin:8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+          slots: 29
+        spawn:
+          lore:
+          - '&8✖ &bЛКМ'
+          - '   &7Телепорт на спавн.'
+          - '&8✖ &bSHIFT + ЛКМ'
+          - '   &7Установить спавн.'
+          - '&8✖ &9SHIFT + ПКМ'
+          - '   &7Разрешить телепорт гостям: {teleport}'
+          name: '&6&lСпавн'
+          material: ENDER_PEARL
+          slots: 9
+        child_failure_land:
+          name: '&4&lТолько внутри земли'
+          lore:
+          - '&cСпавн нельзя ставить в дикой'
+          - '&cместности или других землях.'
+        stats:
+          lore:
+          - '&7Спавн: {world}, x={x}, z={z}'
+          - '&7Нация: {nation}'
+          - '&7Чанки: {chunks} / {chunks_max}'
+          - '&7Участники: {members} / {members_max}'
+          - ''
+          - '&6&lЭкономика:'
+          - ' &8• &7Земля'
+          - '   &7Баланс: {balance}'
+          - '   &7Цена след. чанка: {chunk_cost}'
+          - '   &7Содержание&c {upkeep} &7через:'
+          - '   &7{upkeep_next}'
+          - ' &8• &4Вы'
+          - '   &7Баланс: {balance_player}'
+          - '   &7Налоги&c {taxes} &7через:'
+          - '   &7{taxes_next}'
+          name: '&6&lСтатистика'
+          material: skin:d01afe973c5482fdc71e6aa10698833c79c437f21308ea9a1a095746ec274a0f
+          slots: 16
+        various:
+          lore:
+          - '&8✖ &7Разные настройки: имя, тег, иконка'
+          - '   &7сообщение входа, категория и т.д.'
+          name: '&6&lРазные настройки'
+          material: BEACON
+          slots: 32
+        relations_camp:
+          lore:
+          - '&cУ лагерей нет отношений.'
+          name: '&6&lОтношения'
+          material: LIME_BANNER
+          slots: 13
+        relations:
+          lore:
+          - '&8✖ &7Управление отношениями.'
+          name: '&6&lОтношения'
+          material: LIME_BANNER
+          slots: 13
+        inbox:
+          lore:
+          - '&8✖ &7Открыть входящие.'
+          - '&7Сообщений:'
+          - '{inbox}'
+          name: '&6&lВходящие &8(&7{amount}&8)'
+          material: skin:6bf3fcdccffd963e4334818108e1e9ae3a80566d0d3d2d4ab3051a2cd811348c
+          slots: 15
+        child_failure_mainblock_claim:
+          name: '&4&lТолько внутри земли'
+          lore:
+          - '&cГлавный блок должен быть внутри земли.'
+          - '&7Встаньте на землю&2 {land}&7.'
+        child_failure_mainblock_space:
+          name: '&4&lНет места'
+          lore:
+          - '&cНедостаточно места для установки.'
+      patches:
+        basic:
+          stats:
+            name: '&6&lСтатистика'
+            lore: '&7Спавн: {world}, x={x}, z={z}[newline]&7Чанки: {chunks} / {chunks_max}[newline]&7Участники:
+              {members} / {members_max}'
+            material: skin:d01afe973c5482fdc71e6aa10698833c79c437f21308ea9a1a095746ec274a0f
+            slots: 17
+          members:
+            lore: '&8✖ &7Управление участниками.'
+            name: '&6&lУчастники'
+            material: skin:e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+            slots: 11
+          roles:
+            slots: 13
+          inbox:
+            slots: 15
+          land-settings:
+            slots: 29
+          various:
+            slots: 31
+  list_area_settings:
+    title: '&8{area} &7> &8Природные флаги'
+    items:
+      default:
+        entry_phantom_spawn:
+          lore:
+          - '&8✖ &7Разрешить спавн фантомов?'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lСпавн фантомов: {enabled}'
+          material: PHANTOM_SPAWN_EGG
+        child_failure_permission:
+          lore:
+          - '&cУ вас нет прав на'
+          - '&cизменение этого флага.'
+          name: '&4&lНет прав'
+        entry_expiration_shield:
+          name: '&6&lЩит от удаления: {enabled}'
+          lore:
+          - '&8✖ &7Защищает землю от удаления,'
+          - '   &7если она неактивна.'
+          - '    &8• &7Видно только админам.'
+          material: CLOCK
+        entry_peaceful:
+          name: '&6&lМирная земля: {enabled}'
+          lore:
+          - '&8✖ &7Исключает землю из войн.'
+          - '    &8• &7Видно только админам.'
+          material: CAKE
+        entry_monster_spawn:
+          lore:
+          - '&8✖ &7Разрешить спавн монстров?'
+          - '    &8• &7Влияет на спавнеры: {spawners} '
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lСпавн монстров: {enabled}'
+          material: SPAWNER
+        entry_entity_griefing:
+          lore:
+          - '&8✖ &7Разрешить грифинг сущностями?'
+          - '    &8• &7&lЕсли включено:'
+          - '      &7Криперы взрывают блоки,'
+          - '      &7молнии наносят урон и т.д.'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lГриферство сущностями: {enabled}'
+          material: CREEPER_HEAD
+        entry_wither_attack_animal:
+          name: '&6&lВизер атакует животных: {enabled}'
+          lore:
+          - '&8✖ &7Должны ли визеры бить животных?'
+          - '   &7Разблокировано: {unlocked}'
+          material: skin:886dc0cfcaeecfe1ab69146e4d4f1190837076a67dec135fabda6271f375d01f
+        entry_snow_melt:
+          lore:
+          - '&8✖ &7Должны ли снег и лед таять?'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lТаяние снега: {enabled}'
+          material: SNOWBALL
+        child_failure_priority:
+          lore:
+          - '&cПРиоритет этой роли выше вашего.'
+          name: '&4&lПриоритет роли'
+        entry_block_spreading:
+          name: '&6&lРаспространение блоков: {enabled}'
+          lore:
+          - '&8✖ &7Разрешить блокам распространяться'
+          - '   &7из других областей?'
+          material: BUDDING_AMETHYST
+        entry_piston_griefing:
+          lore:
+          - '&8✖ &7Разрешить поршни извне?'
+          - '    &8• &7&lЕсли включено:'
+          - '      &7Игроки смогут гриферить поршнями.'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lПоршни снаружи: {enabled}'
+          material: PISTON
+        child_failure_access:
+          lore:
+          - '&cВам запрещено редактировать роли.'
+          name: '&4&lЗапрещено'
+        entry_general_admin:
+          lore:
+          - '&8✖ &7Клик для переключения:'
+          - '   &7Разблокировано: {unlocked}'
+          - '&7Описание:'
+          - ' &8• {desc}'
+          name: '&6&l{flag}: {enabled}'
+          material: INHERIT
+        entry_fire_spread:
+          lore:
+          - '&8✖ &7Разрешить распространение огня?'
+          - '    &8• &7Огонь из дикой местности'
+          - '      &7не зайдет в приват.'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lОгонь: {enabled}'
+          material: FLINT_AND_STEEL
+        entry_animal_spawn:
+          lore:
+          - '&8✖ &7Разрешить спавн животных?'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lСпавн животных: {enabled}'
+          material: skin:bee8514892f3d78a32e8456fcbb8c6081e21b246d82f398bd969fec19d3c27b3
+        entry_plant_growth:
+          lore:
+          - '&8✖ &7Разрешить рост растений?'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lРост растений: {enabled}'
+          material: VINE
+        entry_tnt_griefing:
+          lore:
+          - '&8✖ &7Разрешить взрывы TNT?'
+          - '    &8• &7&lЕсли включено:'
+          - '      &7Игроки смогут взрывать вашу землю.'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lВзрывы TNT: {enabled}'
+          material: TNT
+        entry_leaf_decay:
+          lore:
+          - '&8✖ &7Должна ли листва пропадать?'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lИсчезновение листвы: {enabled}'
+          material: OAK_LEAVES
+        entry_general_player:
+          lore:
+          - '&8✖ &7Клик для переключения:'
+          - '   &7Разблокировано: {unlocked}'
+          - '&7Описание:'
+          - '{desc}'
+          name: '&6&l{flag}: {enabled}'
+          material: INHERIT
+        entry_waterflow_allow:
+          lore:
+          - '&8✖ &7Разрешить течение воды/лавы извне?'
+          - '    &8• &7&lЕсли включено:'
+          - '      &7Игроки могут залить вас снаружи.'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lВода и лава: {enabled}'
+          material: WATER_BUCKET
+  list_role_settings:
+    title: '&8Флаги'
+    items:
+      default:
+        entry_setting_edit_various:
+          lore:
+          - '&8✖ &7Разрешить редактировать настройки?'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lРедактирование настроек: {enabled}'
+          material: NAME_TAG
+        entry_plant:
+          lore:
+          - '&8✖ &7Разрешить сажать растения?'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lПосадка: {enabled}'
+          material: IRON_HOE
+        entry_balance_withdraw:
+          lore:
+          - '&8✖ &7Разрешить снимать деньги?'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lСнятие денег: {enabled}'
+          material: GOLD_NUGGET
+        entry_player_untrust:
+          lore:
+          - '&8✖ &7Разрешить исключать игроков?'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lИсключение: {enabled}'
+          material: skin:548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8
+        entry_land_enter:
+          lore:
+          - '&8✖ &7Разрешить входить в область?'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lВход: {enabled}'
+          material: OAK_FENCE_GATE
+        entry_land_claim:
+          lore:
+          - '&8✖ &7Разрешить приватить/распривачивать?'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lПриват: {enabled}'
+          material: IRON_SHOVEL
+        entry_ender_pearl:
+          lore:
+          - '&8✖ &7Разрешить эндер-перлы?'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lЭндер-перлы: {enabled}'
+          material: ENDER_PEARL
+        entry_shear:
+          lore:
+          - '&8✖ &7Разрешить стричь овец?'
+          name: '&6&lСтрижка: {enabled}'
+          material: SHEARS
+        entry_attack_monster:
+          lore:
+          - '&8✖ &7Разрешить бить монстров?'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lАтака монстров: {enabled}'
+          material: ZOMBIE_HEAD
+        entry_harvest:
+          lore:
+          - '&8✖ &7Разрешить собирать урожай?'
+          name: '&6&lСбор урожая: {enabled}'
+          material: WHEAT
+        entry_fly:
+          lore:
+          - '&8✖ &7Разрешить /fly?'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lПолет: {enabled}'
+          material: FEATHER
+        entry_general_admin:
+          lore:
+          - '&8✖ &7Клик для переключения:'
+          - '   &7Разблокировано: {unlocked}'
+          - '    &8• &7Описание:'
+          - '      {desc}'
+          name: '&6&l{flag}: {enabled}'
+          material: INHERIT
+        entry_player_trust:
+          lore:
+          - '&8✖ &7Разрешить добавлять игроков?'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lДобавление: {enabled}'
+          material: skin:ffec3d25ae0d147c342c45370e0e43300a4e48a5b43f9bb858babff756144dac
+        entry_block_ignite:
+          lore:
+          - '&8✖ &7Разрешить поджигать блоки?'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lПоджигание: {enabled}'
+          material: FLINT_AND_STEEL
+        entry_war_manage:
+          lore:
+          - '&8✖ &7Разрешить управление войной?'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lВойна: {enabled}'
+          material: IRON_SWORD
+        entry_attack_player:
+          lore:
+          - '&8✖ &7Разрешить бить игроков?'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lPvP: {enabled}'
+          material: IRON_SWORD
+        entry_trample_farmland:
+          lore:
+          - '&8✖ &7Разрешить топтать грядки?'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lТоптать грядки: {enabled}'
+          material: FARMLAND
+        entry_elytra:
+          lore:
+          - '&8✖ &7Разрешить элитры и трезубцы?'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lЭлитры: {enabled}'
+          material: ELYTRA
+        entry_interact_villager:
+          lore:
+          - '&8✖ &7Разрешить торговлю с жителями?'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lТорговля: {enabled}'
+          material: EMERALD
+        child_failure_permission:
+          lore:
+          - '&cУ вас нет прав.'
+          name: '&4&lНет прав'
+        child_failure_allow-edit:
+          name: '&4&lФлаг неизменяемый'
+          lore:
+          - '&cСервер запретил менять этот флаг.'
+        entry_player_setrole:
+          lore:
+          - '&8✖ &7Разрешить назначать роли?'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lНазначение ролей: {enabled}'
+          material: skin:1e8ffbfd7890dfba8841166d688c93a88b6e8cac4d0260644cac9f3afd57c63e
+        entry_interact_general:
+          lore:
+          - '&8✖ &7Разрешить общее взаимодействие?'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lВзаимодействие: {enabled}'
+          material: STRING
+        child_failure_blacklist:
+          lore:
+          - '&cЭтот флаг нельзя менять на уровне нации.'
+          - ' &8• &7Каждая земля настраивает сама.'
+
+        child_failure_cancelled:
+          name: '&4&lОтменено плагином'
+          lore:
+          - '&cПереключение этого флага'
+          - '&cотменено сторонним плагином.'
+        child_failure_edit_owner:
+          lore:
+          - '&cВы не можете менять флаги'
+          - '&cдля роли владельца.'
+          - ' &8• &7Это предотвращает случайную'
+          - '   &7потерю прав.'
+          name: '&4&lРоль владельца'
+        entry_interact_mechanism:
+          lore:
+          - '&8✖ &7Разрешить редстоун механизмы?'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lРедстоун: {enabled}'
+          material: REDSTONE
+        entry_land_claim_border:
+          lore:
+          - '&8✖ &7Разрешить приватить чанки'
+          - '   &7на границе этой земли?'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lПриват границ: {enabled}'
+          material: IRON_BARS
+        entry_spawn_set:
+          lore:
+          - '&8✖ &7Разрешить менять спавн?'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lУстановка спавна: {enabled}'
+          material: ENDER_EYE
+        entry_player_ban:
+          lore:
+          - '&8✖ &7Разрешить банить/разбанивать?'
+          - '    &8• &7Они не смогут банить игроков'
+          - '      &7с более высокой ролью.'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lБаны: {enabled}'
+          material: BARRIER
+        entry_item_pickup:
+          lore:
+          - '&8✖ &7Разрешить подбирать/выбрасывать предметы?'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lПредметы: {enabled}'
+          material: HOPPER
+        child_failure_priority:
+          lore:
+          - '&cВы не можете редактировать эту роль.'
+          - ' &8• &7Ее приоритет выше вашего.'
+          name: '&4&lПриоритет роли'
+        entry_block_place:
+          lore:
+          - '&8✖ &7Разрешить ставить блоки?'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lУстановка блоков: {enabled}'
+          material: OAK_PLANKS
+        entry_setting_edit_land:
+          lore:
+          - '&8✖ &7Разрешить менять природные флаги?'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lПриродные флаги: {enabled}'
+          material: skin:8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+        entry_interact_container:
+          lore:
+          - '&8✖ &7Разрешить открывать контейнеры?'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lКонтейнеры: {enabled}'
+          material: CHEST
+        child_failure_access:
+          lore:
+          - '&cВам запрещено редактировать роли.'
+          name: '&4&lЗапрещено'
+        entry_no_damage:
+          name: '&6&lНет урона: {enabled}'
+          lore:
+          - '&8✖ &7Делает участников неуязвимыми'
+          - '   &7к урону (кроме PvP и монстров).'
+          - '    &8• &7Видно только админам.'
+          material: CAKE
+        entry_block_break:
+          lore:
+          - '&8✖ &7Разрешить ломать блоки?'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lЛомать блоки: {enabled}'
+          material: IRON_PICKAXE
+        entry_setting_edit_role:
+          lore:
+          - '&8✖ &7Разрешить редактировать роли?'
+          - '    &8• &7Они не смогут менять свои флаги.'
+          - '    &8• &7Давайте это право только'
+          - '      &7доверенным игрокам.'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lНастройки ролей: {enabled}'
+          material: skin:e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+        entry_interact_trapdoor:
+          lore:
+          - '&8✖ &7Разрешить открывать люки?'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lЛюки: {enabled}'
+          material: OAK_TRAPDOOR
+        entry_setting_edit_taxes:
+          lore:
+          - '&8✖ &7Разрешить менять налоги?'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lНалоги: {enabled}'
+          material: GOLD_INGOT
+        child_failure_nation:
+          lore:
+          - '&cРоль управляется нацией&4 {nation}&c.'
+          name: '&4&lУправляется нацией'
+        entry_attack_animal:
+          lore:
+          - '&8✖ &7Разрешить бить животных?'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lАтака животных: {enabled}'
+          material: BOW
+        entry_spawn_teleport:
+          lore:
+          - '&8✖ &7Разрешить телепорт на спавн?'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lТелепорт на спавн: {enabled}'
+          material: ENDER_EYE
+        entry_vehicle_use:
+          lore:
+          - '&8✖ &7Разрешить использовать транспорт?'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lТранспорт: {enabled}'
+          material: MINECART
+        entry_area_assign:
+          lore:
+          - '&8✖ &7Разрешить создавать области?'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lОбласти: {enabled}'
+          material: OAK_FENCE
+        entry_general_player:
+          lore:
+          - '&8✖ &7Клик для переключения:'
+          - '   &7Разблокировано: {unlocked}'
+          - '    &8• &7Описание:'
+          - '      {desc}'
+          name: '&6&l{flag}: {enabled}'
+          material: INHERIT
+        entry_interact_door:
+          lore:
+          - '&8✖ &7Разрешить открывать двери?'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lДвери: {enabled}'
+          material: IRON_DOOR
+  war-declaration_tribute:
+    title: '&8Дань'
+    items:
+      default:
+        cancel-declaration:
+          lore:
+          - '&8✖ &7Отменить объявление войны.'
+          name: '&c&lОтмена'
+          material: skin:548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8
+          slots: 37
+        send-declaration:
+          lore:
+          - '&8✖ &7Отправить объявление войны.'
+          name: '&a&lОтправить'
+          material: skin:ffec3d25ae0d147c342c45370e0e43300a4e48a5b43f9bb858babff756144dac
+          slots: 45
+        refresh_minus-1:
+          name: '&c&lУбрать {value}'
+          material: REDSTONE
+          slots: 20
+          data:
+            modify: 1000
+        refresh_minus-2:
+          name: '&c&lУбрать {value}'
+          material: REDSTONE
+          slots: 21
+          data:
+            modify: 100
+        refresh_minus-3:
+          name: '&c&lУбрать {value}'
+          material: REDSTONE
+          slots: 22
+          data:
+            modify: 1
+        child_max-tribute:
+          lore:
+          - '&cНельзя установить дань выше&c {max}&c.'
+          name: '&4&lМаксимум достигнут'
+        refresh_plus-3:
+          name: '&a&lДобавить {value}'
+          material: GLOWSTONE_DUST
+          slots: 26
+          data:
+            modify: 1000
+        refresh_plus-1:
+          name: '&a&lДобавить {value}'
+          material: GLOWSTONE_DUST
+          slots: 24
+          data:
+            modify: 1
+        refresh_plus-2:
+          name: '&a&lДобавить {value}'
+          material: GLOWSTONE_DUST
+          slots: 25
+          data:
+            modify: 100
+        tribute:
+          lore:
+          - '&7Противник должен заплатить это'
+          - '&7для капитуляции.'
+          - ' &8• &7&lМаксимум:&c {max}'
+          - ' &8• &7&lЕсли 0:'
+          - '   &7Противник не сможет сдаться.'
+          name: '&7&lДань:&c {tribute}'
+          material: GOLD_INGOT
+          slots: 23
+  area:
+    title: '&8{area}'
+    items:
+      default:
+        land-settings:
+          lore:
+          - '&8✖ &7Природные флаги.'
+          name: '&6&lПриродные флаги'
+          material: skin:8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+          slots: 29
+        child_failure_rented:
+          lore:
+          - '&cНельзя менять налоги, пока'
+          - '&cобласть арендована.'
+          - ' &8• &7Арендатор:&3 {player}'
+          name: '&4Арендовано'
+        child_failure_access:
+          lore:
+          - '&7Нужно разрешение владельца.'
+          - ' &8• &7Флаг: {flag}'
+          name: '&4Запрещено'
+        player-management:
+          lore:
+          - '&8✖ &7Управление игроками.'
+          name: '&6&lУправление игроками'
+          material: skin:e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+          slots: 11
+        various:
+          lore:
+          - '&8✖ &7Имя и описание области.'
+          name: '&6&lРазные настройки'
+          material: BEACON
+          slots: 32
+        spawn:
+          lore:
+          - '&8✖ &bЛКМ'
+          - '   &7Телепорт на спавн области.'
+          - '&8✖ &9ПКМ'
+          - '   &7Установить спавн.'
+          name: '&6&lТелепорт'
+          material: ENDER_PEARL
+          slots: 9
+        roles:
+          lore:
+          - '&8✖ &7Управление ролями области.'
+          name: '&6&lРоли'
+          material: skin:e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+          slots: 30
+        taxes:
+          lore:
+          - '&8✖ &7Управление налогами области.'
+          name: '&6&lНалоги'
+          material: GOLD_INGOT
+          slots: 31
+        rental_setup:
+          name: '&6&lНастройка аренды'
+          lore:
+          - '&8✖ &7Настроить аренду или продажу.'
+          material: INHERIT
+          slots: 34
+        rental_setup_land:
+          name: '&6&lПродажа земли'
+          lore:
+          - '&8✖ &7Настроить продажу всей земли.'
+          material: INHERIT
+          slots: 34
+        rental_setup_change_sell:
+          name: '&6&lИзменить цену'
+          lore:
+          - '&8✖ &bЛКМ'
+          - '   &7Обновить цену.'
+          - '   &7Текущая:'
+          - '    &8• &7Цена:&c {cost}'
+          - ''
+          - '&8✖ &3DROP'
+          - '   &7Убрать предложение.'
+          material: INHERIT
+          slots: 34
+        rental_setup_change_rent:
+          name: '&6&lИзменить аренду'
+          lore:
+          - '&8✖ &bЛКМ'
+          - '   &7Обновить условия аренды.'
+          - '   &7Текущие:'
+          - '    &8• &7Интервал:&5 {interval}'
+          - '    &8• &7Цена за интервал:&c {cost}'
+          - '    &8• &7Макс время:&5 {max-time}'
+          - ''
+          - '&8✖ &3DROP'
+          - '   &7Убрать предложение.'
+          material: INHERIT
+          slots: 34
+        child_failure_spawn_area:
+          name: '&4&lТолько в области'
+          lore:
+          - '&cВы должны быть внутри области.'
+        child_failure_spawn_none:
+          name: '&4&lСпавн не установлен'
+        child_success_spawn_set:
+          name: '&aСпавн установлен'
+          lore:
+          - '&7Вы установили точку спавна.'
+  list_area_players:
+    title: '&8{area} &7> &8Участники'
+    items:
+      default:
+        trust:
+          lore:
+          - '&8✖ &7Добавить участника.'
+          - '   &7Доступно:&3 {players} &8/&c {max}'
+          name: '&a&lДобавить игрока'
+          material: skin:ffec3d25ae0d147c342c45370e0e43300a4e48a5b43f9bb858babff756144dac
+          slots: 40
+        child_failure_edit_player_land:
+          lore:
+          - '&cВы не можете редактировать этого игрока.'
+          - ' &8• &7Его роль&6 {role} &7выше или равна вашей.'
+          name: '&4&lПриоритет роли'
+        entry_area:
+          lore:
+          - '&7Роль: {role}'
+          - ''
+          - '&8✖ &bЛКМ'
+          - '   &7Информация'
+          - '&8✖ &bSHIFT + ЛКМ'
+          - '   &7▲ Повысить'
+          - '&8✖ &9SHIFT + ПКМ'
+          - '   &7▼ Понизить'
+          - '&8✖ &3DROP'
+          - '   &7Исключить'
+          name: '&e&l{player}'
+          material: INHERIT
+        child_failure_edit_player_area:
+          lore:
+          - '&cВы не можете редактировать этого игрока.'
+          - ' &8• &7Его роль&6 {role} &7выше или равна вашей.'
+          name: '&4&lПриоритет роли'
+        child_failure_max-players:
+          lore:
+          - '&7Достигнут лимит участников: {max}.'
+          name: '&4&lЛимит участников'
+        refresh_toggle:
+          lore:
+          - '&8✖ &7Показывать только участников'
+          - '   &7этой области &8(&6{area}&8)&7?'
+          name: '&6&lВид: только область: {current}'
+          material: HOPPER
+          slots: 41
+        global-action:
+          name: '&6&lВыполнить для всех: {current}'
+          lore:
+          - '&8✖ &7Добавлять/удалять во всей земле?'
+          - '   &8• &7Если выкл: только для области&6 {area}&7.'
+          material: skin:c9c8881e42915a9d29bb61a16fb26d059913204d265df5b439b3d792acd56
+          slots: 44
+        child_failure_priority:
+          lore:
+          - '&cВы не можете редактировать эту роль.'
+          name: '&4&lПриоритет роли'
+        entry_area_all:
+          lore:
+          - '&7Участник в областях:'
+          - '{areas}'
+          - ''
+          - '&8✖ &bЛКМ'
+          - '   &7Информация.'
+          - '&8✖ &3DROP'
+          - '   &7Исключить'
+          name: '&e&l{player}'
+          material: INHERIT
+        child_failure_access:
+          lore:
+          - '&cУ вас нет прав исключать игроков.'
+          name: '&4&lНет доступа'
+        untrust:
+          lore:
+          - '&8✖ &7Исключить игрока из области.'
+          name: '&c&lИсключить игрока'
+          material: skin:548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8
+          slots: 42
+        child_failure_owner:
+          lore:
+          - '&cВладельца нельзя исключить.'
+          name: '&4&lВладелец'
+        child_failure_tenant:
+          lore:
+          - '&cАрендатора нельзя исключить.'
+          - ' &8• &7Используйте &e/{cmd}&7.'
+          name: '&4&lАрендатор'
+        child_failure_setrole:
+          lore:
+          - '&cУ вас нет прав назначать роли.'
+          name: '&4&lНет доступа'
+        child_failure_self:
+          lore:
+          - '&7Используйте &e/lands leave&7.'
+          name: '&4&lНельзя исключить себя'
+  list_admin_lands:
+    title: '&8Админские земли'
+    items:
+      default:
+        add:
+          lore:
+          - '&8✖ &7Сделать землю админской.'
+          name: '&a&lКонвертировать в Админскую'
+          material: skin:ffec3d25ae0d147c342c45370e0e43300a4e48a5b43f9bb858babff756144dac
+          slots: 40
+        entry_object:
+          lore:
+          - '{title}'
+          - '&8✖ &7Открыть меню земли.'
+          name: '&2&l{land}'
+          material: INHERIT
+        convert:
+          lore:
+          - '&8✖ &7Сделать землю обычной.'
+          name: '&e&lКонвертировать в Обычную'
+          material: skin:1811917c644f04f56b68c9c71b33ac082c2601c24409be78c2063d4df2a86525
+          slots: 41
+        delete:
+          lore:
+          - '&8✖ &7Удалить землю полностью.'
+          name: '&c&lУдалить полностью'
+          material: skin:548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8
+          slots: 42
+  list_player_nations:
+    title: '&8Ваши нации'
+    items:
+      default:
+        entry_nation_edit:
+          lore:
+          - '&7Это ваша основная нация.'
+          - '&8✖ &7Открыть меню нации.'
+          - '&8✖ &9ПКМ'
+          - '   &7Информация о нации.'
+          name: '&9&l{nation}'
+          material: skin:eef425b4db7d62b200e89c013e421a9e110bfb27f2d8b9f5884d10104d00f4f4
+        entry_nation_own:
+          lore:
+          - '&7Вы владелец этой нации.'
+          - ' &8• &7Земли: {lands}'
+          - ' &8• &7Чанки: {chunks}'
+          - ' &8• &7Участники: {members}'
+          - '&8✖ &7Открыть меню нации.'
+          - '&8✖ &9ПКМ'
+          - '   &7Информация о нации.'
+          name: '&9&l{nation}'
+          material: INHERIT
+        entry_nation:
+          lore:
+          - '&7Вы участник этой нации.'
+          - ' &8• &7Земли: {lands}'
+          - ' &8• &7Чанки: {chunks}'
+          - ' &8• &7Участники: {members}'
+          - '&8✖ &7Открыть меню нации.'
+          - '&8✖ &9ПКМ'
+          - '   &7Информация о нации.'
+          name: '&9&l{nation}'
+          material: INHERIT
+  player-management:
+    title: '&8Управление игроками'
+    items:
+      default:
+        members:
+          lore:
+          - '&8✖ &7Управление участниками.'
+          name: '&6&lУчастники'
+          material: skin:e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+          slots: 11
+        members_online:
+          name: '&6&lИгроки онлайн'
+          lore:
+          - '&8✖ &7Показать кто онлайн.'
+          material: CLOCK
+          slots: 32
+        invites:
+          lore:
+          - '&8✖ &7Исходящие приглашения.'
+          name: '&6&lПриглашения'
+          material: WRITABLE_BOOK
+          slots: 15
+        banned:
+          lore:
+          - '&8✖ &7Забаненные игроки.'
+          name: '&6&lБаны'
+          material: BARRIER
+          slots: 13
+        membership-requests:
+          lore:
+          - '&8✖ &7Запросы на вступление.'
+          name: '&6&lЗапросы на вступление'
+          material: BOOKSHELF
+          slots: 17
+  war:
+    title: '&8Война'
+    items:
+      default:
+        war_points_declaration:
+          lore:
+          - '&7Для победы нужно&3 {points} &7очков.'
+          - ' &8• &7Убийство: &3{p_kill} очков'
+          - ' &8• &7Захват: &3{p_cap} очков'
+          - '    &8• &7Флаг захвата можно скрафтить.'
+          - ''
+          - ' &8• &7Начало через:&5 {time}'
+          name: '&6&lОчки'
+          material: IRON_INGOT
+          slots: 13
+        child_failure_permission:
+          lore:
+          - '&cУ вас нет прав на это.'
+          - '   &7Флаг: {flag}'
+          name: '&4&lЗапрещено'
+        child_failure_surrender:
+          lore:
+          - '&cВраг не позволяет сдаться.'
+          - ' &8• &7Они не установили дань.'
+          name: '&4&lКапитуляция отклонена'
+        tribute_attacker_mutual:
+          lore:
+          - '&8✖ &7Сдаться в войне.'
+          - '   &7Вы заплатите&c {tribute-att}'
+          - '   &7защитникам.'
+          - '    &8• &7Если дань 0:'
+          - '      &7Они не смогут сдаться.'
+          - '    &8• &7&lЕсли они сдадутся:'
+          - '      &7Они заплатят вам&c {tribute}'
+          name: '&6&lДань:&c {tribute}'
+          material: GOLD_INGOT
+          slots: 29
+        recipe:
+          lore:
+          - '&7Кликните для рецепта флага.'
+          name: '&6&lРецепт флага захвата'
+          material: BEACON
+          slots: 15
+        tribute_defender:
+          lore:
+          - '&8✖ &7Сдаться в войне'
+          - '    &8• &7Вы заплатите&c {tribute}'
+          - '      &7атакующим.'
+          - '    &8• &7Если дань 0:'
+          - '      &7Они не примут капитуляцию.'
+          name: '&6&lСдаться:&c {tribute}'
+          material: GOLD_INGOT
+          slots: 29
+        child_failure_none:
+          lore:
+          - '&cУ врага {enemy} &cнет земель'
+          - '&cдля телепортации.'
+          name: '&4&lНет земель'
+        child_failure_attacker:
+          lore:
+          - '&7Атакующие не могут сдаваться.'
+          name: '&4&lНельзя сдаться'
+        flags:
+          name: '&6&lАктивные флаги'
+          lore:
+          - '&7Участники войны могут:'
+          - '{settings}'
+          material: IRON_PICKAXE
+          slots: 14
+        child_failure_cost:
+          lore:
+          - '&cУ вас недостаточно средств'
+          - '&cдля оплаты дани&4 {tribute}&c.'
+          name: '&4&lНедостаточно денег'
+        spawn:
+          lore:
+          - '&7Телепорт на границу врага.'
+          name: '&6&lСпавн'
+          material: ENDER_PEARL
+          slots: 9
+        declaration_start:
+          lore:
+          - '&7Война начнется через&5 {time}&7.'
+          name: '&6&lНачало'
+          material: CLOCK
+          slots: 15
+        tribute_attacker:
+          lore:
+          - '&8✖ &bЛКМ'
+          - '   &7Изменить сумму дани.'
+          - '    &8• &7Если 0:'
+          - '      &7Защитники не смогут сдаться.'
+          - '    &8• &7Если сдадутся:'
+          - '      &7Они заплатят вам&c {tribute}'
+          - ''
+          - '&8✖ &9ПКМ'
+          - '   &7Если вы (атакующий) хотите сдаться,'
+          - '   &7вы заплатите&c {tribute-att} &7защитникам.'
+          name: '&6&lДань:&c {tribute}'
+          material: GOLD_INGOT
+          slots: 29
+        war_attackers:
+          material: IRON_SWORD
+          slots: 11
+        war_defenders:
+          material: SHIELD
+          slots: 12
+        war_points:
+          material: IRON_INGOT
+          slots: 13
+  list_wars:
+    title: '&8Текущие войны'
+    items:
+      default:
+        entry_object:
+          name: '{attacker}&7 vs. {defender}'
+          lore:
+          - ' &8• &7Прогресс:&3 {points} / {points_towin} &7очков'
+          - '   {points_bar}'
+          - ''
+          - ' &8• &7Конец через: &5{timeout}'
+          - ' &8• &7Атакующий: {attacker}'
+          - ' &8• &7Защитник: {defender}'
+          material: IRON_SWORD
+  admin_main:
+    title: '&8Админ меню'
+    items:
+      default:
+        lands:
+          lore:
+          - '&8✖ &7Управление админскими землями.'
+          - '    &8• &7Можно использовать &3/lands edit'
+          - '    &8• &7Админ земли не платят содержание'
+          name: '&6&lАдминские земли'
+          material: skin:8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+          slots: 25
+        child_failure_world:
+          lore:
+          - '&cВы должны быть в мире Lands.'
+          name: '&4&lНе мир Lands'
+        wilderness:
+          lore:
+          - '&8✖ &7Флаги дикой местности.'
+          name: '&6&lДикая местность'
+          material: NAME_TAG
+          slots: 21
+  list_membership-requests:
+    title: '&8Запросы'
+    items:
+      default:
+        child_failure_player_own-land:
+          lore:
+          - '&cНельзя добавить: у игрока есть своя земля.'
+          name: '&4&lВладеет землей'
+        child_failure_land_max-members:
+          lore:
+          - '&c{object}&7: достигнут лимит участников.'
+          name: '&4&lЛимит участников'
+        child_failure_player_banned:
+          lore:
+          - '&cНельзя добавить: игрок забанен.'
+          name: '&4&lЗабанен'
+        entry_object:
+          lore:
+          - '&7Время: &5{time}&7 назад'
+          - ''
+          - '&8✖ &bЛКМ'
+          - '   &7Принять.'
+          - '&8✖ &9ПКМ'
+          - '   &7Инфо.'
+          - '&8✖ &3DROP'
+          - '   &7Отклонить.'
+          name: '&6&l{name}'
+          material: INHERIT
+        membership_accept:
+          lore:
+          - '&8✖ &7Автоматически принимать запросы?'
+          - '  &8• &7Любой сможет вступить.'
+          - '  &8• &7Роль новых: {role}'
+          name: '&6&lАвто-прием: {status}'
+          material: REDSTONE
+          slots: 42
+        child_failure_player_max-lands:
+          lore:
+          - '&cИгрок достиг лимита земель.'
+
+        name: '&4&lЛимит земель достигнут'
+        lore:
+        - '&cВы не можете быть участником'
+        - '&cбОльшего кол-ва земель.'
+    patches:
+      all:
+        category:
+          slots: 40
+        category_members:
+          slots: 40
+  list_player_lands:
+    title: '&8Ваши земли'
+    items:
+      default:
+        entry_land_own:
+          lore:
+          - '&7Вы владелец этой земли.'
+          - ' &8• &7Нация:&9 {nation}'
+          - ' &8• &7Чанки:&3 {chunks} &7/&c {max-chunks}'
+          - '&8✖ &bЛКМ'
+          - '   &7Управление землей.'
+          - '&8✖ &bSHIFT + ЛКМ'
+          - '   &7Выбрать для &e/lands edit&7.'
+          - '   &7Команды будут применятся к ней.'
+          - '&8✖ &9ПКМ'
+          - '   &7Информация.'
+          name: '&2&l{land}'
+          material: INHERIT
+        entry_camp_edit:
+          lore:
+          - '&7Этот лагерь выбран для редактирования.'
+          - '&7Лагеря не платят содержание.'
+          - '&7&lИстекает через:'
+          - '&5~{time}'
+          - '&8✖ &bЛКМ'
+          - '   &7Управление.'
+          - '&8✖ &bSHIFT + ЛКМ'
+          - '   &7Выбрать для &e/lands edit&7.'
+          - '&8✖ &9ПКМ'
+          - '   &7Информация.'
+          name: '&2&l{land}'
+          material: INHERIT
+        entry_camp_own:
+          lore:
+          - '&7Вы владелец этого лагеря.'
+          - '&7Лагеря не платят содержание.'
+          - '&7&lИстекает через:'
+          - '&5~{time}'
+          - '&8✖ &bЛКМ'
+          - '   &7Управление.'
+          - '&8✖ &bSHIFT + ЛКМ'
+          - '   &7Выбрать для &e/lands edit&7.'
+          - '&8✖ &9ПКМ'
+          - '   &7Информация.'
+          name: '&2&l{land}'
+          material: INHERIT
+        entry_camp:
+          lore:
+          - '&7Вы участник этого лагеря.'
+          - '&7&lИстекает через:'
+          - '&5~{time}'
+          - '&8✖ &bЛКМ'
+          - '   &7Управление.'
+          - '&8✖ &bSHIFT + ЛКМ'
+          - '   &7Выбрать для &e/lands edit&7.'
+          - '&8✖ &9ПКМ'
+          - '   &7Информация.'
+          name: '&2&l{land}'
+          material: INHERIT
+        entry_land:
+          lore:
+          - '&7Вы участник этой земли.'
+          - ' &8• &7Нация:&9 {nation}'
+          - ' &8• &7Чанки:&3 {chunks} &7/&c {max-chunks}'
+          - '&8✖ &bЛКМ'
+          - '   &7Управление.'
+          - '&8✖ &bSHIFT + ЛКМ'
+          - '   &7Выбрать для &e/lands edit&7.'
+          - '&8✖ &9ПКМ'
+          - '   &7Информация.'
+          name: '&2&l{land}'
+          material: INHERIT
+        entry_land_edit:
+          lore:
+          - '&7Эта земля выбрана для редактирования.'
+          - '&8✖ &bЛКМ'
+          - '   &7Управление.'
+          - '&8✖ &bSHIFT + ЛКМ'
+          - '   &7Выбрать для &e/lands edit&7.'
+          - '&8✖ &9ПКМ'
+          - '   &7Информация.'
+          name: '&2&l{land}'
+          material: skin:eef425b4db7d62b200e89c013e421a9e110bfb27f2d8b9f5884d10104d00f4f4
+  player_invite:
+    title: '&8{land}'
+    items:
+      default:
+        child_failure_banned:
+          lore:
+          - '&cВы не можете вступить в область&4 {area}'
+          - '&cземли&4 {land}&c, так как вы забанены.'
+          name: '&4&lВы забанены'
+        deny:
+          lore:
+          - '&8✖ &7Отклонить приглашение.'
+          name: '&c&lОтклонить'
+          material: RED_STAINED_GLASS_PANE
+          slots: 24-27
+        accept_owner:
+          lore:
+          - '&8✖ &7Принять приглашение.'
+          - '   &7Налоги:&c {tax}'
+          - '   &7Содержание:&c {upkeep}'
+          name: '&a&lПринять'
+          material: LIME_STAINED_GLASS_PANE
+          slots: 19-22
+        accept_merge:
+          lore:
+          - '&8✖ &7Принять запрос на слияние'
+          - '   &2{merge} &7с&2 {land}&7.'
+          name: '&a&lПринять'
+          material: LIME_STAINED_GLASS_PANE
+          slots: 19-22
+        accept_trust:
+          lore:
+          - '&8✖ &7Принять приглашение.'
+          - '   &7Налоги:&c {tax}'
+          name: '&a&lПринять'
+          material: LIME_STAINED_GLASS_PANE
+          slots: 19-22
+        child_failure_inviteOwner:
+          lore:
+          - '&cВы не можете вступить.'
+          - ' &8• &7Нельзя владеть землей и'
+          - '   &7быть в другой одновременно.'
+          name: '&4&lВладелец земли'
+        child_failure_lands:
+          lore:
+          - '&cДостигнут лимит земель,'
+          - '&cв которых вы можете состоять: {max}.'
+          name: '&4&lЛимит земель'
+        child_failure_members:
+          lore:
+          - '&cВ земле&4 {land}&c нет мест.'
+          - ' &8• &7Лимит участников: {max}.'
+          name: '&4&lЛимит участников'
+        child_failure_war:
+          lore:
+          - '&cНельзя вступить в землю&4 {land}&c,'
+          - '&cтак как идет война.'
+          name: '&4&lИдет война'
+        info:
+          lore:
+          - ' &8• &7Область:&6 {area}'
+          - ' &8• &7Земля:&2 {land}'
+          - ' &8• &7Получено:&5 {time}'
+          - ' &8• &7Отправитель: {sender}'
+          name: '&6&lИнформация'
+          material: OAK_SIGN
+          slots: 23
+  list_rentables:
+    title: '&8Аренда'
+    items:
+      default:
+        refresh_type:
+          lore:
+          - '&8✖ &7Показывать на продажу'
+          - '   &7или в аренду?'
+          name: '&7&lТип: {type}'
+          material: COMPARATOR
+          slots: 42
+        entry_land_buy:
+          lore:
+          - '&8• &7Цена:&c {costs}'
+          - '&8✖ &7Телепорт'
+          name: '&a&lКупить землю:&2 {land}'
+          material: INHERIT
+        entry_area_buy:
+          lore:
+          - '&8• &7Размер: {size} блоков'
+          - '&8• &7Цена:&c {costs}'
+          - '&8• &7Земля: {land}'
+          - '&8✖ &7Телепорт'
+          name: '&a&lКупить:&6 {area}'
+          material: INHERIT
+        refresh_sort:
+          lore:
+          - '&8✖ &7Изменить сортировку.'
+          name: '&7&lСортировка: {mode}'
+          material: HOPPER
+          slots: 41
+        entry_area_rent:
+          lore:
+          - '&8• &7Размер: {size} блоков'
+          - '&8• &7Цена:&c {costs} &7за &5{time}'
+          - '&8• &7Макс время: {max}'
+          - '&8• &7Земля: {land}'
+          - '&8✖ &7Телепорт'
+          name: '&e&lАренда:&6 {area}'
+          material: INHERIT
+        child_failure_cooldown:
+          lore:
+          - '&7Подождите&5 {time}'
+          - '&7перед следующим телепортом.'
+          name: '&4&lЗадержка'
+  action-confirm:
+    title: '&8Подтверждение'
+    items:
+      default:
+        confirm:
+          name: '&a&lПодтвердить'
+          material: LIME_STAINED_GLASS_PANE
+          slots:
+          - 1-4
+          - 10-13
+          - 19-22
+          - 28-31
+          - 37-40
+          sound_click: entity.player.levelup
+        cancel:
+          name: '&c&lОтмена'
+          material: RED_STAINED_GLASS_PANE
+          slots:
+          - 6-9
+          - 15-18
+          - 24-27
+          - 33-36
+          - 42-45
+          sound_click: block.anvil.hit
+        info:
+          lore:
+          - '&7Нажмите &a&lПодтвердить &7или'
+          - '&c&lОтмена &7для выхода.'
+          name: '&6&lПодтвердите действие'
+          material: OAK_SIGN
+          slots:
+          - 5
+          - 14
+          - 23
+          - 32
+          - 41
+  admin_wilderness:
+    title: '&8Дикая местность'
+    items:
+      default:
+        management:
+          lore:
+          - '&8✖ &7Флаги управления'
+          - '   &7из сторонних плагинов.'
+          name: '&6&lФлаги управления'
+          material: GOLD_INGOT
+          slots: 23
+        action:
+          lore:
+          - '&8✖ &7Флаги действий,'
+          - '   &7ломание блоков и т.д.'
+          name: '&6&lФлаги действий'
+          material: IRON_PICKAXE
+          slots: 20
+        landflags:
+          lore:
+          - '&8✖ &7Природные флаги,'
+          - '   &7спавн мобов и т.д.'
+          name: '&6&lПриродные флаги'
+          material: skin:8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+          slots: 26
+  object_info:
+    title: '&8{object}'
+    items:
+      default:
+        membership-request_not-looking:
+          lore:
+          - '&cЭта земля не ищет'
+          - '&cновых участников.'
+          name: '&6&lЗапросить вступление'
+          material: BOOKSHELF
+          slots: 33
+        level:
+          lore:
+          - '&8✖ &7Клик для инфо о'
+          - '   &7текущем и следующем уровне.'
+          name: '&6&lУровень'
+          material: BEACON
+          slots: 15
+        created:
+          lore:
+          - '&5{date}'
+          name: '&6&lСоздано'
+          material: CLOCK
+          slots: 11
+        players:
+          lore:
+          - '&e{players}'
+          name: '&6&lИгроки &8(&7{amount}&8)'
+          material: skin:e8b8c6a46d87cf86a55df214cf84bf45cca25edb9a676e96364dd6a6eea235b3
+          slots: 13
+        lands:
+          lore:
+          - '&e{lands}'
+          name: '&6&lЗемли &8(&7{amount}&8)'
+          material: skin:8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+          slots: 13
+        membership-request:
+          lore:
+          - '&8✖ &bЛКМ'
+          - '   &7Запросить вступление.'
+          - '&8✖ &9ПКМ'
+          - '   &7Отозвать запрос.'
+          name: '&6&lЗапросить вступление'
+          material: BOOKSHELF
+          slots: 33
+        war:
+          lore:
+          - ' &8• &7Побед: {won}'
+          - ' &8• &7Поражений: {lost}'
+          - '   &8= &7Винрейт:&3 {wlr}'
+          - '&6&lУбийства:'
+          - ' &8• &7Убийств: {kills}'
+          - ' &8• &7Смертей: {deaths}'
+          - '   &8= &7K/D:&3 {kdr}'
+          - '&8• &7Захватов: {captures}'
+          name: '&6&lВинрейт:'
+          material: IRON_SWORD
+          slots: 31
+        level_camp:
+          lore:
+          - '&cУ лагерей нет уровней.'
+          name: '&6&lУровень'
+          material: BEACON
+          slots: 15
+        relations:
+          lore:
+          - '&8✖ &7Отношения.'
+          name: '&6&lОтношения'
+          material: LIME_BANNER
+          slots: 29
+  list_admin_wilderness_landflags:
+    title: '&8Природные флаги'
+  list_area_roles:
+    title: '&8{area} &7> &8Роли'
+    items:
+      default:
+        child_failure_max-roles:
+          lore:
+          - '&cДостигнут лимит ролей: {max}.'
+          name: '&4&lЛимит ролей'
+        child_failure_access:
+          lore:
+          - '&cВам запрещено редактировать роли.'
+          name: '&4&lНет доступа'
+        entry_object_system_priority:
+          lore:
+          - '&8✖ &bЛКМ'
+          - '   &7Редактировать.'
+          - '&8✖ &bSHIFT + ЛКМ'
+          - '   &7Повысить приоритет'
+          - '&8✖ &9SHIFT + ПКМ'
+          - '   &7Понизить приоритет'
+          name: '&7&l{role}'
+          material: INHERIT
+        entry_object_normal:
+          lore:
+          - '&8✖ &bЛКМ'
+          - '   &7Редактировать.'
+          - '&8✖ &bSHIFT + ЛКМ'
+          - '   &7Повысить приоритет'
+          - '&8✖ &9SHIFT + ПКМ'
+          - '   &7Понизить приоритет'
+          - '&8✖ &3DROP'
+          - '   &7Удалить роль.'
+          name: '&7&l{role}'
+          material: INHERIT
+        entry_object_system:
+          lore:
+          - '&8✖ &bЛКМ'
+          - '   &7Редактировать.'
+          name: '&7&l{role}'
+          material: INHERIT
+        create:
+          lore:
+          - '&8✖ &7Создать новую роль.'
+          - '   &7Доступно:&3 {roles} &8/&c {max}'
+          name: '&a&lСоздать роль'
+          material: skin:ffec3d25ae0d147c342c45370e0e43300a4e48a5b43f9bb858babff756144dac
+          slots: 40
+        child_failure_required:
+          lore:
+          - '&cНельзя удалить эту роль.'
+          - ' &8• &7Она системная.'
+          name: '&4&lСистемная роль'
+        delete:
+          lore:
+          - '&8✖ &7Удалить роль.'
+          name: '&c&lУдалить роль'
+          material: skin:548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8
+          slots: 42
+        child_failure_priority:
+          lore:
+          - '&cВы не можете редактировать эту роль.'
+          name: '&4&lПриоритет роли'
+  list_player_map:
+    title: Карта
+    items:
+      default:
+        entry_chunk_position:
+          name: '&6&lВы здесь'
+          lore:
+          - '&7Это ваша текущая позиция.'
+          material: INHERIT
+        entry_chunk_wilderness:
+          name: '&2Дикая местность'
+          lore:
+          - '&8✖ &7Клик для привата.'
+          material: GREEN_STAINED_GLASS_PANE
+        entry_chunk_untrusted:
+          name: '&4{land}'
+          lore:
+          - '&cВы не участник здесь.'
+          - '&8✖ &7Информация.'
+          material: RED_STAINED_GLASS_PANE
+        entry_chunk_owner:
+          name: '&a{land}'
+          lore:
+          - '&7Вы владелец.'
+          - '&8✖ &7Открыть меню.'
+          material: LIME_STAINED_GLASS_PANE
+        entry_chunk_trusted:
+          name: '&e{land}'
+          lore:
+          - '&7Вы участник.'
+          - '&8✖ &7Открыть меню.'
+          material: YELLOW_STAINED_GLASS_PANE
+        refresh_move_up:
+          name: '&6&lНавигация {direction}'
+          material: skin:45c588b9ec0a08a37e01a809ed0903cc34c3e3f176dc92230417da93b948f148
+          slots: 5
+        refresh_move_down:
+          name: '&6&lНавигация {direction}'
+          material: skin:1cb8be16d40c25ace64e09f6086d408ebc3d545cfb2990c5b6c25dabcedeacc
+          slots: 50
+        refresh_move_left:
+          name: '&6&lНавигация {direction}'
+          material: skin:76ebaa41d1d405eb6b60845bb9ac724af70e85eac8a96a5544b9e23ad6c96c62
+          slots: 19
+        refresh_move_right:
+          name: '&6&lНавигация {direction}'
+          material: skin:8399e5da82ef7765fd5e472f3147ed118d981887730ea7bb80d7a1bed98d5ba
+          slots: 27
+        refresh_reset-pos:
+          name: '&6&lСброс позиции'
+          lore:
+          - '&8✖ &7Вернуться к игроку.'
+          material: skin:22e4ad83c4938d9e5fc589e60c8010be2480e08d834529cec0da13bdf2538555
+          slots: 54
+        back:
+          slots: 46
+    size: 54
+    entries: 1-54
+  list_player_invites:
+    title: '&8Приглашения'
+    items:
+      default:
+        entry_object_owner:
+          lore:
+          - '&8✖ &7Ответить на приглашение.'
+          name: '&2&l{land} &7- &6&lСтать владельцем'
+          material: INHERIT
+        entry_object_merge:
+          lore:
+          - '&8✖ &7Решить насчет слияния'
+          - '   &7вашей&2 {merge}&7 в&2 {land}&7.'
+          name: '&2&l{land} &7- &6&lСлияние земель'
+          material: INHERIT
+        entry_object_trust:
+          lore:
+          - '&8✖ &7Ответить на приглашение.'
+          name: '&2&l{land} &7- &6&lПриглашение'
+          material: INHERIT
+  list_land_areas:
+    title: '&8Области'
+    items:
+      default:
+        child_failure_rented:
+          lore:
+          - '&cНельзя редактировать арендованную область.'
+          - ' &8• &7Арендатор:&3 {player}'
+          name: '&4&lАрендовано'
+        entry_area_default:
+          lore:
+          - '&7{description}'
+          - '&8✖ &7Открыть меню.'
+          name: '&6&l{area}'
+          material: INHERIT
+        child_failure_access:
+          lore:
+          - '&cВам запрещено удалять области.'
+          name: '&4&lНет доступа'
+        entry_area:
+          lore:
+          - '&7{description}'
+          - ''
+          - '&8✖ &7Управление.'
+          - '&8✖ &3DROP'
+          - '   &7Удалить область.'
+          name: '&6&l{area}'
+          material: INHERIT
+        create:
+          lore:
+          - '&8✖ &7Создать новую область.'
+          - '   &7Доступно:&3 {areas} &8/&c {max}'
+          name: '&a&lСоздать область'
+          material: skin:ffec3d25ae0d147c342c45370e0e43300a4e48a5b43f9bb858babff756144dac
+          slots: 40
+        entry_area-setup:
+          lore:
+          - '&81. &7Используйте &e/lands selection'
+          - '   &7для выделения углов.'
+          - '&82. &7Введите &e/{cmd}'
+          - '  &7для назначения области.'
+          - '&8✖ &3DROP'
+          - '   &7Удалить область.'
+          name: '&c&lНастройка'
+          material: ACACIA_FENCE
+        child_failure_untrusted:
+          lore:
+          - '&cУ вас нет доступа к этой области.'
+          - ' &8• &7Вы не участник.'
+          name: '&4&lНет доступа'
+        child_failure_default:
+          lore:
+          - '&cНельзя удалить стандартную область.'
+          name: '&4&lСтандартная область'
+        child_failure_max-areas:
+          lore:
+          - '&cДостигнут лимит областей: {max}.'
+          name: '&4&lЛимит областей'
+        delete:
+          lore:
+          - '&8✖ &7Удалить область.'
+          name: '&c&lУдалить область'
+          material: skin:548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8
+          slots: 42
+  list_area_banned:
+    title: '&8{area} &7> &8Баны'
+    items:
+      default:
+        unban:
+          lore:
+          - '&8✖ &7Разбанить игрока.'
+          name: '&a&lРазбанить'
+          material: skin:548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8
+          slots: 42
+        entry_area_all:
+          lore:
+          - '&7Забанен в областях:'
+          - '{areas}'
+          - ''
+          - '&8✖ &7Информация.'
+          - '&8✖ &3DROP'
+          - '   &7Разбанить'
+          name: '&e&l{player}'
+          material: INHERIT
+        entry_area:
+          lore:
+          - '&7Игрок забанен здесь.'
+          - '&8✖ &7Информация.'
+          - '&8✖ &3DROP'
+          - '   &7Разбанить'
+          name: '&e&l{player}'
+          material: INHERIT
+        refresh_toggle:
+          lore:
+          - '&8✖ &7Показывать баны только'
+          - '   &7этой области &8(&6{area}&8)&7?'
+          name: '&6&lВид: только область: {current}'
+          material: HOPPER
+          slots: 41
+        global-action:
+          name: '&6&lВыполнить для всех: {current}'
+          lore:
+          - '&8✖ &7Банить/разбанивать везде?'
+          - '   &8• &7Если выкл: только для &6{area}&7.'
+          material: skin:c9c8881e42915a9d29bb61a16fb26d059913204d265df5b439b3d792acd56
+          slots: 44
+        ban:
+          lore:
+          - '&8✖ &7Забанить игрока.'
+          - '    &8• &7Забаненные не смогут'
+          - '      &7входить в область.'
+          name: '&c&lЗабанить'
+          material: skin:ffec3d25ae0d147c342c45370e0e43300a4e48a5b43f9bb858babff756144dac
+          slots: 40
+  war_capture_recipe:
+    title: '&8Рецепт флага захвата'
+  war_info:
+    title: '&8Инфо о войне'
+    items:
+      default:
+        war_attackers:
+          material: IRON_SWORD
+          slots: 21
+        war_defenders:
+          material: SHIELD
+          slots: 23
+        war_points:
+          material: IRON_INGOT
+          slots: 25
+  list_role_players:
+    title: '&8Игроки'
+    items:
+      default:
+        entry_object:
+          lore:
+          - '&7Этот игрок дает земле'
+          - '&7&3{support} &7доп. чанков.'
+          name: '&e&l{player}'
+          material: INHERIT
+          slots: 10-36
+  list_all:
+    title: '&8Все'
+    items:
+      default:
+        refresh_toggle-allowed:
+          lore:
+          - '&8✖ &7Показывать только публичные'
+          - '   &7(доступные для входа)?'
+          name: '&6&lТолько публичные: {only-allowed}'
+          material: OAK_DOOR
+          slots: 42
+        refresh_toggle-category:
+          lore:
+          - '&8✖ &7Фильтр по категории.'
+          - '   &8• &7Описание:'
+          - '     {description}'
+          name: '&6&lКатегория: {category}'
+          material: BOOKSHELF
+          slots: 41
+        entry_land_looking:
+          lore:
+          - ' &8• &7{sorting}: {value}'
+          - ' &8• &7Категория: {category}'
+          - ' &8• &7Название:'
+          - '   &7{title}'
+          - ''
+          - '&8✖ &bЛКМ'
+          - '   &7Телепорт на спавн.'
+          - '&8✖ &9ПКМ'
+          - '   &7Информация.'
+          - ''
+          - '&6&lЗапросы на вступление'
+          - '&8✖ &bSHIFT + ЛКМ'
+          - '   &7Запросить вступление.'
+          - '&8✖ &9SHIFT + ПКМ'
+          - '   &7Отозвать запрос.'
+          name: '&6&l#{pos} &2&l{land}'
+          material: INHERIT
+        entry_nation:
+          lore:
+          - ' &8• &7{sorting}: {value}'
+          - ' &8• &7Тег: {tag}'
+          - ' &8• &7Земли: {lands}'
+          - ''
+          - '&8✖ &bЛКМ'
+          - '   &7Телепорт в столицу.'
+          - '&8✖ &9ПКМ'
+          - '   &7Информация.'
+          name: '&6&l#{pos} &2&l{nation}'
+          material: INHERIT
+        refresh_sorting:
+          lore:
+          - '&8✖ &7Режим сортировки.'
+          name: '&6&lСортировка: {current}'
+          material: HOPPER
+          slots: 40
+        refresh_search:
+          lore:
+          - '&8✖ &bЛКМ'
+          - '   &7Искать: {search}'
+          - '&8✖ &9ПКМ'
+          - '   &7Режим: {mode}'
+          - '&8✖ &3DROP'
+          - '   &7Сброс'
+          name: '&6&lПоиск'
+          material: SPYGLASS
+          slots: 43
+        entry_land:
+          lore:
+          - ' &8• &7{sorting}: {value}'
+          - ' &8• &7Категория: {category}'
+          - ' &8• &7Тег: {tag}'
+          - ' &8• &7Название:'
+          - '   &7{title}'
+          - ''
+          - '&8✖ &bЛКМ'
+          - '   &7Телепорт на спавн.'
+          - '&8✖ &9ПКМ'
+          - '   &7Информация.'
+          name: '&6&l#{pos} &2&l{land}'
+          material: INHERIT
+  list_inbox:
+    title: '&8Входящие'
+    items:
+      default:
+        refresh_filter:
+          lore:
+          - '&8✖ &7Фильтр сообщений.'
+          - '   &7Тип:&3 {type}'
+          name: '&6&lФильтр по типу'
+          material: HOPPER
+          slots: 40
+        entry_object:
+          lore:
+          - '{message}'
+          - ''
+          - '&8✖ &7Удалить.'
+          name: '&6&l#{id}&7 {date}'
+          material: PAPER
+          slots: 10-36
+        refresh_clear:
+          lore:
+          - '&8✖ &7Удалить все сообщения.'
+          name: '&6&lОчистить'
+          material: BARRIER
+          slots: 41
+        child_failure_owner:
+          lore:
+          - '&7Только владелец может удалять'
+          - '&7сообщения.'
+          name: '&4&lВладелец'
+        refresh_post:
+          name: '&a&lСоздать пост'
+          lore:
+          - '&8✖ &7Написать сообщение участникам.'
+          - '   &7Они получат уведомление.'
+          material: WRITABLE_BOOK
+          slots: 42
+  list_player_flags:
+    title: '&8Личные настройки'
+    items:
+      default:
+        entry_enter_messages:
+          lore:
+          - '&8✖ &7Показывать сообщения о входе/выходе?'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lСообщения входа/выхода: {enabled}'
+          material: OAK_SIGN
+        entry_receive_invites:
+          lore:
+          - '&8✖ &7Разрешить приглашать вас?'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lПолучать приглашения: {enabled}'
+          material: WRITABLE_BOOK
+        entry_show_inbox:
+          lore:
+          - '&8✖ &7Получать уведомления о важных'
+          - '   &7событиях в ваших землях?'
+          - '   &7Разблокировано: {unlocked}'
+          name: '&6&lПоказывать входящие: {enabled}'
+          material: skin:6bf3fcdccffd963e4334818108e1e9ae3a80566d0d3d2d4ab3051a2cd811348c
+        entry_general_player:
+          lore:
+          - '&8✖ &7Клик для переключения:'
+          - '   &7Разблокировано: {unlocked}'
+          - '&7Описание:'
+          - '{desc}'
+          name: '&6&l{flag}: {enabled}'
+          material: INHERIT
+  player_info:
+    title: '&8Игрок {player}'
+    items:
+      default:
+        max-chunks:
+          lore:
+          - '&7Поддерживает вашу землю &3{chunks} &7чанками,'
+          - '&7будучи участником.'
+          name: '&6&lПоддержка чанками'
+          material: skin:8449b9318e33158e64a46ab0de121c3d40000e3332c1574932b3c849d8fa0dc2
+          slots: 22
+        lands:
+          lore:
+          - '{lands}'
+          name: '&6&lЗемли &8(&7{amount}&8)'
+          material: OAK_SIGN
+          slots: 24
+        areas:
+          lore:
+          - '&7Доверен в этих областях'
+          - '&7земли&2 {land}&7:'
+          - '{areas}'
+          name: '&6&lДоверенные области &8(&7{amount}&8)'
+          material: OAK_FENCE
+          slots: 26
+        time:
+          lore:
+          - '&8• &7Был в сети: &5{seen}'
+          - '   &7Оффлайн с: &5{offline}'
+          - '&8• &7Время в игре: &5{playtime}'
+          name: '&6&lОнлайн и время в игре'
+          material: CLOCK
+          slots: 20
+  relations:
+    title: '&8Отношения'
+    items:
+      default:
+        offer_received:
+          lore:
+          - '&8✖ &7Входящие предложения.'
+          name: '&6&lВходящие'
+          material: skin:3b83bbccf4f0c86b12f6f79989d159454bf9281955d7e2411ce98c1b8aa38d8
+          slots: 26
+        offer_sent:
+          lore:
+          - '&8✖ &7Исходящие предложения.'
+          name: '&6&lИсходящие'
+          material: skin:3e4f2f9698c3f186fe44cc63d2f3c4f9a241223acf0581775d9cecd7075
+          slots: 24
+        enemies:
+          lore:
+          - '&8✖ &7Управление врагами.'
+          name: '&c&lВраги'
+          material: RED_BANNER
+          slots: 22
+        allies:
+          lore:
+          - '&8✖ &7Управление союзниками.'
+          name: '&a&lСоюзники'
+          material: LIME_BANNER
+          slots: 20
+  list_relation:
+    title: '&8Отношения'
+    items:
+      default:
+        add:
+          lore:
+          - '&7Максимум: {max}'
+          name: '&8✖ &a&lДобавить'
+          material: skin:ffec3d25ae0d147c342c45370e0e43300a4e48a5b43f9bb858babff756144dac
+          slots: 40
+        entry_offer_neutral_sender:
+          lore:
+          - '&8• &7Владелец: {owner}'
+          - '&8• &7Уровень: {level}'
+          - ''
+          - '&7Если они примут, вы больше'
+          - '&7не будете врагами.'
+          - ''
+          - '&8✖ &bSHIFT + ЛКМ'
+          - '   &7Информация.'
+          - '&8✖ &3DROP'
+          - '   &7Отозвать.'
+          name: '&c&l{object}'
+          material: INHERIT
+        entry_offer_ally_sender:
+          lore:
+          - '&8• &7Владелец: {owner}'
+          - '&8• &7Уровень: {level}'
+          - ''
+          - '&7Если они примут, вы станете'
+          - '&7союзниками.'
+          - ''
+          - '&8✖ &bSHIFT + ЛКМ'
+          - '   &7Информация.'
+          - '&8✖ &3DROP'
+          - '   &7Отозвать.'
+          name: '&c&l{object}'
+          material: INHERIT
+        remove:
+          name: '&8✖ &c&lУдалить'
+          material: skin:548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8
+          slots: 42
+        entry_offer_neutral_receiver:
+          lore:
+          - '&8• &7Владелец: {owner}'
+          - '&8• &7Уровень: {level}'
+          - ''
+          - '&8✖ &bЛКМ'
+          - '   &7Принять мир.'
+          - '   &7Вы перестанете враждовать.'
+          - '&8✖ &bSHIFT + ЛКМ'
+          - '   &7Информация.'
+          - '&8✖ &3DROP'
+          - '   &7Отклонить.'
+          name: '&c&l{object}'
+          material: INHERIT
+        child_failure_war:
+          lore:
+          - '&cНельзя управлять, пока {object}'
+          - '&cвоюет против&4 {enemy}&c.'
+          name: '&4&lВойна'
+        add_nation:
+          lore:
+          - '&cОтношения управляются нацией'
+          - '&4{nation}&c.'
+          name: '&6&lУправляется нацией'
+          material: skin:ffec3d25ae0d147c342c45370e0e43300a4e48a5b43f9bb858babff756144dac
+          slots: 40
+        child_failure_max_allies:
+          lore:
+          - '&4{object} &cдостиг лимита'
+          - '&cсоюзников: {max}.'
+          name: '&4&lМаксимум союзников'
+        entry_offer_ally_receiver:
+          lore:
+          - '&8• &7Владелец: {owner}'
+          - '&8• &7Уровень: {level}'
+          - ''
+          - '&8✖ &bЛКМ'
+          - '   &7Принять альянс.'
+          - '   &7Вы станете союзниками.'
+          - '&8✖ &bSHIFT + ЛКМ'
+          - '   &7Информация.'
+          - '&8✖ &3DROP'
+          - '   &7Отклонить.'
+          name: '&c&l{object}'
+          material: INHERIT
+        entry_ally:
+          lore:
+          - '&8• &7Владелец: {owner}'
+          - '&8• &7Уровень: {level}'
+          - ''
+          - '&8✖ &bSHIFT + ЛКМ'
+          - '   &7Информация.'
+          - '&8✖ &3DROP'
+          - '   &7Разорвать союз.'
+          name: '&a&lСоюз: {object}'
+          material: INHERIT
+        remove_nation:
+          lore:
+          - '&cОтношения управляются нацией'
+          - '&4{nation}&c.'
+          name: '&6&lУправляется нацией'
+          material: skin:548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8
+          slots: 42
+        entry_enemy:
+          lore:
+          - '&8• &7Владелец: {owner}'
+          - '&8• &7Уровень: {level}'
+          - ''
+          - '&8✖ &bSHIFT + ЛКМ'
+          - '   &7Информация.'
+          - '&8✖ &3DROP'
+          - '   &7Предложить нейтралитет.'
+          name: '&c&lВраг: {object}'
+          material: INHERIT
+        child_failure_nation:
+          lore:
+          - '&cОтношения управляются нацией'
+          - '&4{nation}&c.'
+          name: '&4&lУправляется нацией'
+        child_war:
+          lore:
+          - '&cНельзя сделать это, пока {object}'
+          - '&cвоюет.'
+          name: '&4&lВойна'
+        child_failure_max_enemies:
+          lore:
+          - '&4{object} &cдостиг лимита'
+          - '&cврагов: {max}.'
+          name: '&4&lМаксимум врагов'
+  object_info_relations:
+    title: '&8Отношения'
+    items:
+      default:
+        enemies:
+          lore:
+          - '&8✖ &7Враги.'
+          - '   &8• &7Кол-во: {enemies}'
+          name: '&c&lВраги'
+          material: RED_BANNER
+          slots: 25
+        allies:
+          lore:
+          - '&8✖ &7Союзники.'
+          - '   &8• &7Кол-во: {allies}'
+          name: '&a&lСоюзники'
+          material: LIME_BANNER
+          slots: 21
+  list_land_storage:
+    title: '&8Склад {land}'
+  list_members_online:
+    title: '&8Игроки в сети'
+    items:
+      default:
+        entry_area:
+          name: '&e&l{player}'
+          lore:
+          - '&7Роль: {role}'
+          material: INHERIT
+        entry_area_all:
+          name: '&e&l{player}'
+          material: INHERIT
+        entry_nation:
+          name: '&e&l{player}'
+          material: INHERIT
+        refresh_toggle:
+          lore:
+          - '&8✖ &7Показывать только доверенных'
+          - '   &7в этой области &8(&6{area}&8)&7?'
+          name: '&6&lВид: только область: {current}'
+          material: HOPPER
+          slots: 41
+  list_nation_lands:
+    title: '&8Земли нации'
+    items:
+      default:
+        trust:
+          lore:
+          - '&8✖ &7Пригласить землю в нацию.'
+          - '   &7Доступно:&3 {lands} &8/&c {max}'
+          name: '&a&lПригласить землю'
+          material: skin:ffec3d25ae0d147c342c45370e0e43300a4e48a5b43f9bb858babff756144dac
+          slots: 39
+        members_online:
+          name: '&6&lИгроки в сети'
+          lore:
+          - '&8✖ &7Показать кто онлайн.'
+          material: CLOCK
+          slots: 41
+        entry_object:
+          lore:
+          - '&7Название:'
+          - '&7{title}'
+          - ''
+          - '&8✖ &bЛКМ'
+          - '   &7Информация.'
+          - '&8✖ &3DROP'
+          - '   &7Исключить землю.'
+          name: '&2&l{prefix}{land}'
+          material: INHERIT
+        untrust:
+          lore:
+          - '&8✖ &7Исключить землю из нации.'
+          name: '&c&lИсключить землю'
+          material: skin:548d7d1e03e1af145b0125ab841285672b421265da2ab915015f9058438ba2d8
+          slots: 43
+  rental_setup:
+    title: 'Настройка {type}'
+    items:
+      default:
+        type:
+          name: '&6&lТип: {type}'
+          lore:
+          - '&8✖ &7Выбор: аренда или продажа.'
+          material: OAK_SIGN
+          slots: 32
+        interval:
+          name: '&6&lИнтервал: {interval}'
+          lore:
+          - '&8✖ &7Арендаторы платят&c {cost}&7 каждые&5 {interval}'
+          - '   &7продления.'
+          material: CLOCK
+          slots: 12
+        max-time:
+          name: '&6&lМакс. время: {max-time}'
+          lore:
+          - '&8✖ &7Максимальное время'
+          - '   &7аренды.'
+          material: CLOCK
+          slots: 16
+        cost_rental:
+          name: '&6&lЦена за интервал:&c {cost}'
+          lore:
+          - '&8✖ &7Цена за каждый&5 {interval}&7.'
+          material: GOLD_INGOT
+          slots: 14
+        cost_sell:
+          name: '&6&lЦена:&c {cost}'
+          lore:
+          - '&8✖ &7Цена продажи.'
+          material: GOLD_INGOT
+          slots: 14
+        confirm_rental:
+          name: '&a&lПодтвердить'
+          lore:
+          - '&8✖ &7Настроить аренду.'
+          - '   &8• &7Интервал:&5 {interval}'
+          - '   &8• &7Цена за {interval}:&c {cost}'
+          - '   &8• &7Макс. время:&5 {max-time}'
+          material: LIME_STAINED_GLASS_PANE
+          slots: 45
+        confirm_sell:
+          name: '&a&lПодтвердить'
+          lore:
+          - '&8✖ &7Настроить продажу.'
+          - '   &8• &7Цена:&c {cost}'
+          material: LIME_STAINED_GLASS_PANE
+          slots: 45
+  select_time:
+    title: Время
+    items:
+      default:
+        refresh_d_plus:
+          name: '&a&l+{value} дн.'
+          material: GLOWSTONE_DUST
+          slots: 24
+          data:
+            modify: 1
+        refresh_d_minus:
+          name: '&c&l-{value} дн.'
+          material: REDSTONE
+          slots: 22
+          data:
+            modify: -1
+        refresh_h_plus:
+          name: '&a&l+{value} ч.'
+          material: GLOWSTONE_DUST
+          slots: 25
+          data:
+            modify: 1
+        current:
+          name: '&6&lТекущее:&5 {time}'
+          material: CLOCK
+          slots: 23
+        refresh_h_minus:
+          name: '&c&l-{value} ч.'
+          material: REDSTONE
+          slots: 21
+          data:
+            modify: -1
+        refresh_m_plus:
+          name: '&a&l+{value} мин.'
+          material: GLOWSTONE_DUST
+          slots: 26
+          data:
+            modify: 5
+        refresh_m_minus:
+          name: '&c&l-{value} мин.'
+          material: REDSTONE
+          slots: 20
+          data:
+            modify: -5
+        confirm:
+          name: '&a&lПодтвердить'
+          material: LIME_STAINED_GLASS_PANE
+          slots: 45
+  select_value:
+    title: Значение
+    items:
+      default:
+        refresh_plus-1:
+          name: '&a+{value}'
+          material: GLOWSTONE_DUST
+          slots: 26
+          data:
+            modify: 1
+        refresh_plus-2:
+          name: '&a+{value}'
+          material: GLOWSTONE_DUST
+          slots: 25
+          data:
+            modify: 50
+        refresh_plus-3:
+          name: '&a+{value}'
+          material: GLOWSTONE_DUST
+          slots: 24
+          data:
+            modify: 500
+        current:
+          name: '&6&lТекущее: {value}'
+          material: GOLD_INGOT
+          slots: 23
+        refresh_minus-3:
+          name: '&c-{value}'
+          material: GLOWSTONE_DUST
+          slots: 22
+          data:
+            modify: -500
+        refresh_minus-2:
+          name: '&c-{value}'
+          material: GLOWSTONE_DUST
+          slots: 21
+          data:
+            modify: -50
+        refresh_minus-1:
+          name: '&c-{value}'
+          material: GLOWSTONE_DUST
+          slots: 20
+          data:
+            modify: -1
+        confirm:
+          name: '&a&lПодтвердить'
+          material: LIME_STAINED_GLASS_PANE
+          slots: 45
+skulls:
+  area_default:
+    material: DARK_OAK_FENCE
+  area_sub:
+    material: OAK_FENCE
+common_sounds:
+  set:
+    failure: entity.villager.no
+    success: entity.player.levelup
+common_item-model:
+  items:
+    default:
+      player_head:
+        enabled: false
+        material: PLAYER_HEAD
+        item-model: nexo:2d_player_head
+

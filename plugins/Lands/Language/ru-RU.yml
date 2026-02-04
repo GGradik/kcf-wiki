@@ -1,0 +1,2024 @@
+# Здесь вы можете отредактировать все сообщения чата.
+#
+# Если у вас возникли вопросы или проблемы:
+# Discord: https://discord.incredibleplugins.com
+#
+# Wiki: https://wiki.incredibleplugins.com/general/locale-and-config/messages
+
+general:
+  prefix:
+    normal: '&8[&2Lands&8] '
+    help: '&8[&2Lands&8] &7Использование: '
+  time:
+    days: дн.
+    hours: ч.
+    minutes: мин.
+    seconds: сек.
+  server: Сервер
+  wYes: '&aДа'
+  wNo: '&cНет'
+  value:
+    none: '&8Нет'
+    unlimited: '&aнеограниченно'
+  disabled: '&cОтключено'
+  wilderness: '&aДикая местность'
+  affiliation:
+    land: '&8[&2{land}&8]'
+    nation: '&8[&9{nation} &8|&2 {land}&8]'
+  relation:
+    ally: '&aСоюзник'
+    enemy: '&cВраг'
+    neutral: '&7Нейтрально'
+  day:
+    sunday: Воскресенье
+    monday: Понедельник
+    tuesday: Вторник
+    wednesday: Среда
+    thursday: Четверг
+    friday: Пятница
+    saturday: Суббота
+  land:
+    title:
+      land:
+        normal: '&7%level% &7уровня, владение &3%owner%&7.'
+        levels-disabled: '&7владение &3%owner%&7.'
+      camp: '&7Лагерь игрока &3%owner%&7.'
+      admin: '&7Эта земля принадлежит серверу.'
+    default-area: Область по умолчанию
+  area:
+    description:
+      default: '&7Новые приваты будут принадлежать этой области.'
+      sub: '&7Это подобласть, которая может иметь свои флаги и участников.'
+      rented: '&aЭта область арендована игроком {player}.'
+      sold: '&aЭта область продана игроку {player}.'
+  status:
+    online: '&aонлайн'
+    offline: '&cоффлайн'
+  top:
+    hologram:
+      land:
+        title: '&7&m━━━━━━━━━━━━━━<━&r &2Топ 10 Земель &8(&7Всего: {total}&8) &7&m━>━━━━━━━━━━━━━━'
+        entry: '&c#{pos} &2{object} &7{sorting}:&3 {value}'
+        footer: '&7&m━━━━━━━━━━━━━━<━&r &2Топ 10 Земель &8(&7Всего: {total}&8) &7&m━>━━━━━━━━━━━━━━'
+      nation:
+        title: '&7&m━━━━━━━━━━━━━━<━&r &2Топ 10 Наций &8(&7Всего: {total}&8) &7&m━>━━━━━━━━━━━━━━'
+        entry: '&c#{pos} &2{object} &7{sorting}:&3 {value}'
+        footer: '&7&m━━━━━━━━━━━━━━<━&r &2Топ 10 Наций &8(&7Всего: {total}&8) &7&m━>━━━━━━━━━━━━━━'
+  integration:
+    dynmap:
+      land:
+        description: '<div class="\&quot;infowindow\&quot;"><span style="font-size:
+          200%;"><span style="color: {land_color};">{land}</span><br /></span>{title}</div>
+          <ul> <li class="\&quot;infowindow\&quot;">Уровень: {level}</li> <li class="\&quot;infowindow\&quot;">Баланс:
+          {balance}</li> <li class="\&quot;infowindow\&quot;">Чанки: {chunks}</li>
+          <li class="\&quot;infowindow\&quot;">Игроки ({members_amount}): {members}</li>
+          </ul>'
+        spawn: '<div class="\&quot;infowindow\&quot;"><span style="font-size: 200%;"><span
+          style="color: {land_color};">Точка спавна</span></span></div> <div class="\&quot;infowindow\&quot;"><br
+          />Открыто для всех: {public}</div> <ul> <li>Если спавн открыт для всех,
+          любой может телепортироваться, набрав /lands spawn {land}.</li> </ul>'
+      nation:
+        description: '<div class="\&quot;infowindow\&quot;"><span style="font-size:
+          200%;"><span style="color: {land_color};">{land}</span><br /></span>{title}</div>
+          <ul> <li class="\&quot;infowindow\&quot;">Уровень: {level}</li> <li class="\&quot;infowindow\&quot;">Баланс:
+          {balance}</li> <li class="\&quot;infowindow\&quot;">Чанки: {chunks}</li>
+          <li class="\&quot;infowindow\&quot;">Игроки ({members_amount}): {members}</li>
+          </ul> <p><strong>Эта земля принадлежит нации {nation}:</strong></p> <ul>
+          <li>Уровень: {level_nation}</li> <li>Столица: {capital}</li> <li>Владения (кол-во:
+          {lands_amount}, игроков: {members_amount_nation}): {lands}</li> </ul>'
+      capital:
+        spawn: '<div class="\&quot;infowindow\&quot;"><span style="font-size: 200%;"><span
+          style="color: {land_color};">Спавн столицы</span><br /></span>Этот
+          спавн принадлежит столице нации {nation}.</div><div class="\&quot;infowindow\&quot;"><br
+          />Открыто для всех: {public}</div><ul><li>Если спавн открыт для всех,
+          любой может телепортироваться, набрав /lands spawn {land}.</li></ul>'
+    bluemap:
+      land:
+        description: '<div class="\&quot;infowindow\&quot;"><span style="font-size:
+          200%;"><span style="color: {land_color};">{land}</span><br /></span>{title}</div>
+          <ul> <li class="\&quot;infowindow\&quot;">Уровень: {level}</li> <li class="\&quot;infowindow\&quot;">Баланс:
+          {balance}</li> <li class="\&quot;infowindow\&quot;">Чанки: {chunks}</li>
+          <li class="\&quot;infowindow\&quot;">Игроки ({members_amount}): {members}</li>
+          </ul>'
+        spawn: 'Точка спавна земли {land}. Открыто для всех: {public}. Если этот спавн
+          открыт для всех, любой может телепортироваться, набрав /lands
+          spawn {land}.'
+      nation:
+        description: '<div class="\&quot;infowindow\&quot;"><span style="font-size:
+          200%;"><span style="color: {land_color};">{land}</span><br /></span>{title}</div>
+          <ul> <li class="\&quot;infowindow\&quot;">Уровень: {level}</li> <li class="\&quot;infowindow\&quot;">Баланс:
+          {balance}</li> <li class="\&quot;infowindow\&quot;">Чанки: {chunks}</li>
+          <li class="\&quot;infowindow\&quot;">Игроки ({members_amount}): {members}</li>
+          </ul> <p><strong>Эта земля принадлежит нации {nation}:</strong></p> <ul>
+          <li>Уровень: {level_nation}</li> <li>Столица: {capital}</li> <li>Земли (кол-во:
+          {lands_amount}, игроков: {members_amount_nation}): {lands}</li> </ul>'
+      capital:
+        spawn: '<div class="\&quot;infowindow\&quot;"><span style="font-size: 200%;"><span
+          style="color: {land_color};">Спавн столицы</span><br /></span>Этот
+          спавн принадлежит столице нации {nation}.</div><div class="\&quot;infowindow\&quot;"><br
+          />Открыто для всех: {public}</div><ul><li>Если спавн открыт для всех,
+          любой может телепортироваться, набрав /lands spawn {land}.</li></ul>'
+    squaremap:
+      land:
+        description: '<div class="\&quot;infowindow\&quot;"><span style="font-size:
+          200%;"><span style="color: {land_color};">{land}</span><br /></span>{title}</div>
+          <ul> <li class="\&quot;infowindow\&quot;">Уровень: {level}</li> <li class="\&quot;infowindow\&quot;">Баланс:
+          {balance}</li> <li class="\&quot;infowindow\&quot;">Чанки: {chunks}</li>
+          <li class="\&quot;infowindow\&quot;">Игроки ({members_amount}): {members}</li>
+          </ul>'
+        spawn: '<div class="\&quot;infowindow\&quot;"><span style="font-size: 200%;"><span
+          style="color: {land_color};">Точка спавна</span></span></div> <div class="\&quot;infowindow\&quot;"><br
+          />Открыто для всех: {public}</div> <ul> <li>Если спавн открыт для всех,
+          любой может телепортироваться, набрав /lands spawn {land}.</li> </ul>'
+      nation:
+        description: '<div class="\&quot;infowindow\&quot;"><span style="font-size:
+          200%;"><span style="color: {land_color};">{land}</span><br /></span>{title}</div>
+          <ul> <li class="\&quot;infowindow\&quot;">Уровень: {level}</li> <li class="\&quot;infowindow\&quot;">Баланс:
+          {balance}</li> <li class="\&quot;infowindow\&quot;">Чанки: {chunks}</li>
+          <li class="\&quot;infowindow\&quot;">Игроки ({members_amount}): {members}</li>
+          </ul> <p><strong>Эта земля принадлежит нации {nation}:</strong></p> <ul>
+          <li>Уровень: {level_nation}</li> <li>Столица: {capital}</li> <li>Земли (кол-во:
+          {lands_amount}, игроков: {members_amount_nation}): {lands}</li> </ul>'
+      capital:
+        spawn: '<div class="\&quot;infowindow\&quot;"><span style="font-size: 200%;"><span
+          style="color: {land_color};">Спавн столицы</span><br /></span>Этот
+          спавн принадлежит столице нации {nation}.</div><div class="\&quot;infowindow\&quot;"><br
+          />Открыто для всех: {public}</div><ul><li>Если спавн открыт для всех,
+          любой может телепортироваться, набрав /lands spawn {land}.</li></ul>'
+    pl3xmap:
+      land:
+        description: '<div class="\&quot;infowindow\&quot;"><span style="font-size:
+          200%;"><span style="color: {land_color};">{land}</span><br /></span>{title}</div>
+          <ul> <li class="\&quot;infowindow\&quot;">Уровень: {level}</li> <li class="\&quot;infowindow\&quot;">Баланс:
+          {balance}</li> <li class="\&quot;infowindow\&quot;">Чанки: {chunks}</li>
+          <li class="\&quot;infowindow\&quot;">Игроки ({members_amount}): {members}</li>
+          </ul>'
+        spawn: '<div class="\&quot;infowindow\&quot;"><span style="font-size: 200%;"><span
+          style="color: {land_color};">Точка спавна</span></span></div> <div class="\&quot;infowindow\&quot;"><br
+          />Открыто для всех: {public}</div> <ul> <li>Если спавн открыт для всех,
+          любой может телепортироваться, набрав /lands spawn {land}.</li> </ul>'
+      nation:
+        description: '<div class="\&quot;infowindow\&quot;"><span style="font-size:
+          200%;"><span style="color: {land_color};">{land}</span><br /></span>{title}</div>
+          <ul> <li class="\&quot;infowindow\&quot;">Уровень: {level}</li> <li class="\&quot;infowindow\&quot;">Баланс:
+          {balance}</li> <li class="\&quot;infowindow\&quot;">Чанки: {chunks}</li>
+          <li class="\&quot;infowindow\&quot;">Игроки ({members_amount}): {members}</li>
+          </ul> <p><strong>Эта земля принадлежит нации {nation}:</strong></p> <ul>
+          <li>Уровень: {level_nation}</li> <li>Столица: {capital}</li> <li>Земли (кол-во:
+          {lands_amount}, игроков: {members_amount_nation}): {lands}</li> </ul>'
+      capital:
+        spawn: '<div class="\&quot;infowindow\&quot;"><span style="font-size: 200%;"><span
+          style="color: {land_color};">Спавн столицы</span><br /></span>Этот
+          спавн принадлежит столице нации {nation}.</div><div class="\&quot;infowindow\&quot;"><br
+          />Открыто для всех: {public}</div><ul><li>Если спавн открыт для всех,
+          любой может телепортироваться, набрав /lands spawn {land}.</li></ul>'
+  map:
+    wilderness: '&2▉ '
+    yours: '&a▉ '
+    trusted: '&e▉ '
+    others: '&c▉ '
+    position: '&9▉ '
+    info:
+      wilderness: ' &2▉ &7= Дикая местность'
+      yours: ' &a▉ &7= Ваша земля'
+      trusted: ' &e▉ &7= Доверенная'
+      others: ' &c▉ &7= Чужая'
+      position: ' &9▉ &7= Позиция'
+    hover:
+      wilderness: '&7Это дикая местность. Кликните, чтобы заприватить.'
+      yours: '&7Эта земля принадлежит вам. Кликните для информации о земле&3
+        {land}&7.'
+      trusted: '&7Вы доверенный в этой земле. Кликните для информации о земле&3
+        {land}&7.'
+      others: '&7Вы не доверены в этой земле. Кликните для информации о
+        земле&3 {land}&7.'
+      position: '&7Ваша текущая позиция.'
+  inbox:
+    general:
+      created: '&7Владение {0} &7создано.'
+      renamed: '&7{0} изменил название с {1} на {2}.'
+      post: '{0}:&7 {1}'
+    member:
+      join: '&7Игрок {0} присоединился.'
+      leave: '&7Игрок {0} покинул владение.'
+      ban: '&cИгрок {0} был забанен.'
+      owner: '&7Игрок {0} теперь новый владелец.'
+    storage:
+      entry: '&r{item}&r x {amount}'
+      message: '&7Игрок {0} изменил хранилище. Предметы взяты: {1}&7 - Предметы добавлены:
+        {2}'
+    economy:
+      upkeep:
+        alert:
+          land:
+            normal: '&cВам нужно заплатить&4 {0}&c за содержание через {1}, но у {2} недостаточно
+              средств.'
+            delete: '&cВам нужно заплатить&4 {0}&c за содержание через {1}, но у {2} недостаточно
+              средств. &7Это приведет к тому, что некоторые последние приваты будут
+              удалены. Пожалуйста, пополните баланс, чтобы это предотвратить.'
+          nation:
+            normal: '&cВам нужно заплатить&4 {0}&c за содержание через {1}, но у {2} недостаточно
+              средств.'
+            delete: '&cВам нужно заплатить&4 {0}&c за содержание через {1}, но у {2} недостаточно
+              средств. &7Это приведет к удалению нации. Пожалуйста, пополните
+              баланс, чтобы это предотвратить.'
+        warning: '&cНе удалось оплатить содержание: {0}'
+        unclaim: '&cНе удалось оплатить полную стоимость содержания {0}. Последние {1}
+          заприваченных чанка были распривачены.'
+        paid: '&7Оплачено содержание: {0} Новый баланс: {1}'
+        nation: '&cНация {0}&c не смогла оплатить содержание {1} с баланса столицы
+          и была удалена.'
+      bank:
+        withdraw: '&cИгрок {0} снял {1}. Новый баланс: {2}'
+        deposit: '&7Игрок {0} внес {1}. Новый баланс: {2}'
+      taxes:
+        warning: '&cИгрок {0} не смог заплатить налоги.'
+        untrusted: '&cИгрок {0} не смог заплатить налоги. Он больше не доверенный.'
+        received: '&7Получено {0} налогов от участников земли. Новый баланс: {1}'
+    war:
+      shield: '&7Получено дополнительное время щита войны: {0}&7. Всего: {1}'
+      start: '&7Война против {0} &7началась. Тайм-аут:&5 {1}'
+      declaration:
+        sent: '&7Объявлена война против {0}&7. Война начнется через&5 {1}&7.'
+        received: '&c{0} &cобъявил войну нам. &7Война начнется через&5 {1}&7.'
+        mutual:
+          sent: '&7Отправлен запрос войны {0}&7. Они должны принять его.'
+          received: '&c{0} &cотправил запрос войны. Принять: &e/wars declare {1}'
+          denied: '&7Взаимное объявление войны отклонено {0}&7.'
+      surrender:
+        sent: '&cСдались в войне. Выплачено {0} в качестве дани врагу.'
+        received: '&7Враг {0} &7сдался. Получено {1} в качестве дани.'
+      end:
+        won: '&7Мы выиграли войну против {0} &7со счетом&3 {1} &7очков. &7У них
+          было только&3 {2} &7очков. Война длилась &5{3}&7.'
+        draw: '&7Война против {0} &7закончилась вничью со счетом&3 {1} &7очков.'
+        lost: '&7Мы проиграли войну против {0} &7со счетом&3 {1} &7очков.
+          &7У них было&3 {2} &7очков. Война длилась &5{3}&7.'
+    nation:
+      general:
+        created: '&7Нация {0} &7создана.'
+      member:
+        join: '&7Земля {0} присоединилась.'
+        leave: '&7Земля {0} покинула нацию.'
+      economy:
+        upkeep:
+          warning: '&cНе удалось оплатить содержание {0}.'
+          paid: '&7Оплачено содержание: - {0}'
+        taxes:
+          warning: '&cЗемля {0} не смогла оплатить налоги.'
+          untrusted: '&cЗемля {0} не смогла оплатить налоги. Она была удалена.'
+          received: '&7Получено {0} налогов от земель. Новый баланс: {1}'
+    relation:
+      ally:
+        offer: '&7{0} &7хочет заключить с нами союз.'
+        accepted: '&7Мы теперь союзники с {0}&7.'
+        remove: '&7Мы больше не союзники с {0}&7.'
+      enemy:
+        add: '&7Мы теперь враги с {0}&7.'
+        offer: '&7{0} &7больше не хочет быть с нами врагами.'
+        accepted: '&7Мы больше не враги с {0}&7.'
+  combat-logout: '{player} умер, потому что вышел с сервера во время
+    боя (combat-tag).'
+  wars:
+    object:
+      enemy: '&cВраг'
+      ally: '&aСоюзник'
+    nametag:
+      enemy: '&cВРАГ &8| '
+      ally: '&aСОЮЗНИК &8| '
+    state:
+      preparation: '&aПодготовка'
+      fight: '&cБой'
+  command:
+    argument:
+      optional: '&8[&e{arg}&8]'
+      required: '&8<&e{arg}&8>'
+      type:
+        land: земля
+        land_or_here: земля | здесь
+        nation: нация
+        cmd: команда
+        area: область
+        player: игрок
+        name: имя
+        tag: тег
+        number: число
+        confirm: подтвердить
+        funds: средства
+        menu: меню
+        world: мир
+        args: аргументы
+        page: страница
+        database: база данных
+        holder: земля | нация
+        plugin: плагин
+        role: роль
+        flag: флаг
+        radius: радиус
+        context: контекст
+        boolean: true | false
+        flag_or_all: флаг | всё
+        amount: количество
+        tribute: дань
+        y-min: y-мин
+        y-max: y-макс
+        silent: тихо
+        sorting: сортировка
+        preparation_time: время подготовки
+        category: категория
+        ally: союзник
+        enemy: враг
+        here: здесь
+
+help:
+  help:
+    root:
+      header: '[NoPrefix][T]&7&l&m━━&e&l<<<<&7&l&m━[H]&7Кликните для перехода на
+        предыдущую страницу.[/H][C]{cmd} {previous}[/C][/T] &2Команды Lands &7Стр.&3
+        {page} &8/&3 {pages} [T]&7&l&m━&e&l>>>>&7&l&m━━[H]&7Кликните для перехода
+        на следующую страницу.[/H][C]{cmd} {next}[/C][/T]'
+      footer: |
+        [NoPrefix]
+        &7Кликните на стрелки ниже для навигации.
+        [T]&7&l&m━━&e&l<<<<&7&l&m━[H]&7Кликните для перехода на предыдущую страницу.[/H][C]{cmd} {previous}[/C][/T] &2Команды Lands &7Стр.&3 {page} &8/&3 {pages} [T]&7&l&m━&e&l>>>>&7&l&m━━[H]&7Кликните для перехода на следующую страницу.[/H][C]{cmd} {next}[/C][/T]
+    sub:
+      unknown: |
+        &cПодкоманда&4 {command} &cне существует.
+          [T]&7✖ Посмотреть команды: &e/{cmd} &8[CLICK][H]&7Кликните для получения списка доступных команд[/H][C]{cmd}[/C][/T]
+      header: '[NoPrefix][T]&7&l&m━━━━━&e&l<<<<&7&l&m━[H]&7Кликните для перехода
+        на предыдущую страницу.[/H][C]{cmd} {previous}[/C][/T] &2Подкоманды &7Стр.&3
+        {page} &8/&3 {pages} [T]&7&l&m━&e&l>>>>&7&l&m━━━━━[H]&7Кликните для перехода
+        на следующую страницу.[/H][C]{cmd} {next}[/C][/T]'
+      footer: |
+        [NoPrefix]
+        &7Кликните на стрелки ниже для навигации.
+        [T]&7&l&m━━━━━&e&l<<<<&7&l&m━[H]&7Кликните для перехода на предыдущую страницу.[/H][C]{cmd} {previous}[/C][/T] &2Подкоманды &7Стр.&3 {page} &8/&3 {pages} [T]&7&l&m━&e&l>>>>&7&l&m━━━━━[H]&7Кликните для перехода на следующую страницу.[/H][C]{cmd} {next}[/C][/T]
+  command:
+    lands:
+      help: '[T]&e{parent} {subcmd} {args} - &7Помощь[H]&7Кликните для выполнения.[/H][C]{fullcmd}[/C][/T]'
+      edit: '[T]&e{parent} {subcmd} {args} &8- &7Режим редактирования владения[H]&7Владение для редактирования
+        используется для команд типа /lands claim. &7Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+      confirmtp: '[T]&e{parent} {subcmd} &8- &7Подтвердить небезопасную телепортацию[H]&7Кликните
+        для выполнения.[/H][C]{fullcmd}[/C][/T]'
+      claim:
+        main: '[T]&e{parent} {subcmd} {args} &8- &7Заприватить чанк(и)[H]&7Приват разными способами
+          &8(&e/selection&7, fill, auto, radius&8)&7. &7Кликните, чтобы
+          скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+        auto: '[T]&e{parent} {subcmd} &8- &7Приватить при движении[H]&7Это заприватит
+          все чанки, в которые вы входите, пока движетесь. Кликните для выполнения.[/H][C]{fullcmd}[/C][/T]'
+        fill: '[T]&e{parent} {subcmd} &8- &7Приватить чанки в фигуре[H]&7Заприватить все
+          чанки внутри фигуры, чтобы заполнить её. Кликните для выполнения.[/H][C]{fullcmd}[/C][/T]'
+        radius: '[T]&e{parent} {subcmd} {args} &8- &7Приватить в радиусе[H]&7Заприватить все чанки
+          в указанном радиусе. Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+      
+      create: '[T]&e{parent} {subcmd} {args} &8- &7Создать владение[H]&7Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+      createcamp: '[T]&e{parent} {subcmd} {args} &8- &7Создать лагерь[H]&7Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+      merge: '[T]&e{parent} {subcmd} {args} &8- &7Объединить владение с текущим[H]&7Кликните
+        чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+      storage: '[T]&e{parent} {subcmd} &8- &7Открыть хранилище владения[H]&7Кликните для выполнения.[/H][C]{fullcmd}[/C][/T]'
+      leave: '[T]&e{parent} {subcmd} {args} &8- &7Покинуть владение или область[H]&7Если вы хотите
+        покинуть область в вашей текущей позиции, добавьте "here" к этой команде.
+        Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+      unclaim:
+        main: '[T]&e{parent} {subcmd} &8- &7Расприватить чанк[H]&7Это также поддерживает &e/lands
+          selection&7. &7Кликните для выполнения.[/H][C]{fullcmd}[/C][/T]'
+        radius: '[T]&e{parent} {subcmd} {args} &8- &7Расприватить в радиусе[H]&7Расприватить
+          все чанки в указанном радиусе. Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+        auto: '[T]&e{parent} {subcmd} &8- &7Расприватить при движении[H]&7Это расприватит
+          все чанки, в которые вы входите, пока движетесь. Кликните для выполнения.[/H][C]{fullcmd}[/C][/T]'
+        all: '[T]&e{parent} {subcmd} &8- &7Расприватить все чанки[H]&7Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+      delete: '[T]&e{parent} delete {args} &8- &7Удалить владение или область[H]&7Кликните
+        чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+      trust: '[T]&e{parent} {subcmd} {args} &8- &7Доверить игроку[H]&7Используйте * как имя
+        области, чтобы доверить игроку всё владение. &7Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+      untrust: '[T]&e{parent} {subcmd} {args} &8- &7Лишить игрока доверия[H]&7Используйте * как
+        имя области, чтобы лишить игрока доверия во всем владении. &7Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+      setRole: '[T]&e{parent} {subcmd} {args} &8- &7Установить роль[H]&7Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+      accept: '[T]&e{parent} {subcmd} {args} &8- &7Принять приглашение[H]&7Вы можете посмотреть
+        все полученные приглашения, выполнив /lands invites. &7Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+      deny: '[T]&e{parent} {subcmd} {args} &8- &7Отклонить приглашение[H]&7Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+      view:
+        main: '[T]&e{parent} {subcmd} {args} &8- &7Информация о приватах[H]&7Эта
+          команда визуализирует ближайшие приваты. &7Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+        disable: '[T]&e{parent} {subcmd} &8- &7Отключить визуализацию[H]&7Отключить
+          текущую визуализацию &e/lands view &7. Кликните для выполнения.[/H][C]{fullcmd}[/C][/T]'
+        here: '[T]&e{parent} {subcmd} &8- &7Визуализировать подобласть[H]&7Визуализировать подобласть,
+          в которой вы сейчас стоите. &7Кликните для выполнения.[/H][C]{fullcmd}[/C][/T]'
+        stay: '[T]&e{parent} {subcmd} &8- &7Зафиксировать Y позицию[H]&7Визуализация
+          больше не будет следовать за вашей высотой. &7Кликните для выполнения.[/H][C]{fullcmd}[/C][/T]'
+      
+      menu: '[T]&e{parent} {subcmd} {args} &8- &7Открыть меню[H]&7Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+      setSpawn: '[T]&e{parent} {subcmd} &8- &7Установить спавн владения[H]&7Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+      spawn: '[T]&e{parent} {subcmd} {args} &8- &7Телепортироваться во владение[H]&7Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+      wild: '[T]&e{parent} {subcmd} {args} &8- &7Телепортироваться в случайное место[H]&7Кликните
+        для выполнения.[/H][C]{fullcmd}[/C][/T]'
+      top: '[T]&e{parent} {subcmd} &8- &7Показать топ владений[H]&7Кликните для выполнения.[/H][C]{fullcmd}[/C][/T]'
+      selection:
+        main: '[T]&e{parent} {subcmd} {args} &8- &7Режим выделения[H]&7С этой командой
+          вы можете изменить размер подобласти или расширить выделение до бесконечности по Y.
+          &7Кликните для выполнения.[/H][C]{fullcmd}[/C][/T]'
+        assign: '[T]&e{parent} {subcmd} {args} &8- &7Изменить размер подобласти[H]&7Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+        expand: '[T]&e{parent} {subcmd} &8- &7Расширить выделение[H]&7Кликните для выполнения.[/H][C]{fullcmd}[/C][/T]'
+      chat: '[T]&e{parent} {subcmd} {args} &8- &7Чат владения[H]&7Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+      rename: '[T]&e{parent} {subcmd} {args} &8- &7Переименовать владение[H]&7Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+      teleport: '[T]&e{parent} {subcmd} {args} &8- &7Телепортироваться в чанк[H]&7Кликните, чтобы
+        скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+      invites: '[T]&e{parent} {subcmd} &8- &7Показать полученные приглашения[H]&7Кликните для выполнения.[/H][C]{fullcmd}[/C][/T]'
+      info: '[T]&e{parent} {subcmd} {args} &8- &7Посмотреть информацию о владении[H]&7Кликните
+        для выполнения.[/H][C]{fullcmd}[/C][/T]'
+      player: '[T]&e{parent} {subcmd} {args} &8- &7Посмотреть информацию об игроке[H]&7Кликните
+        чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+      map:
+        main: '[T]&e{parent} {subcmd} &8- &7Посмотреть карту[H]&7Кликните для выполнения.[/H][C]{fullcmd}[/C][/T]'
+        chat: '[T]&e{parent} {subcmd} &8- &7Посмотреть карту в чате[H]&7Кликните для выполнения.[/H][C]{fullcmd}[/C][/T]'
+        link: '[T]&e{parent} {subcmd} &8- &7Получить ссылку на веб-карту[H]&7Кликните для выполнения.[/H][C]{fullcmd}[/C][/T]'
+      balance: '[T]&e{parent} {subcmd} {args} &8- &7Проверить баланс[H]&7Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+      deposit: '[T]&e{parent} {subcmd} {args} &8- &7Внести деньги[H]&7Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+      withdraw: '[T]&e{parent} {subcmd} {args} &8- &7Снять деньги[H]&7Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+      list: '[T]&e{parent} {subcmd} {args} &8- &7Список всех владений[H]&7Кликните для выполнения.[/H][C]{fullcmd}[/C][/T]'
+      assign: '[T]&e{parent} {subcmd} {args} &8- &7Назначить выделение области[H]&7Кликните
+        чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+      setowner: '[T]&e{parent} {subcmd} {args} &8- &7Передать владение[H]&7Кликните
+        чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+      ban: '[T]&e{parent} {subcmd} {args} &8- &7Забанить игрока[H]&7Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+      unban: '[T]&e{parent} {subcmd} {args} &8- &7Разбанить игрока[H]&7Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+      taxes: '[T]&e{parent} {subcmd} &8- &7Показать предстоящие налоговые платежи[H]&7Кликните
+        для выполнения.[/H][C]{fullcmd}[/C][/T]'
+      upkeep: '[T]&e{parent} {subcmd} &8- &7Показать предстоящие платежи за содержание.[H]&7Кликните
+        для выполнения.[/H][C]{fullcmd}[/C][/T]'
+      unstuck: '[T]&e{parent} {subcmd} &8- &7Телепортироваться из ловушек[H]&7В случае, если вы
+        застряли во владении. &7Кликните для выполнения.[/H][C]{fullcmd}[/C][/T]'
+      claimlist: '[T]&e{parent} {subcmd} {args} &8- &7Список приватов вашего владения[H]&7Эта
+        команда покажет все /lands claim вашего владения. &7Кликните для выполнения.[/H][C]{fullcmd}[/C][/T]'
+      rent:
+        main: '[T]&e{parent} {subcmd} {args} &8- &7Управление арендой[H]&7Управление арендованной
+          областью в вашей текущей позиции. &7Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+        cancel: '[T]&e{parent} {subcmd} &8- &7Отменить аренду[H]&7Отменить вашу аренду
+          подобласти в вашей текущей позиции. &7Кликните для выполнения.[/H][C]{fullcmd}[/C][/T]'
+        info: '[T]&e{parent} {subcmd} &8- &7Показать инфо[H]&7Показать информацию об
+          аренде подобласти в вашей текущей позиции. &7Кликните для выполнения.[/H][C]{fullcmd}[/C][/T]'
+        list: '[T]&e{parent} {subcmd} &8- &7Посмотреть все предложения аренды[H]&7Посмотреть все предложения
+          аренды от всех владений. &7Кликните для выполнения.[/H][C]{fullcmd}[/C][/T]'
+        remove:
+          main: '[T]&e{parent} {subcmd} {args} &8- &7Управление текущей арендой[H]&7Управление
+            арендованной областью в вашей текущей позиции. &7Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+          offer: '[T]&e{parent} {subcmd} &8- &7Удалить предложение[H]&7Игроки не смогут
+            продлевать аренду. &7Кликните для выполнения.[/H][C]{fullcmd}[/C][/T]'
+          tenant: '[T]&e{parent} {subcmd} &8- &7Удалить арендатора[H]&7Удалить текущего
+            арендатора, выплатив ему компенсацию. &7Кликните для выполнения.[/H][C]{fullcmd}[/C][/T]'
+      level: '[T]&e{parent} {subcmd} &8- &7Посмотреть прогресс уровня[H]&7Посмотреть прогресс
+        разблокировки следующего уровня и преимуществ текущего и следующего уровня.
+        &7Кликните для выполнения.[/H][C]{fullcmd}[/C][/T]'
+      relations:
+        main: '[T]&e{parent} {subcmd} {args} &8- &7Управление отношениями[H]&7Добавить владения
+          и нации как союзников или врагов. Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+        allies:
+          main: '[T]&e{parent} {subcmd} {args} &8- &7Управление союзниками[H]&7Добавить владения и
+            нации как союзников. Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+          add: '[T]&e{parent} {subcmd} {args} &8- &7Добавить союзника[H]&7Добавить владение или нацию
+            как союзника. Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+          remove: '[T]&e{parent} {subcmd} {args} &8- &7Удалить союзника[H]&7Разорвать отношения
+            с союзником. Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+        enemies:
+          main: '[T]&e{parent} {subcmd} {args} &8- &7Управление врагами[H]&7Добавить владения
+            и нации как врагов. Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+          add: '[T]&e{parent} {subcmd} {args} &8- &7Добавить врага[H]&7Объявить владение или
+            нацию врагом. Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+          remove: '[T]&e{parent} {subcmd} {args} &8- &7Удалить врага[H]&7Отправить запрос на прекращение вражды
+            врагу. Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+      
+      admin:
+        main: '[T]&e{parent} {subcmd} {args} &8- &7Команды администратора[H]&7Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+        listperms: '[T]&e{parent} {subcmd} {args} &8- &7Список прав игрока[H]&7Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+        debug:
+          main: '[T]&e{parent} {subcmd} &8- &7Показать статистику загруженных данных[H]&7Кликните
+            для выполнения.[/H][C]{fullcmd}[/C][/T]'
+          tasks: '[T]&e{parent} {subcmd} &8- &7Статистика задач[H]&7Кликните для выполнения.[/H][C]{fullcmd}[/C][/T]'
+        reload: '[T]&e{parent} {subcmd} &8- &7Перезагрузить конфиг и сообщения[H]&7Кликните
+          для выполнения.[/H][C]{fullcmd}[/C][/T]'
+        about: '[T]&e{parent} {subcmd} &8- &7Показать информацию о Lands[H]&7Кликните
+          для выполнения.[/H][C]{fullcmd}[/C][/T]'
+        chatspy: '[T]&e{parent} {subcmd} {args} &8- &7Прослушивать чат[H]&7Кликните, чтобы
+          скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+        dismiss: '[T]&e{parent} {subcmd} {args} &8- &7Убрать уведомления[H]&7Кликните для выполнения.[/H][C]{fullcmd}[/C][/T]'
+        import: '[T]&e{parent} {subcmd} {args} &8- &7Импортировать приваты из сторонних плагинов[H]&7Кликните
+          чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+        menu: '[T]&e{parent} {subcmd} {args} &8- &7Открыть админ-меню[H]&7Кликните для выполнения.[/H][C]{fullcmd}[/C][/T]'
+        deleteinactive: '[T]&e{parent} {subcmd} &8- &7Удалить неактивных игроков/владения[H]&7Кликните
+          для выполнения.[/H][C]{fullcmd}[/C][/T]'
+        migratedb: '[T]&e{parent} {subcmd} {args} &8- &7Мигрировать базу данных[H]&7Кликните
+          чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+        player:
+          main: '[T]&e{parent} {subcmd} {args} &8- &7Управление игроком (админ)[H]&7Кликните
+            чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+          menu: '[T]&e{parent} {subcmd} &8- &7Открыть меню игрока[H]&7Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+          delete: '[T]&e{parent} {subcmd} &8- &7Удалить игрока и его владения[H]&7Кликните
+            чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+          give:
+            main: '[T]&e{parent} {subcmd} {args} &8- &7Выдать игроку[H]&7Кликните, чтобы
+              скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+            camp: '[T]&e{parent} {subcmd} {args} &8- &7Выдать предметы лагеря[H]&7Кликните, чтобы
+              скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+            captureflag: '[T]&e{parent} {subcmd} {args} &8- &7Выдать блоки захвата[H]&7Кликните
+              чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+            claimblock: '[T]&e{parent} {subcmd} {args} &8- &7Выдать блоки привата[H]&7Кликните
+              чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+            first-join-items: '[T]&e{parent} {subcmd} {args} &8- &7Выдать предметы первого
+              входа[H]&7Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+            permission:
+              main: '[T]&e{parent} {subcmd} {args} &8- &7Изменить численные права[H]&7Кликните
+                чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+              chunks: '[T]&e{parent} {subcmd} {args} &8- &7Изменить макс. чанков[H]&7Кликните
+                чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+              chunks-support: '[T]&e{parent} {subcmd} {args} &8- &7Изменить чанки
+                поддержки[H]&7Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+              lands: '[T]&e{parent} {subcmd} {args} &8- &7Изменить макс. владений участника[H]&7Кликните
+                чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+              members: '[T]&e{parent} {subcmd} {args} &8- &7Изменить макс. участников[H]&7Кликните
+                чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+              ownlands: '[T]&e{parent} {subcmd} {args} &8- &7Изменить макс. собственных владений[H]&7Кликните
+                чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+        
+        resetworld: '[T]&e{parent} {subcmd} {args} &8- &7Удалить все приваты в мире[H]&7Кликните
+          чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+        hologram:
+          main: '[T]&e{parent} {subcmd} {args} &8- &7Управление голограммами топа[H]&7Кликните
+            чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+          create: '[T]&e{parent} {subcmd} {args} &8- &7Создать голограмму[H]&7Кликните, чтобы
+            скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+          delete: '[T]&e{parent} {subcmd} &8- &7Удалить ближайшую голограмму[H]&7Кликните
+            для выполнения.[/H][C]{fullcmd}[/C][/T]'
+          list: '[T]&e{parent} {subcmd} &8- &7Список голограмм[H]&7Кликните для выполнения.[/H][C]{fullcmd}[/C][/T]'
+        land:
+          main: '[T]&e{parent} {subcmd} {args} &8- &7Управление владением (админ)[H]&7Кликните
+            чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+          setflag: '[T]&e{parent} {subcmd} {args} &8- &7Установить состояние флага[H]&7Кликните, чтобы
+            скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+          resetflag: '[T]&e{parent} {subcmd} {args} &8- &7Сбросить флаги к roles.yml[H]&7Кликните
+            чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+          removespawn: '[T]&e{parent} {subcmd} {args} &8- &7Удалить спавн владения[H]&7Кликните
+            чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+          addrole: '[T]&e{parent} {subcmd} {args} &8- &7Добавить роль из roles.yml[H]&7Кликните
+            чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+          menu: '[T]&e{parent} {subcmd} &8- &7Открыть меню владения[H]&7Кликните для выполнения.[/H][C]{fullcmd}[/C][/T]'
+          syncpermissions: '[T]&e{parent} {subcmd} &8- &7Синхронизировать лимиты прав[H]&7Кликните
+            для выполнения.[/H][C]{fullcmd}[/C][/T]'
+          bank:
+            main: '[T]&e{parent} {subcmd} &8- &7Редактировать баланс[H]&7Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+            modify: '[T]&e{parent} {subcmd} {args} &8- &7Добавить (+) или забрать (-) средства[H]&7Кликните
+              чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+            set: '[T]&e{parent} {subcmd} {args} &8- &7Установить средства[H]&7Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+          shield:
+            main: '[T]&e{parent} {subcmd} &8- &7Редактировать время щита[H]&7Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+            modify: '[T]&e{parent} {subcmd} {args} &8- &7Добавить (+) или забрать (-) время[H]&7Кликните
+              чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+            set: '[T]&e{parent} {subcmd} {args} &8- &7Установить время[H]&7Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+    
+    wars:
+      menu: '[T]&e{parent} {subcmd} {args} &8- &7Открыть меню войн[H]&7Кликните для выполнения.[/H][C]{fullcmd}[/C][/T]'
+      deny: '[T]&e{parent} {subcmd} &8- &7Отклонить взаимное объявление войны[H]&7Кликните
+        для выполнения.[/H][C]{fullcmd}[/C][/T]'
+      spawn: '[T]&e{parent} {subcmd} &8- &7Телепортироваться к врагу[H]&7Кликните для выполнения.[/H][C]{fullcmd}[/C][/T]'
+      declare: '[T]&e{parent} {subcmd} {args} - &7Объявить войну[H]&7Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+      list: '[T]&e{parent} {subcmd} - &7Посмотреть активные войны[H]&7Кликните для выполнения.[/H][C]{fullcmd}[/C][/T]'
+      info:
+        main: '[T]&e{parent} {subcmd} {args} &8- &7Информация о войне[H]&7Кликните для выполнения.[/H][C]{fullcmd}[/C][/T]'
+        captureflag: '[T]&e{parent} {subcmd} &8- &7Посмотреть рецепт флага захвата[H]&7Кликните
+          для выполнения.[/H][C]{fullcmd}[/C][/T]'
+      admin:
+        main: '[T]&e{parent} {subcmd} {args} &8- &7Управление войной (админ)[H]&7Кликните
+          чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+        start: '[T]&e{parent} {subcmd} {args} &8- &7Начать войну[H]&7Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+        end: '[T]&e{parent} {subcmd} {args} &8- &7Закончить войну[H]&7Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+    
+    nations:
+      chat: '[T]&e{parent} {subcmd} {args} &8- &7Чат нации[H]&7Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+      trust: '[T]&e{parent} {subcmd} {args} &8- &7Пригласить владение[H]&7Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+      untrust: '[T]&e{parent} {subcmd} {args} &8- &7Удалить владение[H]&7Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+      accept: '[T]&e{parent} {subcmd} {args} &8- &7Принять приглашение[H]&7Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+      deny: '[T]&e{parent} {subcmd} {args} &8- &7Отклонить приглашение[H]&7Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+      menu: '[T]&e{parent} {subcmd} {args} &8- &7Меню[H]&7Кликните для выполнения.[/H][C]{fullcmd}[/C][/T]'
+      create: '[T]&e{parent} {subcmd} {args} &8- &7Создать нацию[H]&7Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+      delete: '[T]&e{parent} {subcmd} &8- &7Удалить нацию[H]&7Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+      leave: '[T]&e{parent} {subcmd} &8- &7Покинуть нацию[H]&7Кликните для выполнения.[/H][C]{fullcmd}[/C][/T]'
+      spawn: '[T]&e{parent} {subcmd} &8- &7Спавн столицы[H]&7Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+      rename: '[T]&e{parent} {subcmd} &8- &7Переименовать нацию[H]&7Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+      setcapital: '[T]&e{parent} {subcmd} {args} &8- &7Установить столицу[H]&7Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+      level: '[T]&e{parent} {subcmd} &8- &7Посмотреть прогресс уровня[H]&7Посмотреть прогресс
+        разблокировки следующего уровня и преимуществ текущего и следующего уровня.
+        &7Кликните для выполнения.[/H][C]{fullcmd}[/C][/T]'
+      info: '[T]&e{parent} {subcmd} {args} &8- &7Посмотреть информацию о нации[H]&7Кликните
+        для выполнения.[/H][C]{fullcmd}[/C][/T]'
+      list: '[T]&e{parent} {subcmd} {args} &8- &7Список всех наций[H]&7Кликните для выполнения.[/H][C]{fullcmd}[/C][/T]'
+      top: '[T]&e{parent} {subcmd} &8- &7Показать топ наций[H]&7Кликните для выполнения.[/H][C]{fullcmd}[/C][/T]'
+      relations:
+        main: '[T]&e{parent} {subcmd} {args} &8- &7Управление отношениями[H]&7Добавить владения
+          и нации как союзников или врагов. Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+        allies:
+          main: '[T]&e{parent} {subcmd} {args} &8- &7Управление союзниками[H]&7Добавить владения и
+            нации как союзников. Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+          add: '[T]&e{parent} {subcmd} {args} &8- &7Добавить союзника[H]&7Добавить владение или нацию
+            как союзника. Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+          remove: '[T]&e{parent} {subcmd} {args} &8- &7Удалить союзника[H]&7Разорвать отношения
+            с союзником. Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+        enemies:
+          main: '[T]&e{parent} {subcmd} {args} &8- &7Управление врагами[H]&7Добавить владения
+            и нации как врагов. Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+          add: '[T]&e{parent} {subcmd} {args} &8- &7Добавить врага[H]&7Объявить владение или
+            нацию врагом. Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+          remove: '[T]&e{parent} {subcmd} {args} &8- &7Удалить врага[H]&7Отправить запрос на прекращение вражды
+            врагу. Кликните, чтобы скопировать.[/H][SC]{fullcmd}[/SC][/T]'
+lands:
+  message:
+    inbox:
+      new:
+        posts: |
+          &7Имеется {amount} новых сообщений от участников вашего владения&2 {land}&7. Последнее: {latest}
+            [T]&7✖ Посмотреть: &e/{cmd} &8[CLICK][H]&7Кликните, чтобы посмотреть[/H][C]{cmd}[/C][/T]
+        general: |
+          &7Имеется {amount} новых входящих сообщений для владения&2 {land}&7. Последнее: {latest}
+            [T]&7✖ Посмотреть: &e/{cmd} &8[CLICK][H]&7Кликните, чтобы посмотреть[/H][C]{cmd}[/C][/T]
+    feature-disabled: '&cЭта функция отключена администратором. &8Им нужно включить настройку ''{setting}'' в конфиге, чтобы вы могли использовать эту функцию.'
+    war: '&cВы не можете сделать это сейчас. &7{object} &7в данный момент участвует в войне против {enemy}&7. &7Пожалуйста, попробуйте после окончания войны.'
+    combat:
+      tag: '#b#[config]color:purple,style:solid[/config]&7Режим боя:&5 {time}'
+    flags:
+      block_place: '&cВам не разрешено ставить блоки здесь (&cОбласть:&4 {area} &cВладение:&4 {land}&c). &8Флаг: {flag}'
+      block_break: '&cВам не разрешено ломать блоки здесь (&cОбласть:&4 {area} &cВладение:&4 {land}&c). &8Флаг: {flag}'
+      block_ignite: '&cВам не разрешено поджигать блоки здесь (&cОбласть:&4 {area} &cВладение:&4 {land}&c). &8Флаг: {flag}'
+      interact_general: '&cВам не разрешено взаимодействовать здесь (&cОбласть:&4 {area} &cВладение:&4 {land}&c). &8Флаг: {flag}'
+      interact_door: '&cВам не разрешено открывать двери здесь (&cОбласть:&4 {area} &cВладение:&4 {land}&c). &8Флаг: {flag}'
+      interact_mechanism: '&cВам не разрешено использовать механизмы здесь (&cОбласть:&4 {area} &cВладение:&4 {land}&c). &8Флаг: {flag}'
+      interact_container: '&cВам не разрешено открывать контейнеры здесь (&cОбласть:&4 {area} &cВладение:&4 {land}&c). &8Флаг: {flag}'
+      interact_villager: '&cВам не разрешено торговать с жителями здесь (&cОбласть:&4 {area} &cВладение:&4 {land}&c). &8Флаг: {flag}'
+      fly: '&cВам не разрешено летать здесь (&cОбласть:&4 {area} &cВладение:&4 {land}&c). &8Флаг: {flag}'
+      spawn_teleport: '&cВам не разрешено телепортироваться на спавн владения&4 {land}&c. &7Они могут настроить права роли, чтобы разрешить вам телепортацию. &8Флаг: {flag}'
+      land_enter: '&cВам не разрешено входить в область&4 {area} &cвладения&4 {land}&c (&cОбласть:&4 {area} &cВладение:&4 {land}&c). &7Вы были телепортированы назад. &8Флаг: {flag}'
+      vehicle_use: '&cВам не разрешено использовать транспорт здесь (&cОбласть:&4 {area} &cВладение:&4 {land}&c). &8Флаг: {flag}'
+      item_pickup: '&cВам не разрешено выбрасывать и подбирать предметы здесь (&cОбласть:&4 {area} &cВладение:&4 {land}&c). &8Флаг: {flag}'
+      ender_pearl: '&cВам не разрешено использовать этот предмет для телепортации в область&6 {area} &cвладения&4 {land}&c. &8Флаг: {flag}'
+      attack_animal: '&cВам не разрешено атаковать животных здесь (&cОбласть:&4 {area} &cВладение:&4 {land}&c). &8Флаг: {flag}'
+      attack_monster: '&cВам не разрешено атаковать монстров здесь (&cОбласть:&4 {area} &cВладение:&4 {land}&c). &7Они также не смогут атаковать вас. &8Флаг: {flag}'
+    rented:
+      edit: '&cВы не можете сделать это, пока область&4 {area}&c арендована или продана. &7Удалить арендатора: &e/{cmd}'
+      tenant: '&cВы не можете редактировать арендатора&4 {player}&c области&4 {area}&c. &7Удалить арендатора: &e/{cmd}'
+    noaccess:
+      wilderness: '&cВам не разрешено делать это в дикой местности. &8Флаг: {flag}'
+      area: '&cВам не разрешено делать это в этой области (&cОбласть:&4 {area} &cВладение:&4 {land}&c). &8Флаг: {flag}'
+      banned: '&cВам не разрешено входить в эту область. &7Вы были забанены в этой области &8(&7Область:&6 {area} &7Владение:&2 {land}&8)&7.'
+      claimblock: '&cВы не владеете этим блоком привата. &7Он принадлежит&3 {player}&7.'
+      
+      combat:
+        attacker: '&cВам не разрешено атаковать игроков здесь. &7Эта область принадлежит владению&2 {land}&7.'
+        target: '&cВашей цели не разрешено атаковать игроков здесь. &7Вы не можете сражаться с ней здесь. &7Эта область принадлежит владению&2 {land}&7.'
+        ally: '&cВы не можете атаковать этого игрока в дикой местности, так как он участник одного из ваших владений. &7Сражения на арене могут быть разрешены в настройках роли.'
+        wilderness: '&cВы не можете атаковать этого игрока, так как он в дикой местности, а вы стоите на заприваченной территории.'
+    area:
+      exists: '&cОбласть с именем&4 {area} &cуже существует во владении&4 {land}&c.'
+      max: '&cВы достигли лимита в&4 {max}&c областей для вашего владения&4 {land}&7, и область&6 {area}&7 еще не существует.'
+      not-exist: '&cОбласть&4 {area} &cне существует во владении&4 {land}&c.'
+      default: '&cВы не можете сделать это с областью по умолчанию&4 {area} &cвладения&4 {land}&c.'
+    introduction:
+      container-placement: |
+        &cВы поставили контейнер в дикой местности. &7Другие игроки могут открыть его и забрать предметы.
+          [T]&7✖ Защитить: &e/{cmd} &8[CLICK][H]&7Заприватить землю здесь, чтобы защитить его.[/H][C]{fullcmd}[/C][/T]
+    event:
+      fly:
+        counter: '#t#&6Режим полета отключается[newline]&7через &3{sec} &7сек.'
+        disabled: '&cВаш режим полета был отключен. &7Здесь запрещено летать.'
+      elytra:
+        counter: '#t#&6Элитры отключаются[newline]&7через &3{sec} &7сек.'
+        disabled: '&cВаш полет на элитрах был отключен. &7Здесь запрещено использовать элитры.'
+      combat_tag:
+        disabled: '&cВаш режим полета был отключен. &7Полет запрещен во время боя.'
+      enter:
+        land: '#t#[config]in:5,stay:40,out:2[/config]&2&l{land}[newline]&3{title}'
+        camp: '#t#[config]in:5,stay:40,out:2[/config]&2&l{land}[newline]&3{title}'
+        admin: '#t#[config]in:5,stay:40,out:2[/config]&2&l{land}[newline]{title}'
+        pvp-warning: '#a#&cВы вошли в PvP зону.'
+      leave:
+        land: '#t#[config]in:5,stay:30,out:2[/config]&2&lДикая местность[newline]&7Почувствуй свободу'
+        camp: '#t#[config]in:5,stay:30,out:2[/config]&2&lДикая местность[newline]&7Почувствуй свободу'
+        admin: '#t#[config]in:5,stay:30,out:2[/config]&2&lДикая местность[newline]&7Почувствуй свободу'
+      level:
+        up: '#t#&6{object}[newline]&7повысил уровень: {level}'
+        down: '#t#&6{object}[newline]&7понизил уровень до: {level}'
+      inbox: '&eВходящие &8- {object}&8: {message}'
+    teleportation:
+      already: '&cВы не можете начать вторую телепортацию. Процесс уже идет. &7Пожалуйста, подождите завершения.'
+      started: '&7Телепортация началась. Телепортация через&5 {sec} сек&7. Пожалуйста, не двигайтесь.'
+      cmd: '&cВы не можете использовать команды во время телепортации. &7Пожалуйста, подождите&5 {sec} сек&7, пока телепортация не завершится.'
+      combat: '&cВы не можете телепортироваться во время боя. &7Подождите&5 {time} &7и не атакуйте никого.'
+      progress: '#b#[config]color:purple,style:solid[/config]&7Подождите&5 {time} &7Сек. до телепортации.'
+      cancelled: '&cВаша телепортация была отменена. &7Пожалуйста, не двигайтесь&5 {sec} &7сек. во время ожидания.'
+      chunk: '#t#&6Телепортирован[newline]&7X: {x} Z: {z} Стоимость:&c {cost}'
+      plugin: '&cТелепортация была отменена сторонним плагином. &7Проверьте другие плагины. &7Это не ошибка Lands.'
+      unsafe: |
+        &7Телепортация отменена, так как место назначения небезопасно.
+          [T]&2✔ Все равно телепортироваться: &e/{cmd} &8[CLICK][H]&7У вас есть {time}&7 для подтверждения. Предупреждение: Место назначения небезопасно и может быть опасным для вас.[/H][C]{cmd}[/C][/T]
+      corrected: '&7Исходное место телепортации было небезопасным. &7Ваше место назначения было исправлено на безопасное.'
+    claimblock:
+      dropped: '&cНекоторые блоки привата лежат на земле. &7В инвентаре не было места.'
+      success: '&7Вы получили&3 {blocks} &7блок(ов) привата. &7Поставьте их в чанке, чтобы заприватить его.'
+    capture:
+      dropped: '&cНекоторые флаги захвата лежат на земле. &7В инвентаре не было места.'
+      success: '&7Вы получили&3 {blocks} &7флаг(ов) захвата. &7Разместите их во вражеских приватах во время войны, чтобы начать захват.'
+    camp:
+      dropped: '&cНекоторые предметы лагеря лежат на земле. &7В инвентаре не было места.'
+      success: '&7Вы получили&3 {blocks} &7предмет(ов) лагеря. &7Разместите их, чтобы создать лагерь.'
+    blacklist:
+      untrusted: '&cВам не разрешено использовать эту команду здесь. &7Вы не доверены в области&6 {area} &7владения&2 {land}&7. &8Право обхода: {permission}'
+      general: '&cВам не разрешено использовать эту команду в заприваченных владениях. &8Право обхода: {permission}'
+      war: '&cВам не разрешено использовать эту команду во время войны. &8Право обхода: {permission}'
+    auto-action:
+      started:
+        claim: '#t#&6Авто-приват[newline]&7Идите, чтобы приватить чанки'
+        unclaim: '#t#&6Авто-расприват[newline]&7Идите, чтобы распривачивать чанки'
+      stopped:
+        claim: '#t#&6Авто-приват[newline]&cОстановлен'
+        unclaim: '#t#&6Авто-расприват[newline]&cОстановлен'
+    role:
+      exists: '&cРоль с именем&4 {role} &cуже существует. &7Пожалуйста, выберите другое имя.'
+      not-exist: '&cРоль&4 {role} &cне существует в области &4{area} &cвладения&4 {land}&c. &7Опечатка?'
+      max: '&cВы не можете создать больше ролей для этого владения. &7Вы достигли лимита в&3 {max} &7ролей.[V] Право: lands.roles.<number>[/V]'
+      player:
+        land: '&cВы не можете редактировать этого игрока во владении&4 {land}&c. &7Его роль&6 {role} &7имеет приоритет выше или равный вашему.'
+        area: '&cВы не можете редактировать этого игрока в этой области (&cОбласть:&4 {area} &cВладение:&4 {land}&c). &7Его роль&6 {role} &7имеет приоритет выше или равный вашему.'
+      weight:
+        land: '&cВы не можете редактировать роль&4 {role} &cвладения&4 {land}&c. &7Приоритет роли выше или равен вашему.'
+        area: '&cВы не можете редактировать роль&4 {role} &cв этой области (&cОбласть:&4 {area} &cВладение:&4 {land}&c). &7Приоритет роли выше или равен вашему.'
+      delete:
+        role: '&cВы не можете удалить роль&4 {role}&c. &7Эта роль обязательна.'
+        entry: '&cВы не можете удалить начальную роль&4 {role}&c. &7Она обязательна для новых игроков.'
+        visitor: '&cВы не можете удалить роль гостя&4 {role}&c. &7Она обязательна для игроков без доверия.'
+    menu-reopen: '#a#&6Открытие предыдущего меню через&5 {time}&6.'
+    chat-input:
+      general: '&7Пожалуйста, введите ваш текст в чат.'
+      player: '#t#&6Введите Имя[newline]&7игрока в чат[newline]&7Введите "cancel" для отмены.'
+      object: '#t#&6Введите Имя[newline]&7владения или нации в чат[newline]&7Введите "cancel" для отмены.'
+      land: '#t#&6Введите Имя[newline]&7целевого владения в чат[newline]&7Введите "cancel" для отмены.'
+      title: '#t#&6Введите новый Титул[newline]&7для этого владения в чат[newline]&7Введите "cancel" для отмены.'
+      rename: '#t#&6Введите новое Имя[newline]&7в чат[newline]&7Пробелы запрещены. Введите "cancel" для отмены.'
+      name: '#t#&6Введите Имя[newline]&7в чат[newline]&7Введите "cancel" для отмены.'
+      text: '#t#&6Введите Текст[newline]&7в чат[newline]&7Введите "cancel" для отмены.'
+    block-selection:
+      rental:
+        prompt: '#t#&6Выберите Табличку[newline]&7в области&6 {area}'
+        sign: '&cВыбранный блок должен быть табличкой.'
+        area: '&cВыбранная табличка должна находиться в области&4 {area} &cвладения&4 {land}&c.'
+  command:
+    menu:
+      invalid: '&cThere is no such shortcut with the name&4 {shortcut}&c.'
+    rent:
+      max-amount: '&cYou can''t rent or buy another area in the land&4 {land}&c. &7You
+        already rented or bought the maximum amount of&3 {max} &7areas in this land.'
+      own: '&cYou can''t rent / purchase your own offers. &7To remove a offer destroy
+        the sign or shift + click at the hologram.'
+      edit: '&cYou currently can''t edit area&4 {area} &cof land&4 {land}&7, because
+        it''s rented/sold to player&3 {player}&7.'
+      tenant: '&cYou haven''t rented the area at your current position. &7Area&6 {area}
+        &7of land&2 {land} &7is not rented by you.'
+      none: '&cThe area&4 {area} &cof land&4 {land} &cat your current position is
+        not rented or bought by anyone.'
+      status: '&cThe area&4 {area} &cof land&4 {land} &cat your current position is
+        not set for rent or sale.'
+      sign: |
+        &7You need to specify a sign type (2. line)
+         &81. line:&7 Lands
+         &82. line:&3 rent &7or &3sell &8[&7area&8]
+      set:
+        land: '&cYou can''t set the whole land&4 {land} &cfor rent. &7You can either
+          create subareas to set them for rent or you sell it completely (second line:
+          sell).'
+        already: '&cYou currently can''t set this area for rent again. &7The area&6
+          {area} &7is currently being rented by&3 {player}&7. It will expire in&5
+          {time}&7.'
+        sold: '&cYou can''t set a area, which has been sold, for rent. &7The area&6
+          {area} &7has been bought by player&3 {player}&7.'
+        interval: '&cThe rent interval must be shorther than the max total rent time.
+          &7Provided values - interval:&5 {interval}&7, max total time:&5 {max-time}'
+        success: |
+          &7You set area&6 {area} &7for rent. The tenant will pay&c {cost} &7each&5 {time}&7.
+            [T]&8✖ &7Remove offer: &e/{cmd} &8[CLICK][H]&7Click here to remove the rental offer.[/H][C]{cmd}[/C][/T]
+        invalid: |
+          &7Your line format is invalid ({line}. line)
+           &81. line:&7 Lands
+           &82. line:&7 rent &8[&7area&8]
+           &83. line:&7 TIME maxTime (not required)
+           &84. line:&7 costs (example: 5 = 5)
+        info: |
+          [NoPrefix]
+          &7&m━━━━━━━━━<━&r &5&lRent Area &7&m━>━━━━━━━━━
+          [T]&8• &7Land:&a {land} &8[CLICK][H]&7Click here to visualize this area.[/H][C]lands view here[/C][/T]
+           &8• &7Area:&6 {area}
+           &8• &7Cost:&c {cost} &7each {time}
+           &8• &8Max time: {max}
+          &7&m━━━━━━━━━<━&r &5&lRent Area &7&m━>━━━━━━━━━
+      rent:
+        expire: '&cYou can''t add any more time to your rental of area&4 {area}&c.
+          &7The land&2 {land} &7removed it for rental. It will expire in&5 {time}&7.'
+        time: '&cYou can''t add any more time to your rental of area&4 {area}&c. &7The
+          land&2 {land} &7configured a maximum of&5 {max} &7in total.'
+        add: '&7You added&5 {add} &7to your rental of area&6 {area} &7for&c {cost}&7.
+          It will expire in&5 {time}&7.'
+        success: |
+          &7You rented area&6 {area} &7of land&2 {land} &7for&c {cost}&7. It will expire in&5 {time}&7.
+            &8✖ &7Adding more time: Click on the sign or hologram
+            [T]&8✖ &7Cancelling rental: &e/{cmd} &8[CLICK][H]&7Click here to cancelling your rental.[/H][C]{cmd}[/C][/T]
+        info: |
+          [NoPrefix]
+          &7&m━━━━━━━━━<━&r &5&lRented Info &7&m━>━━━━━━━━━
+          [T]&8• &7Land:&a {land} &8[CLICK][H]&7Click here to visualize this area.[/H][C]lands view here[/C][/T]
+           &8• &7Area:&6 {area}
+           &8• &7Tenant: {player}
+           &8• &7Time left:&5 {left}
+           &8• &8Rent: {cost} each {time}
+          &7&m━━━━━━━━━<━&r &5&lRented Info &7&m━>━━━━━━━━━
+      cancel:
+        success: '&7Вы отменили аренду области&6 {area}&7. У вас больше нет доступа
+          к этой области.'
+      remove:
+        offer:
+          success:
+            land: '&7Владение&2 {land} &7больше нельзя купить.'
+            area: '&7Область&6 {area} &7владения&2 {land} &7больше нельзя купить или
+              арендовать. Текущие арендаторы останутся до истечения срока аренды.'
+        tenant:
+          confirm: |
+            &cПожалуйста, подтвердите, что хотите заплатить&4 {cost} &cкомпенсации арендатору&4 {player} &c, чтобы удалить его:
+              [T]&2✔ Подтвердить: &e/{cmd} &8[CLICK][H]&7Кликните, чтобы подтвердить действие и оплату.[/H][C]{cmd}[/C][/T]
+          success: '&7Вы удалили арендатора&3 {player} &7из области&6 {area} &7владения&2
+            {land} &7и заплатили&c {cost} &7в качестве компенсации.'
+          target: '&cВы были удалены как арендатор из области&4 {area} &4владения&4
+            {land}&c. &7Вам выплатили&c {compensation} &7компенсации.'
+    sell:
+      sell:
+        rented: '&cВы не можете продать область, которая арендована игроком. &7Область&6
+          {area} &7в данный момент арендует&3 {player}&7. Аренда истечет через&5 {time}&7.'
+        success:
+          area: |
+            &7Вы выставили область&6 {area} &7на продажу. Стоимость:&c {cost}
+              [T]&8✖ &7Удалить предложение: &e/{cmd}[H]&7Кликните, чтобы удалить это предложение.[/H][C]{cmd}[/C][/T]
+          land: |
+            &7Вы выставили всё владение&2 {land} &7на продажу. Стоимость:&c {cost}
+              [T]&8✖ &7Удалить предложение: &e/{cmd}[H]&7Кликните, чтобы удалить это предложение.[/H][C]{cmd}[/C][/T]
+        invalid: |
+          &7Неверный формат строки ({line}. строка)
+           &81. строка:&7 Lands
+           &82. строка:&7 sell &8[&7area&8]
+           &83. строка:&7 стоимость (например: 5 = 5)
+      buy:
+        owner-cooldown: '&cВладелец владения может меняться каждые&4 {cooldown}&c. &7Вы
+          должны подождать еще&5 {time} &7прежде чем владение&2 {land} &7сможет быть куплено.'
+        success:
+          area: '&7Вы купили область&6 {area} &7владения&2 {land} &7за&c {cost}&7.'
+          land: '&7Вы купили владение&2 {land} &7за&c {cost}&7.'
+        info:
+          area: |
+            [NoPrefix]
+            &7&m━━━━━━━━━<━&r &5&lКупить область &7&m━>━━━━━━━━━
+            [T]&7Владение:&a {land} &8[CLICK][H]&7Кликните, чтобы визуализировать область.[/H][C]lands view here[/C][/T]
+             &7Область:&6 {area}
+             &7Стоимость:&c {cost}
+            &7&m━━━━━━━━━<━&r &5&lКупить область &7&m━>━━━━━━━━━
+          land: |
+            [NoPrefix]
+            &7&m━━━━━━━━━<━&r &5&lКупить владение &7&m━>━━━━━━━━━
+            [T]&7Владение:&a {land} &8[CLICK][H]&7Кликните, чтобы визуализировать владение.[/H][C]lands view[/C][/T]
+            &7Стоимость:&c {cost}
+            &7&m━━━━━━━━━<━&r &5&lКупить владение &7&m━>━━━━━━━━━
+      sold: |
+        [NoPrefix]
+        &7---------<- &5&lОбласть продана &7->---------
+        [T]&7Владение:&a {land} &8[CLICK][H]&7Кликните, чтобы визуализировать область.[/H][C]lands view here[/C][/T]
+         &7Область:&6 {area}
+         &7Продана&3 {player} &7за&c {cost}&7.
+        &7---------<- &5&lОбласть продана &7->---------
+    general:
+      no-permission: '&cУ вас нет прав на это. &8Вам нужно право {permission}.'
+      not-exist: '&cНет такого владения или нации с именем&4 {object}&c. &7Опечатка?'
+      land-not-exist: '&cВладение&2 {land} &cне существует. &7Нет владения с таким именем.'
+      area-not-exist: '&cОбласть&4 {area} &cне существует во владении&4 {land}&c. &7Вы
+        можете создать новую область в меню владения в разделе областей. &7Опечатка?'
+      noaccess:
+        untrusted: '&cВы не доверены во владении&4 {land}&c. &7Используйте &e/lands menu
+          &7чтобы увидеть владения, в которых вы состоите.'
+        land: '&cВам не разрешено делать это для этого владения&4 {land}&c. &8Флаг:
+          {flag}'
+        owner: '&cВам не разрешено делать это для владения&4 {land}&c. &7Только владелец
+          земли может делать это. &7Выберите своё владение &8(/&elands edit &8<&eland&8>)
+          &7или создайте новое &8(/&elands create &8<&ename&8>)&7.'
+        area: '&cВам не разрешено делать это в области&4 {area} &cвладения&4 {land}&c.'
+        position:
+          flag: '&cВам не разрешено делать это для владения&4 {land} &cв вашей текущей
+            позиции. &8Флаг: {flag}'
+          untrusted: '&cВам не разрешено делать это для владения&4 {land} &cв вашей
+            текущей позиции. &7Вы не доверены в этом владении.'
+      no-edit-land: '&cВы еще не выбрали владение для редактирования. &7Используйте &e/lands edit
+        &8<&eland&8> &7чтобы выбрать его.'
+      object:
+        name:
+          exist: '&cИмя или тег&4 {name} &cуже заняты. &7Вам нужно выбрать другое.'
+          same: '&cИмя&4 {name} &cуже установлено. &7Оно совпадает с текущим.'
+        tag:
+          name: '&cТег не может совпадать с именем&4 {name}&c.'
+          same: '&cТег&4 {tag} &cуже установлен. &7Он совпадает с текущим.'
+      swear-word: '&cОбнаружено ругательство. &7Пожалуйста, не используйте ненормативную лексику. Слово:&c
+        {word}'
+      action:
+        cooldown: '&cВы не можете сделать это сейчас. &7Вам нужно подождать&5 {time}&7.'
+        spam: '&cУ вас выполняется другая команда или действие. &7Пожалуйста,
+          подождите завершения и не спамьте командами. &8Действие: {action}'
+      wilderness: '&cВ вашей текущей позиции нет заприваченного владения. &7Пожалуйста, войдите
+        в своё владение, чтобы выполнить это действие. &7Вы можете использовать &e/view
+        &7чтобы визуализировать приваты вокруг вас.'
+      player-self: '&cВы не можете сделать это с самим собой.'
+      banks-disabled: '&7Банки были отключены администратором. &8Они могут включить
+        их в конфиге.'
+      land-not-trusted: '&cИгрок&4 {player} &7не является частью владения&4 {land}&c.
+        Вам нужно сначала доверить его, используя &e/lands trust&7.'
+      area-not-trusted: '&cВы не можете сделать это здесь. &7Вы не доверены в области&6
+        {area} &7владения&2 {land}&7.'
+      number: '&cВаш ввод&4 {input} &cне является числом. &7Аргумент&3 {argument}
+        &7должен быть числом.'
+      none: |
+        &cВы не состоите ни в одном владении.
+          [T]&8✖ &7Создать своё: &e/{cmd} &8[CLICK][H]&7Кликните, чтобы скопировать.[/H][SC]{cmd}[/SC][/T]
+             &7Любое владение может пригласить вас, используя: &e/lands trust
+      name:
+        number: '&cВам не разрешено использовать цифры для этого имени. &7Пожалуйста, используйте
+          только буквы. Найденная цифра:&3 {invalid}'
+        reserved: '&cИмя&4 {reserved}&c зарезервировано для других целей. &7Пожалуйста,
+          выберите другое имя.'
+        character: '&cВы не можете использовать недопустимые символы для имени. &7Пожалуйста, используйте
+          только буквы и цифры. &7Найден недопустимый символ:&3 {invalid}'
+        color: '&cВам не разрешено использовать цветовые коды в этом имени. &7Пожалуйста, удалите
+          цветовые коды из вашего ввода.'
+        format: '&cВам не разрешено использовать форматирование, такое как жирный текст и т.д.,
+          в этом имени. &7Пожалуйста, удалите форматирование из вашего ввода.'
+        length: '&cЭто имя слишком длинное. &7Максимальная длина&3 {max} &7символов
+          &8(&7ваше: {input}&8)&7. Пожалуйста, придумайте имя короче.'
+        empty: '&cЭто имя недействительно. &7Вам нужно ввести хотя бы один символ,
+          не являющийся цветовым кодом.'
+      money:
+        fallback: '&7Уведомление:&c {cost} &7было списано с вашего личного счета,
+          потому что в банке вашего владения&2 {land} &7недостаточно денег.
+          Внести: &e/{cmd}[T]&8[CLICK][H]&7Кликните, чтобы внести деньги в
+          банк владения {land}.[/H][SC]{cmd}[/SC][/T]'
+        failure:
+          bank: '&cВ банке владения недостаточно денег для оплаты стоимости.
+            &7Внесите&c {cost} &7в банк вашего владения: [T]&e/{cmd} &8[CLICK][H]&7Кликните,
+            чтобы внести {cost} в банк вашего владения.[/H][C]{cmd}[/C][/T]'
+          personal: '&cУ вас недостаточно средств для оплаты. &7Вам нужно&c {cost}&7.
+            Ваш баланс: {balance}'
+      input:
+        confirm: |
+          &7Пожалуйста, подтвердите это действие &8(&e/{input}&8) &7кликом ниже:
+            [T]&2✔ Подтвердить: &e/{fullcmd} &8[CLICK][H]&7Кликните, чтобы подтвердить это действие.[/H][C]{fullcmd}[/C][/T]
+        land: '&cВладение&4 {input} &cне существует. &7Нет владения с таким
+          именем.'
+        nation: '&cНация&4 {input} &cне существует. &7Нет нации с таким
+          именем.'
+        holder: '&cНет такого владения или нации с именем&4 {input}&c. &7Опечатка?'
+        number: '&cВаш ввод&4 {input} &cне является числом. &7Аргумент {pos}: {expected}'
+        category: '&cВаш ввод&4 {input} &cне является категорией. &7Аргумент {pos}: {expected}'
+        funds: '&cВаш ввод&4 {input} &cне соответствует ни одной валюте. &7Аргумент {pos}:
+          {expected}'
+        player: '&cНет игрока с именем&4 {input}&c. &7Опечатка?'
+        offline: '&cИгрок с именем&4 {input} &cсейчас не онлайн.
+          &7Опечатка?'
+        world: '&cМир&4 {input} &cне существует. &7Аргумент {pos}: {expected}'
+        world-disabled:
+          general: '&cЭто отключено в этом мире.[V] &8Мир: {input}[/V]'
+          claiming: '&cПриват отключен в мире, где вы находитесь. &7Войдите
+            сначала в мир, где включен приват.[V] &7Вам нужно добавить его в опцию
+            claim-worlds-list в конфиге. &8Текущий мир: {input}[/V]'
+        time: '&cВаш ввод&4 {input} &cне представляет время. &7Аргумент {pos}:
+          {expected}. Правильный пример: 1h'
+    create:
+      land-other: '&cВам не разрешено иметь своё владение и быть участником
+        другого владения. &7Вам нужно сначала покинуть владение&2 {land}&7.'
+      max:
+        land: '&cВы не можете создавать больше владений. &7Вы достигли максимума в&3
+          {max} &7собственных владений.'
+        camp: '&cВы не можете создавать больше лагерей. &7Вы достигли максимума в&3
+          {max} &7лагерей.'
+      success:
+        land: |
+          &7Успешно создано владение&2 {land} &7за&c {cost}&7.
+          Владение {land} &7установлено как редактируемое для будущих действий.
+            [T]&7✖ Сменить владение: &e/{cmd_edit} &8[CLICK][SC]{cmd_edit}[/SC][H]&7Владение {land} было установлено как редактируемое для действий типа доверия игроков и т.д. Чтобы изменить это, выполните эту команду. Кликните, чтобы скопировать.[/H][/T]
+            [T]&7✖ Заприватить чанк: &e/{cmd_claim} &8[CLICK][C]{cmd_claim}[/C][H]&7Кликните, чтобы заприватить чанк, в котором вы стоите.[/H][/T]
+            [T]&7✖ Заприватить выделение: &e/{cmd_selection} &8[CLICK][C]{cmd_selection}[/C][H]&7Кликните, чтобы заприватить выделенные чанки.[/H][/T]
+            [T]&7✖ Доверить игрокам: &e/{cmd_trust} &8[CLICK][SC]{cmd_trust}[/SC][H]&7Кликните, чтобы скопировать.[/H][/T]
+        camp: '&7Вы создали лагерь&2 {land} &7в текущей позиции. &7Вы заплатили&c
+          {cost}&7. Лагерь нельзя расширить и он исчезнет через&5 {time}&7.'
+      broadcast: '&7Владение&2 {land} &7было создано игроком&3 {player}&7.'
+    rename:
+      success: '&7Успешно установлено новое имя&3 {name} &7для владения&2 {land}&7.
+        Вы заплатили&c {cost}&7.'
+    edit:
+      success: '&7Вы вошли в режим редактирования владения&2 {land}&7. Следующие действия,
+        такие как &e/lands claim &7или &e/lands trust&7, будут выполняться для этого владения.'
+    selection:
+      max: '&cВ вашем выделении слишком много чанков. &7Размер:&3 {current} &7Ваш
+        максимальный размер:&3 {max} &7чанков.'
+      too-far: '&cБлок, на который вы смотрите, слишком далеко. &7Пожалуйста, подойдите ближе
+        к нему.'
+      world: '&cОбе позиции должны быть в одном мире. &7Пожалуйста, установите первую
+        и вторую позицию в одном мире.'
+      pos:
+        warn: '&cПредупреждение: &7Этот чанк принадлежит другому плагину управления. Имя:&3
+          {plugin}'
+        cancelled: '&cВы не можете установить выделение здесь. &7Этот чанк принадлежит другому
+          плагину управления. Имя:&3 {plugin}'
+      area:
+        conflicts: '&cНайдено&4 {conflicts} &cконфликтов с чанками, уже назначенными
+          областям. &7Используйте &e/lands selection assign {area} confirm &7чтобы подтвердить
+          перезапись. Конфликты принадлежат этим областям: {areas}'
+      expand:
+        y: '&7Расширена нижняя точка выделения на&3 {y-min} &7и верхняя
+          точка на&3 {y-max}&7.'
+        enabled: '&7Ваше выделение расширено от низа до верха (мин. и макс. высота
+          привата).'
+        disabled: '&7Ваше выделение больше не расширено от низа до верха.'
+      status:
+        complete: '#t#&6Selection Complete[newline]&7Claim: &e&l/claim &7Unclaim:
+          &e&l/unclaim[newline]&6&lAssign selection to a subarea: &e&l/assign'
+        progress: '#t#&6Selection[newline]&7Left: {first} &7Right: {second}[newline]&6&lSet
+          corner: &6left/right click or drop item &7&lCancel: &7Change tool slot'
+        reminder: |
+          &7Выделение завершено: Доступны следующие действия:
+            [T]&7✖ Заприватить: &e/claim &8[CLICK][H]&7Кликните, чтобы заприватить выделение.[/H][C]lands claim[/C][/T]
+            [T]&7✖ Расприватить: &e/unclaim &8[CLICK][H]&7Кликните, чтобы расприватить выделение.[/H][C]lands unclaim[/C][/T]
+            [T]&7✖ Подобласть: &e/assign &8[CLICK][H]&7Назначить это выделение подобласти.[/H][SC]lands assign <area>[/SC][/T]
+        not-complete: '&cВаше выделение не завершено. &7Пожалуйста, убедитесь, что обе
+          позиции установлены. [T]&7Вы можете переключить режим выделения командой &e/lands
+          selection &8[CLICK][H]&7Кликните, чтобы переключить режим выделения.[/H][C]lands
+          selection[/C][/T]'
+        disabled: '#t#&6Выделение[newline]&cРежим отключен'
+    claim:
+      camp: |
+        &cВаш лагерь&4 {land} &cне может быть расширен.
+          [T]&7✖ Сменить владение: &e/lands edit &8<&eland&8> &8[CLICK][SC]lands edit[/SC][H]&7Кликните, чтобы скопировать эту команду.[/H][/T]
+      create:
+        auto: |
+          &7Автоматически создано новое владение&2 {land}&7, так как у вас не было владения для привата.
+            [T]&7✖ Переименовать: &e/lands rename &8<&ename&8> &8[CLICK][SC]lands rename[/SC][H]&7Кликните, чтобы скопировать эту команду.[/H][/T]
+        force_near: |
+          &7Автоматически создано новое владение&2 {land}&7, так как ваше предыдущее не соединялось бы с этим приватом.
+            [T]&7✖ Переименовать: &e/lands rename &8<&ename&8> &8[CLICK][SC]lands rename[/SC][H]&7Кликните, чтобы скопировать эту команду.[/H][/T]
+      region:
+        chunk: '&cВы не можете заприватить землю здесь. &7Этот чанк уже принадлежит другому
+          плагину управления регионами: {plugin}'
+        selection: '&cВы не можете заприватить это выделение. &7Оно содержит части региона
+          из другого плагина управления регионами: {plugin}'
+      war: '&cВы не можете приватить во время войны против {object}&c.'
+      already: '&cВы не можете заприватить этот чанк. &7Он уже принадлежит владению&2 {land}&7.'
+      initial:
+        world: "&cДля владения&4 {land} &cвы можете приватить только в том мире, в котором\
+          \ вы изначально создали его &8(&4{world}&8)&c. &7Вы можете создать другое\
+          \ владение для мира, в котором находитесь сейчас &8(&7{current}&8)&7. \n  [T]&7✖\
+          \ Создать: &e/lands create &8<&ename&8> &8[CLICK][SC]lands create[/SC][H]&7Кликните,\
+          \ чтобы скопировать эту команду.[/H][/T]\n"
+        server: "&cДля владения&4 {land} &cвы можете приватить только на том сервере, на котором\
+          \ вы изначально создали его &8(&4{server}&8)&c. &7Вы можете создать\
+          \ другое владение для сервера, на котором находитесь сейчас &8(&7{current}&8)&7. \n\
+          \  [T]&7✖ Создать: &e/lands create &8<&ename&8> &8[CLICK][SC]lands create[/SC][H]&7Кликните,\
+          \ чтобы скопировать эту команду.[/H][/T]\n"
+      chunk-distance:
+        land: '&cЭто слишком близко к владению&4 {land}&c. &7Минимальная дистанция вокруг
+          владений, не являющихся частью нации, составляет&3 {distance} чанк(ов)&7.'
+        nation: '&cЭто слишком близко к владению&4 {land}&c. &7Минимальная дистанция составляет&3
+          {distance} чанк(ов)&7, так как они часть нации.'
+      force-near:
+        far-land: '&cВы не можете заприватить этот чанк(и). &7Ваши приваты должны быть соединены
+          с вашим владением&2 {land}&7.'
+        parts: '&cВы не можете заприватить этот чанк(и). &7Ваши приваты должны быть соединены
+          с вашим владением&2 {land}&7, так как достигнут лимит в &c{max} &7разъединенных
+          частей.'
+      success: '&7Успешно запривачен этот чанк &8(&7Владение:&2 {land} &7X: {x} Z:
+        {z}&8) &7за&c {cost}&7. Следующий приват будет стоить&c {next}&7.'
+      already-claimed: '&cВ вашем выделении есть чанк, который уже запривачен и
+        не принадлежит вашему владению &8(&7X: {x} Z: {z}&8)&c. &7Он принадлежит владению&2
+        {land}&7.'
+      max-chunk: '&cВы не можете заприватить&4 {chunks} &cбольше чанков для этого владения. &7Максимум
+        для владения&2 {land} &7составляет&3 {max} &7чанков.[V] &8Право: lands.chunks.<number>[/V]'
+      selection:
+        success: '&7Вы успешно заприватили&3 {chunks} &7чанков для вашего владения&2 {land}&7.
+          Вы заплатили&c {cost}&7.'
+      radius:
+        success: '&7Вы успешно заприватили&3 {chunks} &7чанков в радиусе&7
+          {radius} &7чанков вокруг вас для вашего владения&2 {land}&7. Вы заплатили&c {cost}&7.'
+      fill:
+        none: '&cНе удалось найти форму. &7Пожалуйста, убедитесь, что вы стоите в незаприваченном
+          регионе, окруженном вашим приватом.'
+        success: '&7Вы успешно заприватили&3 {chunks} &7чанков для вашего владения&2 {land}
+          &7чтобы заполнить форму, в которой вы стояли. Вы заплатили&c {cost}&7.'
+    merge:
+      confirm: |
+        &7Пожалуйста, подтвердите объединение владения&2 {merge} &7в&2 {land}&7 за &c{cost}&7:
+          [T]&2✔ Подтвердить: &e/{fullcmd} &8[CLICK][H]&7Кликните, чтобы подтвердить действие.[/H][C]{fullcmd}[/C][/T]
+      same: '&cВы не можете объединить владение&4 {merge} &cс самим собой. &7Пожалуйста, укажите другое
+        владение.'
+      already: '&cВы уже запросили объединение владения&4 {merge}&c с вашим
+        владением&4 {land}&c.'
+      cost: '&cВладение&4 {land}&c в данный момент не может оплатить стоимость&4 {cost}&c для
+        объединения.'
+      max:
+        chunks: '&cВы не можете объединить владение&4 {merge} &cв&4 {land}&c. &7Их общее
+          количество&3 {chunks} &7чанков превышает лимит в&3 {max} &7чанков для
+          вашего владения&2 {land}&7.'
+      connection: '&cВы не можете объединить владение&4 {merge} &cв&4 {land}&c. &7Их приваты
+        не соединены в мире&3 {world}&7.'
+      nation: |
+        &cВы не можете объединить владение&4 {merge} &cв&4 {land}&c. &7Владение&2 {merge} &7является столицей нации&9 {nation}&7.
+          [T]&7✖ Сменить столицу: &e/nations setcapital &8<&eland&8>[H]&7Кликните, чтобы сменить столицу нации. Это позволит объединить {merge}. Кликните, чтобы скопировать.[/H][SC]nations setcapital[/SC][/T]
+      requested: '&7Вы успешно запросили у&3 {player}&7 объединить их владение&2
+        {merge} &7с вашим владением&2 {land}&7. Они могут ответить на ваш запрос.'
+      success: '&7Успешно объединено владение&2 {merge}&7 в&2 {land}&7 за&c {cost}&7.'
+    assign:
+      selection: '&cВам нужно сначала создать выделение. &7Используйте &e/lands selection
+        &7чтобы создать его. После этого попробуйте снова.'
+      default: '&cВы не можете назначить выделение области по умолчанию. &7Области могут быть
+        удалены в меню областей владения.'
+      confirm: |
+        &cВаше выделение имеет малую высоту. &7Подобласти, в отличие от приватов, имеют высоту и не расширяются от низа до верха по умолчанию.
+          [T] &7✖ Продолжить: &e/{cmd_confirm} &8[CLICK][H]&7Кликните, чтобы продолжить.[/H][C]{cmd_confirm}[/C][/T]
+          [T] &7✖ Расширить полностью: &e/{cmd_expand} &8[CLICK][H]&7Кликните, чтобы расширить выделение от низа до верха привата.[/H][C]{cmd_expand}[/C][/T]
+      size: '&cВаше выделение слишком маленькое. &7Минимальный размер&3 {min} &7блоков,
+        а ваш&3 {current}&7.'
+      success: '&7Вы успешно изменили размер области&6 {area} &7владения&2 {land}&7.
+        Изменения визуализированы.'
+      conflict:
+        land: '&cВаше выделение конфликтует с владением&4 {land}&c. &7Пожалуйста, скорректируйте ваше
+          выделение.'
+        area: '&cВаше выделение конфликтует с областью&4 {area}&c. &7Пожалуйста, скорректируйте ваше
+          выделение.'
+    leave:
+      owner: |
+        &cВы не можете покинуть это владение. &7Как владелец, вы можете удалить владение или передать владение.
+          [T]&c✘ Удалить &8[CLICK][C]lands delete[/C][H]&7Кликните, чтобы удалить владение&2 {land}&7.[/H][/T]
+          [T]&2✔ Передать владение &8[CLICK][SC]lands setowner [/SC][H]&7Кликните, чтобы скопировать команду.[/H][/T]
+      land:
+        untrusted: '&7Вы не доверены ни в одной области владения&2 {land}&7.'
+        success: '&7Успешно покинули всё владение&2 {land}&7.'
+      area:
+        untrusted: '&7Вы не доверены в области&6 {area} &7владения&2 {land}&7.'
+        success: '&7Успешно покинули область&6 {area} &7владения&2 {land}&7.'
+      confirm: |
+        &7Пожалуйста, подтвердите, что хотите покинуть всё владение&2 {land} &7кликом ниже:
+          [T]&2✔ Подтвердить: &e/{fullcmd} &8[CLICK][H]&7Кликните, чтобы подтвердить действие.[/H][C]{fullcmd}[/C][/T]
+    unclaim:
+      rental: '&cВы не можете расприватить этот чанк&7, так как он содержит арендованную или
+        проданную область&6 {area}&7. Удалите арендатора&3 {player}&7: &e/{cmd}'
+      split: '&cВы не можете расприватить этот чанк, так как это приведет к разделению
+        вашего владения на части. &7Части, которые разделятся, теперь визуализированы.'
+      success: '&7Успешно распривачен этот чанк &8(&7Владение:&2 {land} &7X: {x} Z:
+        {z}&8)&7. Вы получили&c {back} &7назад.'
+      all:
+        success: '&7Вы успешно расприватили все чанки владения&2 {land} &7и
+          получили&3 {back} &7назад.'
+        confirm: |
+          &7Пожалуйста, подтвердите, что хотите расприватить все чанки владения&2 {land}&7:
+            [T]&2✔ Подтвердить: &e/{fullcmd} &8[CLICK][H]&7Кликните, чтобы подтвердить действие.[/H][C]{fullcmd}[/C][/T]
+      selection:
+        empty: '&cВы не расприватили ни одного чанка, так как они не запривачены или
+          вам не разрешено распривачивать их.'
+        rental: '&cВы не можете расприватить это выделение&7, так как оно содержит арендованную
+          или проданную область&6 {area} &7владения&2 {land}&7. Удалите арендатора&3 {player}&7:
+          &e/{cmd}'
+        split: '&7Вы расприватили {success} / {size} чанков этого выделения, &cно
+          {failed} не удалось расприватить, так как это привело бы к разделению владения
+          на части &8(администратор может отключить это в конфиге)&7. Части, которые
+          разделятся, теперь визуализированы. Вы получили&c {back} &7назад.'
+        partly: '&7Вы успешно расприватили {success} / {size} чанков этого выделения.
+          Вы получили&c {back} &7назад.'
+        success: '&7Вы успешно расприватили все чанки этого выделения. Вы получили&c
+          {back} &7назад.'
+    delete:
+      area:
+        sub: |
+          &cВ вашей позиции не найдено подобласти. &7Если вы хотите удалить всё владение, выполните следующую команду.
+            [T]&7✖ Удалить владение: &e/{cmd} &8[CLICK][H]&7Удалить всё владение&2 {land}&7.[/H][C]{cmd}[/C][/T]
+        rented: "&cВы не можете удалить эту область, так как она арендована или куплена&4\
+          \ {player}&c. \n  [T]&7✖ Удалить арендатора: &e/{cmd} &8[CLICK][H]&7Кликните,\
+          \ чтобы удалить арендатора.[/H][C]{cmd}[/C][/T]'\n"
+        success: '&7Успешно удалена область&6 {area} &7владения&2 {land}&7.'
+      land:
+        confirm: |
+          &7Пожалуйста, подтвердите удаление владения&2 {land} &7кликом ниже:
+            [T]&2✔ Подтвердить: &e/{fullcmd} &8[CLICK][H]&7Кликните, чтобы подтвердить действие.[/H][C]{fullcmd}[/C][/T]
+        nation: '&cВы не можете удалить это владение, так как это столица нации&4
+          {nation}&c. &7Вам нужно удалить нацию сначала: &e/nations delete'
+        broadcast: '&7Владение&2 {land} &7было удалено игроком&3 {player}&7.'
+        rented: "&cВы не можете удалить это владение, так как его область&4 {area} &cарендована\
+          \ или куплена&4 {player}&c. \n  [T]&7✖ &7Чтобы удалить арендатора, выполните\
+          \ &e/{cmd} &8[CLICK] &7находясь в этой области.[H]&7Кликните, чтобы удалить\
+          \ арендатора.[/H][C]{cmd}[/C][/T]'\n"
+        success: '&7Успешно удалено ваше владение&2 {land}&7. Вы получили&e {back} &7назад
+          от стоимости приватов и баланса банка.'
+    trust:
+      own-land: '&cИгрока&4 {player} &cнельзя пригласить в другое владение. &7Им не разрешено
+        иметь своё владение и быть участником другого одновременно. Им нужно удалить своё владение&2 {land} &7сначала.'
+      max-lands: '&7Игрок&3 {player} &7уже достиг максимума владений.[V] &8Право: lands.lands.<number>[/V]'
+      max-members: '&cНе удалось доверить игрока&4 {player} &cво владении&4 {land}&c. &7Ваше
+        владение&2 {land} &7достигло максимума в&3 {members} &7участников.'
+      max: '&cИгрок&4 {player} &cне может вступить в большее число владений. &7Он достиг своего
+        максимума в&3 {max} &7владений.[V] &8Право: lands.lands.<number>[/V]'
+      flag: '&cИгрок&4 {player}&c не хочет получать приглашения от любых владений.
+        &7Он может изменить это в своём меню, выполнив &8/&3{cmd}&7.'
+      server-admin: '&7Доверие этому игроку напрямую, несмотря на то что приглашения включены,
+        так как у вас права администратора сервера. &8Право: {permission}'
+      area:
+        invited: '&cИгрок&4 {player} &cуже приглашен в подобласть&4 {area}
+          &cвладения&4 {land}&c. &7Приглашение было отправлено&5 {time} &7назад.'
+        trusted: |
+          &7Игрок&3 {player} &7уже доверен в подобласти&6 {area} &7владения&2 {land}&7.
+            [T]&7✖ Доверить всему владению: &3/{cmd_land} &8[CLICK][H]&7Кликните, чтобы доверить всему владению вместо только этой подобласти.[/H][C]{cmd_land}[/C][/T]
+        banned: |
+          &cВы не можете доверить игрока&4 {player}&c в области&4 {area}&c владения&4 {land}&c. &7Он забанен.
+            [T]&2✔ Разбанить: &e/{cmd} &8[CLICK][H]&7Кликните, чтобы разбанить игрока.[/H][C]{cmd}[/C][/T]
+        success: '&7Успешно приглашен игрок&3 {player} &7в область&6 {area}
+          &7владения&2 {land}&7. Он может принять ваше приглашение.'
+        target: |
+          [T]&7Игрок&3 {player} &7пригласил вас в область&6 {area} &7своего владения&2 {land}&7.[H]&7Кликните, чтобы открыть меню приглашений.[/H][C]lands invites[/C][/T] &7Налоги:&c {tax}
+            [T]&2✔ Принять: &e/{cmd_accept} &8[CLICK][H]&7Кликните, чтобы принять приглашение.[/H][C]{cmd_accept}[/C][/T]
+            [T]&c✘ Отклонить: &e/{cmd_deny} &8[CLICK][H]&7Кликните, чтобы отклонить приглашение.[/H][C]{cmd_deny}[/C][/T]
+        invited: '&cThe player&4 {player} &cis already invited to the whole land&4
+          {land}&c. &7The invite has been sent&5 {time} &7ago.'
+        trusted: '&7The player&3 {player} &7is already trusted in the whole land&2
+          {land}&7.'
+        banned: |
+          &cВы не можете доверить игрока&4 {player}&c во владении&4 {land}&c. &7Он забанен во всем владении.
+            [T]&2✔ Разбанить: &e/{cmd} &8[CLICK][H]&7Кликните, чтобы разбанить игрока во всем владении.[/H][C]{cmd}[/C][/T]
+        success: '&7Успешно приглашен игрок&3 {player} &7во всё владение&2
+          {land}&7. Он может принять ваше приглашение.'
+        target: |
+          [T]&7Игрок&3 {player} &7пригласил вас присоединиться к владению&2 {land}&7.[H]&7Кликните, чтобы открыть меню приглашений.[/H][C]{cmd_invites}[/C][/T] &7Налоги:&c {tax}
+            [T]&2✔ Принять: &e/{cmd_accept} &8[CLICK][H]&7Кликните, чтобы принять приглашение.[/H][C]{cmd_accept}[/C][/T]
+            [T]&c✘ Отклонить: &e/{cmd_deny} &8[CLICK][H]&7Кликните, чтобы отклонить приглашение.[/H][C]{cmd_deny}[/C][/T]
+    untrust:
+      owner: '&cВладельцев земли нельзя лишить доверия. [T]&7Новые владельцы могут быть назначены командой
+        &e/{cmd}&7. &8[CLICK][H]&7Кликните, чтобы скопировать команду.[/H][SC]{cmd}[/SC][/T]'
+      area:
+        already: |
+          &7Игрок&3 {player} &7не доверен в этой конкретной подобласти &8(&7Область:&6 {area} &7Владение:&2 {land}&8).
+            [T]&7✖ Лишить доверия во всем владении: &3/{cmd_land} &8[CLICK][H]&7Кликните, чтобы лишить доверия во всем владении вместо только этой подобласти.[/H][C]{cmd_land}[/C][/T]
+        revoke: '&7Успешно отозвано приглашение для игрока&3 {player} &7в этой
+          области &8(&7Область:&6 {area} &7Владение:&2 {land}&8)&7. Игрок не доверен.'
+        success: '&7Успешно лишен доверия игрок&3 {player} &7в этой области &8(&7Область:&6
+          {area} &7Владение:&2 {land}&8)&7.'
+        rental: '&cВы не можете лишить доверия арендатора&4 {player} &cобласти&4 {area}&c.
+          &7Чтобы снять область с аренды, используйте &e/lands rent remove &7находясь
+          в области.'
+      land:
+        already: '&7Игрок&3 {player} &7не доверен ни в одной области владения&2
+          {land} &7и не получал приглашений.'
+        revoke: '&7Успешно отозвано приглашение для игрока&3 {player} &7для всего
+          владения&2 {land}&7. Игрок не доверен ни в каких областях.'
+        success: '&7Успешно лишен доверия игрок&3 {player} &7во всем владении&2
+          {land}&7, кроме областей, которые он арендовал/купил.'
+    setrole:
+      cant-set:
+        owner: |
+          &cВы не можете установить роль&4 {role}&c. &7Если вы хотите сменить владельца всего владения&2 {land}&7, используйте следующую команду:
+            [T]&7✖ Сменить владельца: &e/{cmd} &8[CLICK][H]&7Кликните, чтобы назначить&3 {player} &7владельцем владения&2 {land}&7.[/H][C]{cmd}[/C][/T]
+        ally: '&cВы не можете установить роль&4 {role}&c. &7Эта роль автоматически назначается
+          игрокам, которые являются частью союзного владения или нации.'
+        nation: '&cВы не можете установить роль&4 {role}&c. &7Эта роль автоматически
+          назначается игрокам, которые являются частью той же нации, что и владение &2{land}&7.'
+        visitor: |
+          &cВы не можете установить роль&4 {role}&c. &7Если вы хотите лишить доверия этого игрока, используйте следующую команду:
+            [T]&7✖ Лишить доверия: &e/{cmd} &8[CLICK][H]&7Кликните, чтобы лишить доверия игрока&3 {player}&7.[/H][C]{cmd}[/C][/T]
+        tenant: '&cВы не можете установить роль&4 {role}&c. &7Она должна быть получена через
+          табличку аренды или продажи: {wiki}'
+      land:
+        untrusted: '&cИгрок&4 {player} &cне доверен во владении&4 {land}&c.
+          &7Пожалуйста, сначала доверьте ему.'
+        success: '&7Успешно установлена роль&3 {role} &7для игрока&3 {player} &7в областях
+          владения&2 {land}&7, в которых он доверен.'
+      area:
+        untrusted: '&cИгрок&4 {player} &cне доверен в области&4 {area}
+          &cвладения&4 {land}&c. &7Пожалуйста, сначала доверьте ему.'
+        success: '&7Успешно установлена роль&3 {role} &7для игрока&3 {player} &7в
+          области&6 {area} &7владения&2 {land}&7.'
+    accept:
+      max: '&cВы не можете быть участником большего количества владений. &7Вы достигли максимума в&3
+        {max} &7владений.[V] &8Право: lands.lands.<number>[/V]'
+      not-exist: '&cУ вас нет приглашения от владения&4 {land} &cили оно истекло.
+        &7Пожалуйста, проверьте ввод.'
+      own-land: '&cВы не можете присоединиться к другому владению. &7Вам не разрешено иметь своё
+        владение и быть участником другого одновременно. &7Вам нужно удалить
+        своё владение&2 {land} &7сначала.'
+      max-lands: '&cВы не можете вступить в большее число владений. &7Вы можете иметь только&3 {max} &7владений.[V]
+        &8Право: lands.lands.<number>[/V]'
+      banned: '&cВы не можете присоединиться к области&4 {area}&7 владения&4 {land}&c. &7Они забанили
+        вас в этой области.'
+      max-members: '&cВы не можете присоединиться к владению&4 {land}&c. &7Они достигли своего
+        максимума в&3 {members} &7участников.'
+      war: '&cВы не можете присоединиться к владению&4 {land}&c, так как оно участвует в
+        войне против {object}&c. &7Попробуйте снова, когда война закончится.'
+      notification: "&7У вас есть&3 {invites} &7приглашений от других владений. \n\n [T]&7Посмотреть\
+        \ полученные: &e/{cmd} &8[CLICK][H]&7Посмотреть все полученные приглашения от других владений.[/H][C]{cmd}[/C][/T]\n"
+      area:
+        success: '&7Успешно принято приглашение от владения&2 {land} &7в область&6
+          {area}&7.'
+        broadcast: '&2{land} &8| &7Игрок&3 {player} &7теперь участник области&6
+          {area} &7в нашем владении.'
+      land:
+        success: '&7Успешно принято приглашение от владения&2 {land} &7быть доверенным
+          во всем владении.'
+        broadcast: '&2{land} &8| &7Игрок&3 {player} &7теперь участник нашего владения.'
+        owner:
+          max: '&cВы не можете владеть большим количеством земель. &7Вы достигли максимума
+            в&3 {max}&7 владений.'
+          success: '&7Вы приняли приглашение от владения&2 {land}&7. Вы теперь
+            владелец&2 {land}&7.'
+    setowner:
+      confirm: |
+        &7Пожалуйста, подтвердите, что хотите назначить игрока {player} новым владельцем владения&2 {land}&7:
+          [T]&2✔ Подтвердить: &e/{fullcmd} &8[CLICK][H]&7Кликните, чтобы подтвердить это действие.[/H][C]{fullcmd}[/C][/T]
+      max:
+        ownlands: '&cИгрок&4 {player} &cне может владеть большим количеством земель.
+          &7Он уже достиг максимума в&3 {max} &7собственных владений.'
+        chunks: '&cИгрок&4 {player} &cне может владеть этой землей. &7В ней&3 {chunks}
+          &7чанков, что превышает его максимум в&4 {max} &7чанков для этого
+          владения.'
+      cooldown: '&cВладелец может меняться только каждые&4 {cooldown}&c. &7Вы должны
+        подождать еще&5 {time}&7.'
+      success:
+        invited: '&7Вы успешно пригласили игрока&3 {player} &7стать новым
+          владельцем владения&2 {land}&7.'
+        set: '&7Вы успешно назначили игрока&3 {player} &7новым владельцем владения&2
+          {land}&7.'
+        target: |
+          [T]&7Игрок&3 {player} &7пригласил вас стать новым владельцем владения&2 {land}&7.[H]&7Кликните, чтобы открыть меню приглашений.[/H][C]lands invites[/C][/T] &7Содержание:&c {upkeep}
+            [T]&2✔ Принять: &e/{cmd_accept} &8[CLICK][H]&7Кликните, чтобы принять приглашение.[/H][C]{cmd_accept}[/C][/T]
+            [T]&c✘ Отклонить: &e/{cmd_deny} &8[CLICK][H]&7Кликните, чтобы отклонить приглашение.[/H][C]{cmd_deny}[/C][/T]
+    deny:
+      not-exist: '&cУ вас нет приглашения от владения&4 {land} &cили оно истекло.
+        &7Опечатка?'
+      success: '&7Вы успешно отклонили приглашение от владения&2 {land}&7.'
+    teleport:
+      chunk-not-claimed: '&cЧанк назначения не запривачен &8(&7X: {x} &7Z:
+        {z}&8)&c.'
+      not-trusted: '&cВы не можете телепортироваться сюда. &7Вы не доверены
+        во владении&2 {land}&7.'
+      success: '&7Успешная телепортация на X:&3 {x} &7Z:&3 {z} &7Запривачено: {claimed}'
+    setspawn:
+      wilderness: '&cВы можете установить спавн владения только в своём владении. &7Вам нужно
+        подняться или спуститься в своё владение&2 {land}&7.'
+      success: '#t#&6Точка спавна установлена[newline]&7Стоимость:&c {cost}'
+    spawn:
+      not-exist: '&cСпавн не установлен для владения&4 {land}&c. &7Кто-то должен
+        сначала установить его командой &e/lands setspawn&7.'
+      not-allowed: '&cВам не разрешено телепортироваться на спавн владения&4 {land}&c.
+        &7Им нужно дать вам право в настройках роли.'
+      war: '&cВы не можете телепортироваться на спавн владения&4 {land}&c. &7Они
+        участвуют в войне, которая закончится через&5 {time}&7.'
+      chunk: '&7Владение&2 {land} &7еще не установило спавн &8(&e/lands setspawn&8).
+        &7Телепортация на начальный приват этого владения.'
+      success: '&7Успешная телепортация на спавн владения&2 {land} &7Стоимость:&c
+        {cost}'
+      area:
+        cooldown: '&cВы не можете телепортироваться на спавны областей сейчас. &7Вам нужно подождать
+          &5{time} &7прежде чем вы сможете телепортироваться снова.'
+        none: '&cОбласть&4 {area} &cвладения&4 {land} &cне имеет установленного спавна.'
+        teleport: '&cВам не разрешено телепортироваться в эту область. &7Владелец земли
+          может дать вам право на это.'
+        enter: '&cВам не разрешено входить в эту область. &7Владелец земли может дать
+          вам право на это.'
+        success: '&7Успешная телепортация на спавн области&6 {area} &7владения&2
+          {land}&7.'
+    wild:
+      perm: '&cВам не разрешено использовать случайную телепортацию в мире&4 {world}&c.
+        &8Вам не хватает права {perm} для этого мира.'
+      no-location: '&cНе удалось найти безопасное место, соответствующее фильтру
+        в конфиге. &8Пожалуйста, настройте дистанцию и установите
+        спавн мира (/setworldspawn).'
+      end: '&cСлучайная телепортация не может быть использована в Энде.'
+      searching: '#t#&6Поиск[newline]&7Места назначения...'
+      success: '&7Вы были случайно телепортированы &8(&7X: {x} Z: {z}&8)&7. Вы заплатили&c
+        {cost}&7.'
+    deposit:
+      number: '&7Вам нужно указать сумму. Используйте &e/lands deposit &8<&eсумма&8>
+        &7или &e/lands deposit &8<&eвладение&8> <&3сумма&8>&7.'
+      partly: '&cВнесено только&4 {cost} &cиз указанных&4 {input}&7, так как
+        банк владения&2 {land} &7достиг максимального баланса&3 {max}&7.'
+      success: '&7Вы успешно положили&3 {cost} &7в банк владения&2 {land}&7.
+        &7Новый баланс банка:&3 {bank}'
+    withdraw:
+      number: '&7Вам нужно указать сумму. Используйте &e/lands withdraw &8<&eсумма&8>
+        &7или &e/lands withdraw &8<&eвладение&8> <&3сумма&8>&7.'
+      balance: '&cВ банке владения&4 {land}&c недостаточно денег. &7Доступно
+        только&3 {bank}&7. Ожидается:&3 {take}'
+      failed: '&cСнятие не удалось. &7Сервер может ограничивать сумму, которую вы
+        можете снять.'
+      success: '&7Вы успешно сняли&3 {cost} &7из банка владения&2 {land}&7.
+        &7Новый баланс банка:&3 {bank}'
+    balance: '&7Баланс владения&2 {land} &7составляет&3 {balance}'
+    ban:
+      area:
+        already: |
+          &7Игрок&3 {player} &7уже забанен в конкретной подобласти&6 {area} &7владения&2 {land}&7.
+            [T]&7✖ Забанить во всем владении: &3/{cmd_land} &8[CLICK][H]&7Кликните, чтобы забанить его во всем владении вместо только этой подобласти.[/H][C]{cmd_land}[/C][/T]
+        success: '&7Успешно забанен игрок&3 {player} &7в области&6 {area} &7владения&2
+          {land}&7. Он не сможет войти в неё или телепортироваться на спавн,
+          если он находится в этой области.'
+        target: '&cВладение&4 {land} &cзабанило вас в своей области&4 {area}&c.
+          &7Вы не сможете войти в неё или телепортироваться на спавн, если он
+          находится в этой области.'
+      land:
+        already: '&7Игрок&3 {player} &7уже забанен во всем владении&2 {land}&7.'
+        success: '&7Успешно забанен игрок&3 {player} &7во всем владении&2
+          {land}&7. Он не сможет входить в любые области или телепортироваться на спавн.'
+        tenant: '&cВы не можете забанить игрока&4 {player}&c во всем владении&4 {land}&c,
+          потому что он арендатор области&4 {area}&c. &7Удалить арендатора: &e/{cmd}'
+        target: '&cВладение&4 {land} &cзабанило вас во всем владении&c. &7Вы не сможете
+          входить в любые его области или телепортироваться на спавн.'
+    unban:
+      area:
+        success: '&7Успешно разбанен игрок&3 {player} &7в этой области &8(&7Область:&6
+          {area} &7Владение:&2 {land}&8)&7.'
+      land:
+        success: '&7Успешно разбанен игрок&3 {player} &7во владении&2 {land}&7.'
+    chat:
+      activated: '&7Чат владения активирован. Отправьте сообщение в публичный чат, чтобы общаться с
+        вашим владением.'
+      deactivated: '&7Чат владения успешно деактивирован.'
+      none: "&cНе найдено владение для чата. \n  [T]&7✖ &7Отключить режим чата: &e/{cmd}\
+        \ &8[CLICK][H]&7Кликните, чтобы деактивировать режим чата.[/H][C]{cmd}[/C][/T]\n"
+      format:
+        minecraft: '[NoPrefix]&2{land} &8| {role} &7{player_display} &8»&f {message}'
+        discord: '[NoPrefix]&2{land} &8| &9Discord &7{player_display} &8»&f {message}'
+        spy: '[NoPrefix]&8[&cChatSpy&8] &2{land} &8| {role} &7{player_display} &8»&f
+          {message}'
+    view:
+      disabled: '&7Вы успешно отключили текущую визуализацию.'
+      wilderness: '&7Включена визуализация приватов. &7Ваша текущая позиция - дикая местность.'
+      tool: '&7Позиция, на которую вы смотрите - дикая местность. [T]&7Заприватить: &e/{cmd}
+        &8[CLICK][H]&7Кликните, чтобы заприватить чанк, на который смотрите.[/H][C]{fullcmd}[/C][/T]'
+      y-level: '&7Текущая позиция - дикая местность, но чанк уже запривачен
+        владением&2 {land} &7на другой высоте.'
+      y-lock:
+        enabled: '&cРежим y-lock переключен: &7Границы владения больше не будут следовать за
+          вашей позицией вверх и вниз.'
+        disabled: '&aРежим y-lock переключен: &7Границы владения будут следовать за вашей позицией
+          вверх и вниз.'
+      info: |
+        [NoPrefix]
+        &7&m━━━━━━━━━<━&r &5&lОбзор Владения &7&m━>━━━━━━━━━
+        [T]&8• &7Владение: &2{land} &8[CLICK][H]&7Кликните, чтобы получить больше информации об этом владении.[/H][C]{cmd}[/C][/T]
+        &8• &7Уровень: {level}
+        &8• &7Нация: {nation}
+        &8• &7Чанк &7X: {x}, Z: {z}, запривачен {date}
+        &7&lОбласть:&6 {area}
+         &8• &7Налог:&c {tax}
+         &8• &7Игроки:&7 {players}
+         &8• &7Описание:&r {description}
+        &7&m━━━━━━━━━<━&r &5&lОбзор Владения &7&m━>━━━━━━━━━
+      area: |
+        [NoPrefix]
+        &7&m━━━━━━━━━<━&r &5&lОбзор Области &7&m━>━━━━━━━━━
+        [T]&8• &7Владение: &2{land} &8[CLICK][H]&7Кликните, чтобы получить больше информации об этом владении.[/H][C]lands info {land}[/C][/T]
+        &8• &7Уровень: {level}
+        [T]&7&lОбласть:&6 {area} &8[CLICK][H]&7Кликните, чтобы получить больше информации об этой области.[/H][C]lands menu here[/C][/T]
+         &8• &7Налог:&c {tax}
+         &8• &7Игроки:&7 {players}
+         &8• &7Описание:&r {description}
+        &7&m━━━━━━━━━<━&r &5&lОбзор Области &7&m━>━━━━━━━━━
+    map:
+      header: '&7&m━━━━━━━━━━<━&r &2Карта Земель &7&m━>━━━━━━━━━━[newline]'
+      footer: '[newline]&7&m━━━━━━━━━━<━&r &2Карта Земель &7&m━>━━━━━━━━━━'
+      link: '[T]&7Ссылка на веб-карту: &8[CLICK][H]&7Кликните, чтобы открыть веб-карту.[/H][URL]{dynmap}[/URL][/T]'
+    unstuck:
+      success: '&7Успешная телепортация в ближайшее незаприваченное место.'
+    taxes:
+      none: '&7Нет предстоящих налоговых платежей.'
+      upcoming:
+        header: '[NoPrefix]&7&m━━━━━━━━━<━&r &cПредстоящие налоги &7&m━>━━━━━━━━━'
+        entry: '[NoPrefix]&8- &7{land}: &c{tax}'
+        footer: |
+          [NoPrefix]&7Вам нужно заплатить всего {total} через &5{next}&7.
+          &7Баланс: {balance}
+          &7&m━━━━━━━━━<━&r &cПредстоящие налоги &7&m━>━━━━━━━━━
+      changes:
+        header: |
+          [NoPrefix]
+          &7&m━━━━━━━━━<━&r &4Изменение налогов &7&m━>━━━━━━━━━
+          &cНалоги были изменены в некоторых владениях:
+        entry: '[NoPrefix]&8- &7{land}: {color}{tax} &8(ранее: {previous})'
+        footer: |
+          [NoPrefix]
+          &7Платеж через:&5 {next}
+          &7Баланс: {balance}
+          &8Подробнее: /lands taxes
+          &7&m━━━━━━━━━<━&r &4Изменение налогов &7&m━>━━━━━━━━━
+    upkeep:
+      broadcast:
+        reminder: '&cСодержание будет списано через&4 {time}&c. &7Убедитесь, что у вас
+          достаточно денег в банке вашего владения или столицы нации.'
+        collected: "[NoPrefix][I]&7&m━━━━━━━━━<━&r &cСодержание списано &7&m━>━━━━━━\
+          ━━━[/I]\n&8• &2Владения:&c {lands_upkeep} &7с&3 {lands} &7владений \n   &7Распривачено\
+          \ всего&3 {chunks} &7чанков. [I]&8[ИНФО&8][H]&7Чанки будут распривачены,\
+          \ если владение не может оплатить содержание за них.[/H][/I]\n&8• &9Нации:&c\
+          \ {nations_upkeep} &7с&3 {nations} &7наций\n   &7Удалено&3 {nations_deleted}\
+          \ &7наций. [I]&8[ИНФО&8][H]&7Нации будут удалены, если они не могут оплатить\
+          \ их содержание.[/H][/I]\n[I]&7&m━━━━━━━━━<━&r &cСодержание списано\
+          \ &7&m━>━━━━━━━━━[/I]\n"
+      none: '&7В данный момент вам не нужно платить содержание ни за одно владение.'
+      header: '[NoPrefix]&7&m━━━━━━━━━<━&r &cПредстоящее содержание &7&m━>━━━━━━━━━'
+      entry: '[NoPrefix][T]{covered} {land}: {upkeep_form} &8[CLICK][C]{cmd}[/C][H]&7Кликните
+        сюда, чтобы внести необходимые средства.[/H][/T]'
+      footer: |
+        [NoPrefix]&7Ваши владения должны заплатить всего {total} через &5{next} &7чтобы сохранить все приваты или членство в нации. &7Кликните выше, чтобы внести деньги в банки ваших владений.
+        &7&m━━━━━━━━━<━&r &cПредстоящее содержание &7&m━>━━━━━━━━━
+    relations:
+      self: '&cВы не можете добавить&4 {object} &cкак союзника или врага самому себе.'
+      nation: '&cВсе отношения управляются нацией&4 {nation}&c, частью которой является ваше
+        владение.'
+      allies:
+        add:
+          max: '&4{object} &cне может иметь больше союзников. &7Оно достигло своего максимума
+             в&3 {max} &7союзников.'
+          already: '&7{target} &7уже является союзником {object}&7.'
+          sent: '&7Вы уже отправили предложение о союзе {target}&5 {time}&7 назад.'
+          nation: |
+            &cВы не можете вступить в союз с владением&4 {land}&c. &7Владение управляется нацией&9 {nation}&7.
+              [T]&7✖ Отправить запрос на союз нации&9 {nation} &7вместо этого: &e/{cmd} &8[CLICK][H]&7Кликните, чтобы отправить запрос на союз нации&9 {nation} &7.[/H][C]{cmd}[/C][/T]
+          broadcast: '&7{object} &7и {target} &7теперь союзники.'
+          success: '&7Успешно отправлено предложение о союзе {target}&7. Если они примут
+            его, вы &8(&7{object}&8) &7будете в союзе с ними.'
+        remove:
+          already: '&7{target} &7не является союзником {object}&7.'
+          revoked: '&7Вы &8(&7{object}&8) отозвали предложение о союзе для {target}&7.'
+          broadcast: '&7{object} &7и {target} &7больше не союзники.'
+          success: '&7Успешно удален {target}&7 из ваших союзников. Вы &8(&7{object}&8)
+            &7больше не в союзе с ними.'
+      enemies:
+        add:
+          max: '&4{object} &cне может иметь больше врагов. &7Оно достигло своего максимума
+             в&3 {max} &7врагов.'
+          already: '&7{target} &7уже враг {object}&7.'
+          revoked: '&7Вы &8(&7{object}&8) отозвали предложение о нейтрализации для {target}&7.'
+          nation: |
+            &cВы не можете объявить владение&4 {land} &cврагом. &7Владение управляется нацией&9 {nation}&7.
+              [T]&7✖ Объявить нацию&9 {nation} &7врагом вместо этого: &e/{cmd} &8[CLICK][H]&7Кликните, чтобы объявить нацию&9 {nation} &7врагом.[/H][C]{cmd}[/C][/T]
+          success: '&7Вы &8(&7{object}&8) &7и {target} &7теперь враги.'
+          broadcast: '&7{object} &7и {target} &7теперь враги.'
+        remove:
+          already: '&7{target} &7не враг&7 {object}&7.'
+          sent: '&7Вы уже отправили предложение о нейтрализации {target}&5 {time}&7
+            назад.'
+          broadcast: '&7{object} &7и {target} &7больше не враги.'
+          success: '&7Успешно отправлено предложение о нейтрализации {target}&7. Если
+            они примут его, вы &8(&7{object}&8) &7больше не будете врагами.'
+    confirmtp:
+      none: '&cУ вас нет активной телепортации.'
+    admin:
+      listperms:
+        header: '[NoPrefix][T]&7----------&e&l<<<<&7-[H]&7Кликните, чтобы перейти
+          на предыдущую страницу.[/H][C]{cmd} {player} {previous}[/C][/T] &2Список Прав &7Стр.&3
+          {page} &8/&3 {pages} [T]&7-&e&l>>>>&7----------[H]&7Кликните, чтобы перейти
+          на следующую страницу.[/H][C]{cmd} {player} {next}[/C][/T]'
+        footer: |
+          [NoPrefix]
+          &cИгрок &4{player} &cимеет эти права, потому что они или их wildcard (perm.*) права установлены в вашем плагине прав. &7Кликните на стрелки ниже для навигации.
+
+           &cКрасный = wildcard права
+           &eЖелтый = числовые права
+          [T]&7----------&e&l<<<<&7-[H]&7Кликните, чтобы перейти на предыдущую страницу.[/H][C]{cmd} {player} {previous}[/C][/T] &2Список Прав &7Стр.&3 {page} &8/&3 {pages} [T]&7-&e&l>>>>&7----------[H]&7Кликните, чтобы перейти на следующую страницу.[/H][C]{cmd} {player} {next}[/C][/T]
+      land:
+        addrole:
+          confirm: |
+            &cВыполнение этой команды может привести к тому, что владения будут иметь одну и ту же роль несколько раз. &7Например, вновь созданные владения, которые уже наследуют эту роль из roles.yml. Также выполнение этой команды для одной и той же роли несколько раз приведет к дублированию ролей в затронутых владениях. &7Пожалуйста, подтвердите это действие:
+              [T]&2✔ Подтвердить: &e/{fullcmd} &8[CLICK][H]&7Кликните, чтобы подтвердить действие.[/H][C]{fullcmd}[/C][/T]
+wars:
+  message:
+    noaccess:
+      wilderness: '&cВам не разрешено делать это в дикой местности, пока вы
+        участвуете в войне. &8Флаг: {flag}'
+      general: '&cВам не разрешено делать это в вашей текущей войне против владения&4
+        {land}&c. &8Флаг: {flag}'
+      pillage: '&cВы не можете грабить владение&4 {land} &cпока недостаточно защитников
+        онлайн. &7Пожалуйста, подождите, пока минимум&3 {defenders} &7защитник(ов)
+        владения&2 {land} &7будут онлайн.'
+      allies: '&cВы можете вторгаться только к атакующему&4 {attacker}&c и защитнику&4 {defender}&c
+        в этой войне. &7К союзникам любой из команд вторгаться нельзя.'
+    start:
+      broadcast: '&7Война между {attacker} &7и {defender} &7началась. Она
+        закончится через&5 {time}&7.'
+    end:
+      broadcast:
+        won: '&7{winner}&7 выиграл войну против {loser}&7 со счетом&3 {winner_points}&7
+          против&3 {loser_points}&7 очков. Это заняло&5 {time}&7.'
+        surrendered:
+          war: '{loser} &7сдался с&3 {loser_points}&7 очков. Война закончилась
+            и они заплатили&c {tribute} &7своему врагу {winner} &8(&3{winner_points}&7
+            очков&8)&7. Война длилась&5 {time}&7.'
+          preparation: '{loser} &7сдался во время периода подготовки к войне и
+            заплатил&c {tribute} &7своему врагу {winner}&7.'
+        draw: '&7Война между {attacker} &7и {defender} &7закончилась вничью с&3
+          {points}&7 очков. Это заняло&5 {time}&7.'
+    kill:
+      target:
+        attackers: '&7Наш товарищ по команде&a {attacker} &7был убит защитником&c {defender}&7.'
+        defenders: '&7Наш товарищ по команде&a {defender} &7был убит атакующим&c {attacker}&7.'
+      killer:
+        attackers: '&7Наш товарищ по команде&a {attacker} &7убил защитника&c {defender}&7:
+          &a+ {points} очков'
+        defenders: '&7Наш товарищ по команде&a {defender} &7убил атакующего&c {attacker}&7:
+          &a+ {points} очков'
+    capture:
+      place:
+        wilderness: '&cВы не можете разместить флаг захвата в дикой местности. &7Вам нужно
+          разместить его внутри вражеского владения.'
+        overlap: '&cБлоки захвата должны быть размещены так, чтобы маяк не
+          перекрывался с дикой местностью.'
+        region: '&cНельзя разместить флаг захвата здесь. &7Он перекрывается с регионом захвата
+          другого флага захвата.'
+        outskirts: '&cНельзя разместить флаг захвата здесь. &7Вы должны разместить его на окраине
+          владения.'
+        state: '&cВы сейчас не находитесь в войне против владения&4 {land} &cили война
+          еще не началась.'
+        y: '&cНельзя разместить флаг захвата здесь. &7Он должен быть размещен между&3 {min}
+          &7и&3 {max} &7блоков высоты.'
+        already: '&cНельзя разместить флаг захвата здесь. &7В этом чанке уже размещен
+          флаг захвата.'
+        space: '&cНельзя разместить флаг захвата здесь. &7На этой позиции недостаточно места.'
+        cooldown: '&cВам нужно подождать&4 {time} &cпрежде чем ваша команда сможет разместить
+          флаг захвата снова.'
+        max: '&cВаша команда уже разместила максимальное количество&4 {max} &cодновременных
+          флагов захвата.'
+        invader: '#t#&aТочка захвата[newline]&aразмещена во вражеском владении: {land}, {x},
+          {y}, {z}[newline]&aПрисоединяйтесь к ним для захвата области.'
+        defender: '#t#&cТочка захвата[newline]&cразмещена в нашем владении: {land}, {x}, {y},
+          {z}[newline]&cИдите туда, чтобы присоединиться к защитникам.'
+      destroy:
+        presense: '&cВы не можете сломать этот флаг захвата сейчас. &7В этой области все еще&3
+          {players} &7вражеских игроков.'
+        invader: '#t#&cТочка захвата[newline]&cво вражеском владении {land} была уничтожена'
+        defender: '#t#&aТочка захвата[newline]&aудалена из нашего владения {land}[newline]&2&l+
+          {points} очков'
+        invaders-break: '&cЗахватчикам не разрешено ломать свои собственные флаги захвата.'
+      progress:
+        none:
+          area: '#b#[config]style:solid,color:white[/config]&7Захват приостановлен - {progress}%
+            - ни у одной команды нет большинства'
+          broadcast: '#b#[config]style:solid,color:white[/config]&7Захват приостановлен
+            - {progress}%, x: {x}, y: {y}, z: {z}'
+        invaders:
+          broadcast: '#b#[config]style:solid,color:red[/config]&cВраг захватывает
+            - {progress}%, {invaders} захватчик(ов), x: {x}, y: {y}, z: {z}'
+          invaders: '#b#[config]style:solid,color:red[/config]&cМы захватываем -
+            {progress}%, {defenders} защитник(ов)'
+          defenders: '#b#[config]style:solid,color:red[/config]&cВраг захватывает
+            - {progress}%, {invaders} захватчик(ов)'
+        defenders:
+          broadcast: '#b#[config]style:solid,color:green[/config]&aМы отбиваем
+            - {progress}%, {invaders} захватчик(ов), x: {x}, y: {y}, z: {z}'
+          invaders: '#b#[config]style:solid,color:red[/config]&cЗащитники отбивают
+            - {progress}%, {defenders} защитник(ов)'
+          defenders: '#b#[config]style:solid,color:green[/config]&aМы отбиваем
+            - {progress}%, {invaders} захватчик(ов)'
+      online: '#a#&cНельзя захватить: Минимум {min} игрок(ов) владения {land} должны
+        быть онлайн.'
+      success:
+        invader: '#t#&aТочка захвата[newline]&aмы захватили {chunks} чанк(ов) у
+          {land}[newline]&2&l+ {points} очков'
+        defender: '#t#&cТочка захвата[newline]&cвраг захватил {chunks} чанк(ов) у
+          {land}'
+  command:
+    general:
+      no-war: '&cНет предстоящих или активных войн для {object}&c. &7Всё
+        мирно.'
+    declare:
+      confirm: |
+        &7Пожалуйста, подтвердите (вы &8(&7{attacker}&8)), &7что хотите объявить войну {defender}&7:
+          [T]&2✔ Подтвердить: &e/{fullcmd} &8[CLICK][H]&7Кликните, чтобы подтвердить действие.[/H][C]{fullcmd}[/C][/T]
+      not-allowed: '&cВам не разрешено начинать войну за {object}&c. &7Лидер
+        {object} &7должен сделать это.'
+      member: '&cВы не можете объявить войну {object}&c. &7Вы или вражеский лидер
+        доверены в общих владениях и / или нации.'
+      hours: '&cВы можете объявлять войну только в следующие часы: {hours} &8(&7текущее
+        время:&5 {current}&7, часовой пояс: {timezone}&8)'
+      days: '&cВы можете объявлять войну только в следующие дни:&5 {days} &8(&7текущий
+        день:&5 {current}&7, часовой пояс: {timezone}&8)'
+      enemies: |
+        &cВам нужно сначала добавить&4 {object} &cкак врага.
+          [T]&7✖ Добавить врага: &e/{cmd} &8[CLICK][H]&7Кликните, чтобы добавить {object} &7как врага, чтобы объявить ему войну.[/H][C]{cmd}[/C][/T]
+      ally: |
+        &cВы не можете объявить войну вашему союзнику {object}&c.
+          [T]&7✖ Управление отношениями: &e/{cmd} &8[CLICK][H]&7Кликните, чтобы управлять вашими отношениями.[/H][C]{cmd}[/C][/T]
+      war-shield: '&cВы сейчас не можете объявить войну {object}&c. &7У них есть
+        военный щит на следующие&5 {time}&7.'
+      no-nation: '&cВы не можете атаковать владение&4 {land}&c. &7Они должны быть частью нации,
+        чтобы участвовать в войне.'
+      admin: '&cВы не можете объявить войну админским владениям.'
+      peaceful: '&cЭто владение было отмечено как мирное администратором сервера. &7Оно
+        не может участвовать ни в каких войнах.'
+      nation: '&cВы не можете объявить войну {object}&c. &7Они часть
+        той же нации&9 {nation}&7.'
+      min-balance:
+        attacker: '&cНельзя отправить это объявление. &7Атакующим {object} &7нужен
+          минимальный баланс в&c {min} &7чтобы начать войну. Внесите деньги в
+          банк вашего владения: [T]&e/{cmd} &8[CLICK][H]&7Кликните, чтобы внести {min} в
+          банк вашего владения.[/H][C]{cmd}[/C][/T]'
+        defender: '&cБаланс защитников {object} &cслишком низкий. &7Вы можете
+          атаковать только тех, у кого минимальный баланс&c {min}&7.'
+      min-chunks:
+        attacker: '&cНельзя отправить это объявление. &7Атакующим {object} &7нужно
+          минимальное количество&c {min} &7чанков, чтобы начать войну. Заприватить: [T]{cmd}
+          &8[CLICK][H]&7Кликните, чтобы заприватить.[/H][C]{cmd}[/C][/T]'
+        defender: '&cКоличество приватов защитников {object} &cслишком низкое. &7Вы
+          можете атаковать только тех, у кого минимальное количество&c {min} &7чанков.'
+      min-age:
+        attacker: '&cНельзя отправить это объявление. &7Атакующие {object} &7должны
+          существовать как минимум&5 {min} &7чтобы начать войну.'
+        defender: '&cВозраст защитников {object} &cслишком мал. &7Вы можете
+          атаковать только тех, кто существует как минимум&5 {min}&7.'
+      online: '&cНельзя отправить это объявление. &7Как минимум один игрок {object} &7должен
+        быть онлайн.'
+      broadcast: '&7{attacker} &7объявил войну {defender}&7. Их война
+        начнется через&5 {time}&7.'
+      success:
+        normal: '&7Вы &8({object}&8) &7успешно объявили войну {enemy}&7.
+          Война начнется через&5 {time}&7.'
+        mutual:
+          accepted: '&7Вы &8({object}&8) &7приняли войну против {enemy}&7.
+            Война начнется через&5 {time}&7.'
+          sent: '&7Вы &8({object}&8) &7отправили запрос на войну {enemy}&7. Они должны
+            принять его, прежде чем война сможет начаться.'
+      target: '&7Враг {attacker} &7объявил войну {defender} &8(&7ВАМ&8)&7.
+        Война начнется через&5 {time}&7.'
+      mutual:
+        success: '&7Вы &8({attacker}&8) &7успешно отправили объявление войны
+          {defender}&7. &7Они теперь должны принять или отклонить его, прежде чем война сможет начаться.
+          &7Если защитники сдадутся во время войны, они должны будут заплатить&c {tribute}
+          &7атакующим.'
+        target: |
+          &7Враг {attacker} &7отправил объявление войны против {defender} &8(&7ВАС&8)&7. &7Если защитники сдадутся во время войны, они должны будут заплатить&c {tribute} &7атакующим.
+           [T]&2✔ Принять &8[CLICK][H]&7Кликните, чтобы принять объявление войны.[/H][C]wars declare {input}[/C][/T]
+           [T]&c✘ Отклонить &8[CLICK][H]&7Кликните, чтобы отклонить объявление войны.[/H][C]wars deny[/C][/T]
+      already:
+        attacker: '&cНельзя вступить в другую войну. &7Текущая война {object} &7должна
+          сначала закончиться.'
+        defender: '&cВы сейчас не можете объявить им войну. &7Цель {object}
+          &7уже участвует в войне.'
+      min-players:
+        attacker: '&cВы не можете участвовать в войне, потому что {object} &cнужно больше доверенных
+          игроков. &7Требуемый минимум для объявления войны атакующими составляет&3 {min}
+          &7игроков.'
+        defender: '&cВы не можете объявить войну {object}&c, потому что им нужно
+          больше доверенных игроков. &7Требуемый минимум для получения защитниками
+          объявления войны составляет&3 {min} &7игроков.'
+    deny:
+      attacker: '&cАтакующие не могут отклонить свое собственное объявление войны. &7Только защитник
+        может сделать это.'
+      ongoing: '&cВы не можете отклонить текущую войну против {enemy}&c. &7Вы можете только
+        отклонять объявления войны для {object}&7.'
+      success: '&7Вы успешно отклонили объявление войны для {object} &7против
+        врага {enemy}&7.'
+    menu:
+      mutual: '&cВы не можете открыть меню войны сейчас. &7Объявление войны
+        {object} &7еще не было принято.'
+    spawn:
+      none: '&cВраг {enemy} &cне имеет приватов, чтобы телепортироваться.'
+      success: '&7Вы были телепортированы рядом с границей врага {enemy}&7.'
+    info:
+      war: |
+        &4Текущая война:
+        &8- &7Атакующий {attacker}&7:
+             &8• &7Захваты: {att_cap}
+             &8• &7Убийства: {att_kills}
+               &3= {att_points} / {towin} &7очков для победы
+               {att_bar}
+        &8- &7Защитник {defender}&7:
+             &8• &7Захваты: {def_cap}
+             &8• &7Убийства: {def_kills}
+               &3= {def_points} / {towin} &7очков для победы
+               {def_bar}
+
+        &7Тайм-аут:&5 ~{time}
+        [T]&7Подробнее: &e/{cmd} &8[CLICK][H]&7Кликните, чтобы открыть меню войны.[/H][C]{cmd}[/C][/T]
+      declaration:
+        normal: |
+          &4Объявление войны:
+            &8• &7Атакующий: {attacker}
+            &8• &7Защитник: {defender}
+            &8• &7Начнется через:
+              &5~{time}
+
+          [T]&7Подробнее: &e/{cmd} &8[CLICK][H]&7Кликните, чтобы открыть меню войны.[/H][C]{cmd}[/C][/T]
+        mutual:
+          defender: |
+            &4Объявление войны:
+              &8• &7Атакующий: {attacker}
+              &8• &7Защитник: {defender}
+              &8• &7Если вы сдадитесь во время войны:
+                &7Дань:&c {tribute}
+
+            [T]&2✔ Принять: &e/{cmd_accept} &8[CLICK][H]&7Кликните, чтобы принять объявление войны.[/H][C]{cmd_accept}[/C][/T]
+            [T]&c✘ Отклонить: &e/{cmd_deny} &8[CLICK][H]&7Кликните, чтобы отклонить объявление войны.[/H][C]{cmd_deny}[/C][/T]
+          attacker: |
+            &4Объявление войны:
+              &8• &7Атакующий: {attacker}
+              &8• &7Защитник: {defender}
+              &8• &7Если защитники сдадутся:
+                &7Дань:&c {tribute}
+
+            &cЗащитник еще не принял
+            &cобъявление.
+nations:
+  message:
+    current-war: '&cВы не можете сделать это сейчас. &7Ваша нация&9 {nation} &7в настоящее время
+      участвует в войне. &7Пожалуйста, попробуйте снова после окончания войны.'
+    untrusted: '&cВы не являетесь членом нации&4 {nation}&c.'
+  command:
+    chat:
+      activated: '&7Чат нации активирован. Отправьте сообщение в общий чат, чтобы общаться с
+        вашей нацией.'
+      deactivated: '&7Чат нации успешно деактивирован.'
+      none: "&cНе найдена нация для чата нации. \n  [T]&7✖ &7Отключить режим чата: &e/{cmd}\
+        \ &8[CLICK][H]&7Кликните, чтобы деактивировать режим чата.[/H][C]{cmd}[/C][/T]\n"
+      format:
+        minecraft: '[NoPrefix]&9Нация {nation} &8| &7{player} &8»&f {message}'
+        discord: '[NoPrefix]&9Нация {nation} &8| &9Discord &7{player} &8»&f {message}'
+        spy: '[NoPrefix]&8[&cChatSpy&8] &9Нация {nation} &8| &7{player} &8»&f {message}'
+    general:
+      not-exist: '&cНация&9 {nation} &cне существует. &7Нет нации с
+        таким именем.'
+      no-member: '&cВы не являетесь членом этой нации&c. &7Ни одно из ваших владений не является
+        частью нации&9 {nation}&7.'
+      none: |
+        &cВаше владение&4 {land} &cне является частью какой-либо нации.
+
+          &7Любая нация может пригласить ваше владение: &e/nations trust
+          [T]&7Создайте свою собственную нацию: &e/{cmd} &8[CLICK][H]&7Кликните, чтобы скопировать.[/H][SC]{cmd}[/SC][/T]
+      noaccess: '&cВам не разрешено делать это для нации&4 {nation}&c. &8Флаг:
+        {flag}'
+      not-trusted: '&cВладение&4 {land} &cне является членом вашей нации&4 {nation}&c.'
+    create:
+      camp: |
+        &cВы не можете создать нацию с лагерем &8(&4{land}&8) &cв качестве столицы.
+          [T]&7✖ Создать владение: &e/{cmd_create} &8[CLICK][SC]{cmd_create}[/SC][H]&7Создать владение. Кликните, чтобы скопировать.[/H][/T]
+          [T]&7✖ Изменить редактируемое владение: &e/{cmd_edit} &8[CLICK][SC]{cmd_edit}[/SC][H]&7Используйте эту команду, чтобы изменить редактируемое владение, которое вы хотите сделать столицей вашей нации. Кликните, чтобы скопировать.[/H][/T]
+      already: '&cВаше владение&4 {land} &cуже является частью нации&4 {nation}&c.
+        &7Ваше владение должно сначала покинуть её, выполнив &e/nations leave&7.'
+      war: '&cВы не можете создать нацию с владением&4 {land} &cв качестве столицы, пока
+        оно участвует в войне против&4 {object}&c. &7Пожалуйста, попробуйте снова после
+        окончания войны.'
+      level: '&cВы сейчас не можете создать нацию. &7Ваше владение&2 {land} &7должно
+        быть как минимум уровня&3 {level} &8(&7текущий: {current}&8)&7.'
+      success: '&7Вы успешно создали нацию&9 {nation} &7с владением&2
+        {land} &7в качестве столицы. [T]&7Кликните сюда, чтобы открыть меню.[H]&7Открыть меню.[/H][C]nations
+        menu[/C][/T]'
+    trust:
+      camp: '&cCamps не могут быть частью наций. &7Владение&2 {land} &7является лагерем.'
+      max-distance: '&cВладение&4 {land} &cслишком далеко от столицы нации&4
+        {nation}&c. &7Макс:&3 {max} блок(ов)&7, фактическая дистанция:&3 {distance} блок(ов)&7'
+      already: '&cВладение&4 {land} &cуже является частью нации&4 {nation}&c.
+        &7Они должны сначала покинуть её, используя &e/nations leave&7.'
+      added: '&7Вы успешно добавили ваше владение&2 {land} &7как члена вашей нации&9
+        {nation}&7.'
+      success: '&7Вы успешно пригласили владение&2 {land} &7присоединиться к вашей нации&9 {nation}&7.'
+      target: |
+        &7Нация&9 {nation} &7пригласила ваше владение&2 {land} &7присоединиться к ним.
+          [T]&2✔ Принять: &e/{cmd_accept} &8[CLICK][H]&7Кликните, чтобы принять это приглашение.[/H][C]{cmd_accept}[/C][/T]
+          [T]&c✘ Отклонить: &e/{cmd_deny} &8[CLICK][H]&7Кликните, чтобы отклонить это приглашение.[/H][C]{cmd_deny}[/C][/T]
+    accept:
+      war: '&cВы не можете присоединиться к этой нации сейчас. &7Нация&9 {nation} &7в настоящее время
+        участвует в войне против {object}&7. Пожалуйста, попробуйте снова, когда их война закончится.'
+      none: '&cВаше владение&4 {land} &cне получало никаких приглашений от нации&9 {nation}&c.
+        &7Они могут пригласить ваше владение, выполнив &e/nations trust&7.'
+      already: '&cВаше владение&4 {land} &cуже является частью нации&4 {nation}&c. &7Вы
+        должны сначала покинуть её, выполнив &e/nations leave&7.'
+      success: '&7Ваше владение&2 {land} &7теперь часть нации&9 {nation}&7.'
+    deny:
+      success: '&7Вы успешно отклонили приглашение от нации&9 {nation}&7.'
+    untrust:
+      capital: '&cВы не можете удалить это владение. &7Владение&2 {land} &7является столицей
+        нации&9 {nation}&7.'
+      already: '&cВладение&4 {land} &cне доверено в нации&4 {nation}&c.'
+      success: '&7Вы успешно удалили владение&2 {land} &7из нации&9 {nation}&7.'
+    delete:
+      confirm: |
+        &7Пожалуйста, подтвердите удаление нации&9 {nation} &7кликнув ниже:
+          [T]&2✔ Подтвердить: &e/{fullcmd} &8[CLICK][H]&7Кликните, чтобы подтвердить действие.[/H][C]{fullcmd}[/C][/T]
+      war: '&cВы сейчас не можете удалить вашу нацию. &7Нация&9 {nation} &7в настоящее время
+        участвует в войне против {object}&7. Пожалуйста, попробуйте снова, когда война закончится.'
+      success: '&7Успешно удалена эта нация &8(&7Нация:&2 {nation}&8)&7.'
+    leave:
+      confirm: |
+        &7Пожалуйста, подтвердите, что вы хотите удалить владение&2 {land} &7из нации&9 {nation}&7:
+          [T]&2✔ Подтвердить: &e/{fullcmd} &8[CLICK][H]&7Кликните, чтобы подтвердить действие.[/H][C]{fullcmd}[/C][/T]
+      capital: '&cВаше владение&4 {land} &cне может покинуть нацию&4 {nation}&c, потому что
+        владение является столицей этой нации. &7Чтобы удалить вашу нацию, выполните &e/nations
+        delete&7.'
+      war: '&cВы не можете покинуть эту нацию сейчас. &7Нация&9 {nation} &7в настоящее время
+        участвует в войне против {object}&7. Ваша война закончится через&5 {time}&7.'
+      success: '&7Вы успешно покинули нацию&9 {nation} &7с владением&2 {land}&7.'
+    rename:
+      success: '&7Успешно установлено новое имя&3 {name} &7для этой нации &8(&7Нация:&9
+        {nation}&8)&7. Вы заплатили&c {cost}&7.'
+    setcapital:
+      confirm: |
+        &7Пожалуйста, подтвердите, что вы хотите установить владение&2 {land} &7как новую столицу нации&9 {nation}&7:
+          [T]&2✔ Подтвердить: &e/{fullcmd} &8[CLICK][H]&7Кликните, чтобы подтвердить действие.[/H][C]{fullcmd}[/C][/T]
+      level: '&cВы не можете установить владение&4 {land} &cкак новую столицу нации&4
+        {nation}&c. &7Оно должно быть как минимум уровня&3 {level} &8(&7текущий: {current}&8)&7.'
+      success: '&7Успешно установлено владение&2 {land} &7как новая столица нации&9
+        {nation}&7.'
+list:
+  swear-words: []
+  hologram:
+    landblock:
+      main:
+      - '&7Владение&2 {land}'
+      - '&7Входящие:&r {inbox}'
+      - '&7Чанки: {chunks} / {chunks_max}'
+      - '&7Участники: {members} / {members_max}'
+      - '&7Баланс: {balance}'
+      - '&7Содержание и налоги через: {upkeep_next}'
+      main_camp:
+      - '&7Владение&2 {land}'
+      - '&7Входящие:&r {inbox}'
+      - '&7Участники: {members} / {members_max}'
+      - '&7Истекает через:&5 {expiration}'
+    rent:
+    - '&6Аренда {area}'
+    - '&c{cost} &7каждые &5{time}'
+    - '&7Макс длительность: {max}'
+    - '&8Кликните для аренды.'
+    sell:
+      area:
+      - '&aКупить'
+      - '&7Область: &6{area}'
+      - '&c{cost} &7всего'
+      - '&8Кликните для покупки.'
+      land:
+      - '&aКупить'
+      - '&7Владение: &2{land}'
+      - '&c{cost} &7всего'
+      - '&8Кликните для покупки.'
+    rented:
+    - '&7Область&6 {area}'
+    - '&7Арендатор: {player}'
+    - '&5{time} &7осталось'
+    - '&c{cost} &7каждые &5{time}'
+    - '&8Shift + click: Отмена'
+    - '&8Click: Добавить время'
+    sold:
+      area:
+      - '&aПродано'
+      - '&7Область: &6{area}'
+      - '&7Игроку: {player}'
+      - '&8Shift + click: Отмена'
+      land:
+      - '&aПродано'
+      - '&7Владение: &2{land}'
+      - '&7Игроку: {player}'
+  sign:
+    top:
+      entry:
+      - '&6&l#{pos} {object}'
+      - '&7владелец {owner}'
+      - '&7{sorting}:'
+      - '&3{value}'
+      none:
+      - ''
+      - '&cНет'
+      - ''
+      - ''
+    rent:
+    - '&6&lАренда {area}'
+    - '&c{cost} &7/'
+    - '&5{time}'
+    - '&8Макс: {max}'
+    sell:
+      area:
+      - '&a&lКупить {area}'
+      - '&7Блоки: {blocks}'
+      - '&7Цена: &c{cost}'
+      - '&8Клик купить.'
+      land:
+      - '&a&lКупить владение'
+      - '&2&l{land}'
+      - '&7Цена: &c{cost}'
+      - '&8Клик купить.'
+    rented:
+    - '&6&lАрендовано'
+    - '&7Область: &6{area}'
+    - '&7Кому: {player}'
+    - '&5{time} &7ост'
+    sold:
+      area:
+      - '&7&lПродано'
+      - '&7Область: &6{area}'
+      - '&7Кому: {player}'
+      land:
+      - '&7&lПродано'
+      - '&7Владение: &2{land}'
+      - '&7Кому: {player}'
+

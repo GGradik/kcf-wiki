@@ -1,0 +1,123 @@
+{
+  "Order": 1,
+  "Name": "Боец",
+  "ID": "Combat",
+  "Icon": {
+    "Material": "IRON_SWORD"
+  },
+  "Description": [
+    "<gray>Специализация: <red>Атака",
+    "",
+    "- <red><bold>Повышенный урон",
+    "- <green><bold>Регенерация",
+    "- <gold><bold>Шипы",
+    "- <blue><bold>Отбрасывание"
+  ],
+  "MobTypes": [
+    "*"
+  ],
+  "Skills": {
+    "Life": {
+      "Upgrades": {
+        "1": {
+          "Health": "+5"
+        },
+        "10": {
+          "Health": "+5"
+        },
+        "25": {
+          "Health": "+5"
+        },
+        "50": {
+          "Health": "+5"
+        }
+      }
+    },
+    "Damage": {
+      "Upgrades": {
+        "5": {
+          "Damage": "+1.0"
+        },
+        "15": {
+          "Damage": "+1.0"
+        },
+        "30": {
+          "Damage": "+1.5"
+        },
+        "45": {
+          "Damage": "+2.0"
+        }
+      }
+    },
+    "Heal": {
+      "Upgrades": {
+        "10": {
+          "Health": "+1",
+          "Time": "30s"
+        },
+        "30": {
+          "Health": "+1",
+          "Time": "15s"
+        }
+      }
+    },
+    "Knockback": {
+      "Upgrades": {
+        "15": {
+          "Chance": "+10"
+        },
+        "40": {
+          "Chance": "+15"
+        }
+      }
+    },
+    "Thorns": {
+      "Upgrades": {
+        "20": {
+          "Reflection": "+10",
+          "Chance": "+10"
+        },
+        "40": {
+          "Chance": "+10"
+        }
+      }
+    },
+    "Backpack": {
+      "Upgrades": {
+        "15": {
+          "drop": true,
+          "rows": "+1"
+        },
+        "50": {
+          "drop": true,
+          "rows": "+1"
+        }
+      }
+    },
+    "Behavior": {
+      "Upgrades": {
+        "1": {
+          "Friend": true,
+          "Farm": false,
+          "Duel": false,
+          "Aggro": false,
+          "Raid": false
+        },
+        "5": {
+          "Friend": true,
+          "Farm": false,
+          "Duel": true,
+          "Aggro": true,
+          "Raid": false
+        }
+      }
+    },
+    "Control": {
+      "Upgrades": {
+        "1": {
+          "Active": true
+        }
+      }
+    }
+  }
+}

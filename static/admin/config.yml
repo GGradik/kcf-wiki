@@ -1,0 +1,24 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Local backend for testing without a server (optional, requires running a separate proxy)
+  local_backend: true
+
+media_folder: "static/img/news"
+public_folder: "/img/news"
+
+collections:
+  - name: "blog"
+    label: "Новости"
+    folder: "blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Заголовок", name: "title", widget: "string"}
+      - {label: "Никнейм (Обязательно)", name: "nickname", widget: "string", required: true}
+      - {label: "Координаты", name: "coords", widget: "string", required: false}
+      - {label: "Дата и время проведения", name: "event_date", widget: "datetime", required: false}
+      - {label: "Обложка", name: "image", widget: "image", required: false}
+      - {label: "Закрепить пост (📌)", name: "pinned", widget: "boolean", default: false, required: false}
+      - {label: "Текст новости (Доп. фото добавляйте сюда)", name: "body", widget: "markdown"}

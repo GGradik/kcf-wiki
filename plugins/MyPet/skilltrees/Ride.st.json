@@ -1,0 +1,125 @@
+{
+  "Order": 4,
+  "Name": "Ездовой",
+  "ID": "Ride",
+  "Icon": {
+    "Material": "SADDLE",
+    "Glowing": true
+  },
+  "Description": [
+    "<gray>Специализация: <gold>Путешествия",
+    "",
+    "- <yellow><bold>Верховая езда",
+    "- <green><bold>Высокая скорость",
+    "- <aqua><bold>Высокий прыжок",
+    "- <blue>Маяк: Скорость",
+    "- <gray>Седельные сумки"
+  ],
+  "MobTypes": [
+    "*"
+  ],
+  "Skills": {
+    "Ride": {
+      "Upgrades": {
+        "1": {
+          "Active": true,
+          "Speed": "+5",
+          "JumpHeight": "+0.5"
+        },
+        "10": {
+          "Speed": "+5",
+          "JumpHeight": "+0.25"
+        },
+        "25": {
+          "Speed": "+5",
+          "JumpHeight": "+0.25"
+        },
+        "40": {
+          "Speed": "+5",
+          "JumpHeight": "+0.5"
+        },
+        "50": {
+          "Speed": "+5"
+        }
+      }
+    },
+    "Sprint": {
+      "Upgrades": {
+        "5": {
+          "Active": true
+        }
+      }
+    },
+    "Life": {
+      "Upgrades": {
+        "1": {
+          "Health": "+5"
+        },
+        "15": {
+          "Health": "+5"
+        },
+        "30": {
+          "Health": "+5"
+        }
+      }
+    },
+    "Beacon": {
+      "Upgrades": {
+        "20": {
+          "Buffs": {
+            "Speed": "1",
+            "WaterBreathing": true
+          },
+          "Duration": "10",
+          "Range": "5"
+        },
+        "45": {
+          "Buffs": {
+            "Speed": "2",
+            "WaterBreathing": true
+          },
+          "Duration": "15",
+          "Range": "5"
+        }
+      }
+    },
+    "Backpack": {
+      "Upgrades": {
+        "10": {
+          "drop": true,
+          "rows": "+1"
+        },
+        "35": {
+          "drop": true,
+          "rows": "+1"
+        }
+      }
+    },
+    "Pickup": {
+      "Upgrades": {
+        "5": {
+          "Range": "2",
+          "Exp": true
+        }
+      }
+    },
+    "Control": {
+      "Upgrades": {
+        "1": {
+          "Active": true
+        }
+      }
+    },
+    "Behavior": {
+      "Upgrades": {
+        "1": {
+          "Friend": true,
+          "Farm": false,
+          "Duel": false,
+          "Aggro": false,
+          "Raid": false
+        }
+      }
+    }
+  }
+}

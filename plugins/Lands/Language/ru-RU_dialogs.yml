@@ -1,0 +1,66 @@
+# Здесь можно перевести все диалоги.
+#
+# Если возникнут вопросы или проблемы:
+# Discord: https://discord.incredibleplugins.com
+#
+# Wiki: https://wiki.incredibleplugins.com/general/locale-and-config/dialogs
+
+dialogs:
+  input:
+    title: Ввод
+    inputs:
+      text:
+        label: Текст
+      player:
+        label: Игрок
+    buttons:
+      confirm:
+        label: '&aПодтвердить'
+        tooltip: Нажмите, чтобы подтвердить ввод.
+      discard:
+        label: '&cОтменить'
+        tooltip: Нажмите, чтобы отменить ввод.
+  land_create:
+    title: Создать Новую Землю
+    inputs:
+      name:
+        label: Название
+      tag:
+        label: Тег
+    bodies:
+      info:
+        text: Создание этой земли будет стоить вам&4 {cost}&r. Для новой земли будет запривачено&3 {chunks}&r чанков, если достаточно места.
+      tag:
+        text: Тег - это короткая версия названия вашей земли.
+        item:
+          material: NAME_TAG
+          hide-tooltip: true
+    buttons:
+      confirm:
+        label: '&aСоздать'
+        tooltip: Нажмите, чтобы создать новую землю.
+      discard:
+        label: '&cОтменить'
+        tooltip: Нажмите, чтобы отменить создание земли.
+  nation_create:
+    title: Создать Новую Нацию
+    inputs:
+      name:
+        label: Название
+      tag:
+        label: Тег
+    bodies:
+      info:
+        text: Создание этой нации будет стоить вам&4 {cost}&r.
+      tag:
+        text: Тег - это короткая версия названия вашей нации.
+        item:
+          material: NAME_TAG
+          hide-tooltip: true
+    buttons:
+      confirm:
+        label: '&aСоздать'
+        tooltip: Нажмите, чтобы создать новую нацию.
+      discard:
+        label: '&cОтменить'
+        tooltip: Нажмите, чтобы отменить создание нации.

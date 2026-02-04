@@ -1,0 +1,9 @@
+{
+    "label": "ГОРОД И НАЦИЯ",
+    "position": 3,
+    "collapsible": false,
+    "link": {
+        "type": "generated-index",
+        "description": "Развитие поселений и политика"
+    }
+}

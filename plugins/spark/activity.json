@@ -1,0 +1,27 @@
+[
+  {
+    "user": {
+      "type": "other",
+      "name": "CONSOLE"
+    },
+    "time": 1767357612024,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/shyUj6dTfr"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Dazzle279",
+      "uniqueId": "a8f421fa-729e-3649-91b5-e2b12220fbaa"
+    },
+    "time": 1767357606800,
+    "type": "Profiler",
+    "data": {
+      "type": "file",
+      "value": "plugins/spark/profile-2026-01-02_18.40.06.sparkprofile"
+    }
+  }
+]

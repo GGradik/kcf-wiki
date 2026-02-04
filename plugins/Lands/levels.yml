@@ -1,0 +1,363 @@
+# levels.yml — Средневековая тематика с подсказками команд
+
+general:
+  keep-level: false
+
+land:
+  enabled: true
+  levels:
+    1:
+      title: 'Хижина'
+      attributes:
+        chunks:
+          description: '&7Стартовый лимит чанков'
+          value: 0
+    2:
+      title: 'Хутор'
+      requirements:
+        members:
+          required: 1
+          title: 'Жители: {req}'
+          description:
+            - '&7Для жизни на хуторе нужен хотя бы {req} житель.'
+            - '&7Команда: &e/lands trust <игрок>'
+        chunks:
+          required: 2
+          title: 'Территория: {req}'
+          description:
+            - '&7Расширьте владения до {req} чанков.'
+            - '&7Команда: &e/claim'
+        balance:
+          required: 2000
+          title: 'Казна: ${req}'
+          description:
+            - '&7Накопить ${req} в казне.'
+            - '&7Команда: &e/lands deposit <сумма>'
+      attributes:
+        chunks:
+          description: '&7+{value} доп. чанк к лимиту'
+          value: 1
+    3: 
+      title: 'Деревня'
+      requirements:
+        members:
+          required: 2
+          title: 'Жители: {req}'
+          description:
+            - '&7Деревне нужны жители.'
+            - '&7Команда: &e/lands trust <игрок>'
+        chunks:
+          required: 4
+          title: 'Территория: {req}'
+          description:
+            - '&7Расширьте владения до {req} чанков.'
+            - '&7Команда: &e/claim'
+        balance:
+          required: 5000
+          title: 'Казна: ${req}'
+          description:
+            - '&7Накопить ${req} в казне.'
+            - '&7Команда: &e/lands deposit <сумма>'
+      attributes:
+        chunks:
+          description: '&7+{value} доп. чанка к лимиту'
+          value: 3
+    4:
+      title: 'Поместье'
+      requirements:
+        members:
+          required: 3
+          title: 'Жители: {req}'
+          description:
+            - '&7Для обслуживания поместья нужны люди.'
+            - '&7Команда: &e/lands trust <игрок>'
+        chunks:
+          required: 8
+          title: 'Территория: {req}'
+          description:
+            - '&7Ваши земли должны занимать {req} чанков.'
+            - '&7Команда: &e/claim'
+        balance:
+          required: 15000
+          title: 'Казна: ${req}'
+          description:
+            - '&7Богатство поместья: ${req}.'
+            - '&7Команда: &e/lands deposit <сумма>'
+      attributes:
+        chunks:
+          description: '&7+{value} доп. чанков к лимиту'
+          value: 6
+    5:
+      title: 'Городок'
+      requirements:
+        members:
+          required: 5
+          title: 'Жители: {req}'
+          description:
+            - '&7Город требует населения.'
+            - '&7Команда: &e/lands trust <игрок>'
+        chunks:
+          required: 16
+          title: 'Территория: {req}'
+          description:
+            - '&7Город должен занимать {req} чанков.'
+            - '&7Команда: &e/claim'
+        balance:
+          required: 30000
+          title: 'Казна: ${req}'
+          description:
+            - '&7Городская казна: ${req}.'
+            - '&7Команда: &e/lands deposit <сумма>'
+      attributes:
+        chunks:
+          description: '&7+{value} доп. чанков к лимиту'
+          value: 10
+    6:
+      title: 'Форт'
+      requirements:
+        members:
+          required: 7
+          title: 'Гарнизон: {req}'
+          description:
+            - '&7Для обороны форта нужно {req} бойцов.'
+            - '&7Команда: &e/lands trust <игрок>'
+        chunks:
+          required: 24
+          title: 'Территория: {req}'
+          description:
+            - '&7Укрепления занимают {req} чанков.'
+            - '&7Команда: &e/claim'
+        balance:
+          required: 60000
+          title: 'Казна: ${req}'
+          description:
+            - '&7Военный бюджет: ${req}.'
+            - '&7Команда: &e/lands deposit <сумма>'
+      attributes:
+        chunks:
+          description: '&7+{value} доп. чанков к лимиту'
+          value: 15
+    7:
+      title: 'Замок'
+      requirements:
+        members:
+          required: 10
+          title: 'Свита: {req}'
+          description:
+            - '&7Замок требует {req} подданных.'
+            - '&7Команда: &e/lands trust <игрок>'
+        chunks:
+          required: 40
+          title: 'Владения: {req}'
+          description:
+            - '&7Владения замка: {req} чанков.'
+            - '&7Команда: &e/claim'
+        balance:
+          required: 120000
+          title: 'Сокровищница: ${req}'
+          description:
+            - '&7Золото в сокровищнице: ${req}.'
+            - '&7Команда: &e/lands deposit <сумма>'
+      attributes:
+        chunks:
+          description: '&7+{value} доп. чанков к лимиту'
+          value: 25
+    8:
+      title: 'Цитадель'
+      requirements:
+        members:
+          required: 15
+          title: 'Население: {req}'
+          description:
+            - '&7Величие цитадели поддерживают {req} жителей.'
+            - '&7Команда: &e/lands trust <игрок>'
+        chunks:
+          required: 64
+          title: 'Владения: {req}'
+          description:
+            - '&7Цитадель занимает {req} чанков.'
+            - '&7Команда: &e/claim'
+        balance:
+          required: 250000
+          title: 'Казна: ${req}'
+          description:
+            - '&7В казне должно быть ${req}.'
+            - '&7Команда: &e/lands deposit <сумма>'
+      attributes:
+        chunks:
+          description: '&7+{value} доп. чанков к лимиту'
+          value: 50
+      commands:
+        reached: 
+          - 'broadcast &6Земля &e{land_name} &6достигла статуса &cЦитадель&6!'
+        down: [ ]
+
+
+nation:
+  enabled: true
+  levels:
+    1:
+      title: 'Союз'
+      attributes:
+        chunks:
+          description: '&7{value} доп. чанков городам'
+          value: 0
+        effects:
+          description: '&a+ Эффекты нации: {value}'
+          value: [ ]
+        effects_amount:
+          description: '&a+ Слотов эффектов: {value}'
+          value: 0
+    2:
+      title: 'Баронство'
+      requirements:
+        lands:
+          required: 0
+          title: '{req} вассала'
+          description:
+            - '&7В составе должно быть {req} земли.'
+            - '&7Команда: &e/nations invite <земля>'
+        members:
+          required: 3
+          title: '{req} подданных'
+          description:
+            - '&7Общее население: {req} человек.'
+            - '&7Команда: &e/lands trust'
+        balance:
+          required: 50000
+          title: 'Казна: ${req}'
+          description:
+            - '&7Суммарный баланс земель: ${req}.'
+            - '&7Команда: &e/lands deposit'
+      attributes:
+        chunks:
+          description: '&7+{value} доп. чанков городам'
+          value: 5
+        effects:
+          description: '&a+ Эффекты нации: {value}'
+          value:
+            - SPEED
+            - FAST_DIGGING
+        effects_amount:
+          description: '&a+ Слотов эффектов: {value}'
+          value: 1
+    3:
+      title: 'Герцогство'
+      requirements:
+        lands:
+          required: 1
+          title: '{req} вассала'
+          description:
+            - '&7В составе должно быть {req} земли.'
+            - '&7Команда: &e/nations invite <земля>'
+        members:
+          required: 5
+          title: '{req} подданных'
+          description:
+            - '&7Общее население: {req} человек.'
+            - '&7Команда: &e/lands trust'
+        balance:
+          required: 150000
+          title: 'Казна: ${req}'
+          description:
+            - '&7Суммарный баланс земель: ${req}.'
+            - '&7Команда: &e/lands deposit'
+      attributes:
+        chunks:
+          description: '&7+{value} доп. чанков городам'
+          value: 15
+        effects:
+          description: '&a+ Эффекты нации: {value}'
+          value:
+            - SPEED
+            - FAST_DIGGING
+            - DOLPHINS_GRACE
+            - WATER_BREATHING
+            - JUMP
+        effects_amount:
+          description: '&a+ Слотов эффектов: {value}'
+          value: 1
+    4:
+      title: 'Королевство'
+      requirements:
+        lands:
+          required: 2
+          title: '{req} вассалов'
+          description:
+            - '&7В составе должно быть {req} земель.'
+            - '&7Команда: &e/nations invite <земля>'
+        members:
+          required: 8
+          title: '{req} подданных'
+          description:
+            - '&7Общее население: {req} человек.'
+            - '&7Команда: &e/lands trust'
+        balance:
+          required: 400000
+          title: 'Казна: ${req}'
+          description:
+            - '&7Суммарный баланс земель: ${req}.'
+            - '&7Команда: &e/lands deposit'
+      attributes:
+        chunks:
+          description: '&7+{value} доп. чанков городам'
+          value: 30
+        effects:
+          description: '&a+ Эффекты нации: {value}'
+          value:
+            - SPEED:2
+            - FAST_DIGGING:2
+            - JUMP:2
+            - DAMAGE_RESISTANCE
+            - FIRE_RESISTANCE
+            - REGENERATION
+        effects_amount:
+          description: '&a+ Слотов эффектов: {value}'
+          value: 2
+    5:
+      title: 'Империя'
+      requirements:
+        lands:
+          required: 3
+          title: '{req} вассалов'
+          description:
+            - '&7Империя объединяет {req} земель.'
+            - '&7Команда: &e/nations invite <земля>'
+        members:
+          required: 12
+          title: '{req} подданных'
+          description:
+            - '&7Общее население: {req} человек.'
+            - '&7Команда: &e/lands trust'
+        balance:
+          required: 1000000
+          title: 'Казна: ${req}'
+          description:
+            - '&7Богатство империи: ${req}.'
+            - '&7Команда: &e/lands deposit'
+      attributes:
+        chunks:
+          description: '&7+{value} доп. чанков городам'
+          value: 60
+        effects:
+          description: '&a+ Эффекты нации: {value}'
+          value:
+            - SPEED:2
+            - FAST_DIGGING:2
+            - INCREASE_DAMAGE
+            - DAMAGE_RESISTANCE:2
+            - REGENERATION
+            - SATURATION
+            - NIGHT_VISION
+            - LUCK
+        effects_amount:
+          description: '&a+ Слотов эффектов: {value}'
+          value: 3
+      commands:
+        reached: 
+          - 'broadcast &eНация &6{nation} &eпровозгласила себя &cИмперией&e!'
+        down: [ ]
+
+sound:
+  up: 'block.bell.use'
+  down: 'block.anvil.destroy'

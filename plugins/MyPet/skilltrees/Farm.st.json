@@ -1,0 +1,110 @@
+{
+  "Order": 2,
+  "Name": "Добытчик",
+  "ID": "Farm",
+  "Icon": {
+    "Material": "CHEST_MINECART"
+  },
+  "Description": [
+    "<gray>Специализация: <gold>Лут и Хранение",
+    "",
+    "- <yellow><bold>Огромный рюкзак",
+    "- <green><bold>Авто-подбор предметов",
+    "- <blue><bold>Выживаемость",
+    "- <red>Низкий урон"
+  ],
+  "MobTypes": [
+    "*"
+  ],
+  "Skills": {
+    "Damage": {
+      "Upgrades": {
+        "10": {
+          "Damage": "+1.0"
+        },
+        "30": {
+          "Damage": "+1.0"
+        }
+      }
+    },
+    "Life": {
+      "Upgrades": {
+        "1": {
+          "Health": "+4"
+        },
+        "20": {
+          "Health": "+5"
+        },
+        "40": {
+          "Health": "+5"
+        }
+      }
+    },
+    "Backpack": {
+      "Upgrades": {
+        "1": {
+          "drop": true,
+          "rows": "+1"
+        },
+        "15": {
+          "drop": true,
+          "rows": "+1"
+        },
+        "30": {
+          "drop": true,
+          "rows": "+1"
+        },
+        "45": {
+          "drop": true,
+          "rows": "+1"
+        }
+      }
+    },
+    "Pickup": {
+      "Upgrades": {
+        "1": {
+          "Range": "2",
+          "Exp": true
+        },
+        "20": {
+          "Range": "+2",
+          "Exp": true
+        },
+        "40": {
+          "Range": "+2",
+          "Exp": true
+        }
+      }
+    },
+    "Behavior": {
+      "Upgrades": {
+        "1": {
+          "Friend": true,
+          "Farm": true,
+          "Duel": false,
+          "Aggro": false,
+          "Raid": false
+        }
+      }
+    },
+    "Heal": {
+      "Upgrades": {
+        "5": {
+          "Health": "+1",
+          "Time": "30s"
+        },
+        "25": {
+          "Health": "+1",
+          "Time": "15s"
+        }
+      }
+    },
+    "Control": {
+      "Upgrades": {
+        "1": {
+          "Active": true
+        }
+      }
+    }
+  }
+}

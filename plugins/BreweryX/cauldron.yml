@@ -1,0 +1,326 @@
+# !!! IMPORTANT: BreweryX configuration files do NOT support external comments! If you add any comments, they will be overwritten !!!
+# -- Ингредиенты для котла --
+# (я зову этот раздел недовары)
+
+# Раздел определяет, какие ингредиенты принимаются в котел даже если для них нет никакого рецепта, и какое из них получится базовое зелье (недовар)
+# Если ингредиент уже указан в каком-либо рецепте в разделе рецептов (или же в кастомных ингредиентах), то тогда его необязательно вписывать сюда,
+# кроме случаев, когда вы хотите изменить дизайн недовара для тех или иных ингредиентов.
+
+# name: Название недовара (Поддерживает цвета: &6, &#AABBCC )
+
+# ingredients: ингредиенты и их число(опицонально), из которых получается недовар. Пример: Potato/3
+#   Используйте /brew ItemName с предметом в руке, чтобы получить его айдишник для конфига
+#   (как правило, соответствует майнкрафтовскому айдишнику, отличаться могут у предметов из других плагинов, поддержка которых есть в BreweryX)
+
+# color: цвет зелья-недовара. Дефолтное значение - CYAN.
+#   Возможные значения: DARK_RED, RED, BRIGHT_RED, ORANGE, YELLOW, PINK, PURPLE, BLUE, CYAN, WATER, TEAL, OLIVE, GREEN, LIME, BLACK, GREY, BRIGHT_GREY, WHITE
+#   Или RGB-цвета (hex: например, '99FF33') (обязательно в '')
+
+# cookParticles:
+#   Цвет частиц над котлом и время, в которое эти частицы меняют цвет
+#   Например, если у нас указано RED/8 и 'ffffff/18', то через 8 минут после добавления ингредиентов частицы над котлом (изначально голубые) станут красными и останутся такими до тех пор,
+#   пока не пройдет 18 минут с момента добавления ингредиентов. В этот момент они быстро из красного цвета перетекут в белый (ffffff - белый цвет),
+#   и через несколько секунд, если больше никакие цвета не указаны, станут серыми.
+#   Подсказка: если хотите, чтобы цвет был постоянно, а не перетекал в серый, то придется указать в конце прошлый цвет второй раз с большим количеством минут.
+#   Например: BLUE/3, RED/10, RED/60
+#   Синий через три минуты, красный через 10 и красный-серый через 60. Поскольку вряд ли кто-то будет что-то варить 60 минут,
+#   можно сказать, что красный цвет останется навсегда, пусть на самом деле и не навсегда =)
+
+# lore: Описание, которое будет у зелья-недовара. Поддерживает цвета: &a или rgb &#AABBCC
+
+# customModelData: Custom Model Data, которая будет наложена на зелье-недовар
+cauldron:
+  wheat:
+    name: Бродящая пшеница
+    ingredients:
+    - WHEAT
+    cookParticles:
+    - 2d8686/8
+  sugarcane:
+    name: Сахарный отвар
+    ingredients:
+    - SUGAR_CANE
+    color: f1ffad
+    cookParticles:
+    - f1ffad/4
+    - 858547/10
+  sugar:
+    name: Сахарная вода
+    ingredients:
+    - SUGAR
+    cookParticles:
+    - WHITE/4
+    - BRIGHT_GREY/25
+  apple:
+    name: Яблочное сусло
+    ingredients:
+    - APPLE
+  berries:
+    name: Виноградное сусло
+    ingredients:
+    - SWEET_BERRIES
+    color: RED
+    cookParticles:
+    - ff6666/2
+    - RED/7
+    - ac6553/13
+  potato:
+    name: Картофельное месиво
+    ingredients:
+    - POTATO
+  grass:
+    name: Вареные травы
+    ingredients:
+    - SHORT_GRASS
+    color: 99ff66
+    cookParticles:
+    - GREEN/2
+    - 99ff99/20
+  rmushroom:
+    name: Мухоморный отвар
+    ingredients:
+    - RED_MUSHROOM
+    color: ff5c33
+    cookParticles:
+    - fab09e/15
+  bmushroom:
+    name: Грибной отвар
+    ingredients:
+    - BROWN_MUSHROOM
+    color: c68c53
+    cookParticles:
+    - c68c53/15
+  cocoa:
+    name: Шоколадная основа
+    ingredients:
+    - COCOA_BEANS
+    color: '804600'
+    cookParticles:
+    - a26011/1
+    - 5c370a/3
+    - 4d4133/8
+  milk:
+    name: Молочная вода
+    ingredients:
+    - MILK_BUCKET
+    color: BRIGHT_GREY
+    cookParticles:
+    - fbfbd0/1
+    - WHITE/6
+  bl_flow:
+    name: Голубой отвар
+    ingredients:
+    - blue-flowers
+    color: 0099ff
+    cookParticles:
+    - 0099ff
+  cactus:
+    name: Сок Агавы
+    ingredients:
+    - CACTUS
+    color: 00b300
+    cookParticles:
+    - 00b300/16
+  poi_potato:
+    name: Ядовитая жижа
+    ingredients:
+    - POISONOUS_POTATO
+  egg:
+    name: Липкое варево
+    ingredients:
+    - EGG
+  oak_sapling:
+    name: Древесный отвар
+    ingredients:
+    - OAK_SAPLING
+  vine:
+    name: Вареные лианы
+    ingredients:
+    - VINE
+    color: 99ff66
+    cookParticles:
+    - GREEN/2
+    - 99ff99/20
+  rot_flesh:
+    name: Гнилой отвар
+    ingredients:
+    - ROTTEN_FLESH
+    color: '263300'
+    cookParticles:
+    - 263300/8
+    - BLACK/20
+  melon:
+    name: Арбузный сок
+    ingredients:
+    - MELON_SLICE
+  wheat_seeds:
+    name: Горький отвар
+    ingredients:
+    - WHEAT_SEEDS
+  melon_seeds:
+    name: Горький отвар
+    ingredients:
+    - MELON_SEEDS
+  pumpkin_seeds:
+    name: Горький отвар
+    ingredients:
+    - PUMPKIN_SEEDS
+  bone_meal:
+    name: Костный отвар
+    ingredients:
+    - BONE_MEAL
+    color: BRIGHT_GREY
+  cookie:
+    name: Шоколадная гуща
+    ingredients:
+    - COOKIE
+    color: '804600'
+    cookParticles:
+    - a26011/1
+    - 5c370a/3
+    - 4d4133/8
+  fer_spid_eye:
+    name: Забродивший глаз
+    ingredients:
+    - FERMENTED_SPIDER_EYE
+  ghast_tear:
+    name: Грустный отвар
+    ingredients:
+    - GHAST_TEAR
+  snowball:
+    name: Ледяная вода
+    ingredients:
+    - SNOWBALL
+  Gold_Nugget:
+    name: Сверкающий отвар
+    ingredients:
+    - GOLD_NUGGET
+    color: ffd11a
+    cookParticles:
+    - ffd11a
+  glowstone_dust:
+    name: Светящийся отвар
+    ingredients:
+    - GLOWSTONE_DUST
+    color: ffff33
+    cookParticles:
+    - ffff99/3
+    - d9d926/15
+  applemead_base:
+    name: Яблочно-сахарная смесь
+    ingredients:
+    - SUGAR_CANE/3
+    - APPLE
+    color: e1ff4d
+    cookParticles:
+    - e1ff4d/4
+  poi_grass:
+    name: Вареные ядовитые травы
+    ingredients:
+    - SHORT_GRASS
+    - POISONOUS_POTATO
+    color: 99ff66
+    cookParticles:
+    - GREEN/2
+    - 99ff99/20
+  juniper:
+    name: Можжевеловый отвар
+    ingredients:
+    - blue-flowers
+    - WHEAT
+    color: 00ccff
+    cookParticles:
+    - 00ccff/8
+  gin_base:
+    name: Фруктовый можжевельник
+    ingredients:
+    - blue-flowers
+    - WHEAT
+    - APPLE
+    color: 66e0ff
+    cookParticles:
+    - 00ccff/5
+  eggnog_base:
+    name: Яичная смесь
+    ingredients:
+    - EGG
+    - SUGAR
+    - MILK_BUCKET
+    color: ffecb3
+    cookParticles:
+    - ffecb3/2
+  pumpkin_mash:
+    name: Тыквенная мякоть
+    ingredients:
+    - PUMPKIN
+    color: ORANGE
+    cookParticles:
+    - ff9100/5
+  fern_tea:
+    name: Травяной настой
+    ingredients:
+    - FERN
+    color: GREEN
+    cookParticles:
+    - 00ff1a/3
+  nether_wart_base:
+    name: Адская выжимка
+    ingredients:
+    - NETHER_WART
+    color: DARK_RED
+    cookParticles:
+    - ff0000/10
+    - 000000/5
+  honey_base:
+    name: Растворенный мед
+    ingredients:
+    - HONEY_BOTTLE
+    color: YELLOW
+    cookParticles:
+    - FFDE21/5
+    - FFAA00/5
+  spruce_sapling:
+    name: Хвойный настой
+    ingredients:
+    - SPRUCE_SAPLING
+    color: '336600'
+    cookParticles:
+    - 336600/5
+  bamboo_base:
+    name: Бамбуковая вода
+    ingredients:
+    - BAMBOO
+    color: '99CC00'
+    cookParticles:
+    - 99CC00/5
+  coal_base:
+    name: Черная вода
+    ingredients:
+    - COAL
+    color: BLACK
+    cookParticles:
+    - 000000/5
+  prismarine_base:
+    name: Искаженный сок
+    ingredients:
+    - PRISMARINE_CRYSTALS
+    color: '009999'
+    cookParticles:
+    - 009999/5
+    - 00FFFF/10
+  chorus_base:
+    name: Сок хоруса
+    ingredients:
+    - CHORUS_FRUIT
+    color: PURPLE
+    cookParticles:
+    - AA00AA/5
+  golden_apple_base:
+    name: Расплавленное золото
+    ingredients:
+    - GOLDEN_APPLE
+    color: GOLD
+    cookParticles:
+    - FFFF00/5
+    - FFCC00/10
+

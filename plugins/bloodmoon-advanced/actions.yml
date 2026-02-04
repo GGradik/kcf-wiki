@@ -1,0 +1,83 @@
+# Docs: https://bloodmoon.pseudonova.com/actions/introduction
+actions:
+  strike-lightning:
+    events:
+      - lightning 6 10
+    commands: []
+  
+  # Магические заклинания оставляем на "древнем языке" для атмосферы
+  swap-spell:
+    events:
+      - swap 100
+      - speak &3Secra astafa perdu! 100
+    commands: []
+  blast-spell:
+    events:
+      - dash 100
+      - speak &7Karanta segrum dia! 100
+    commands: []
+  teleport-spell:
+    events:
+      - teleport 8 100
+      - speak &6Parendum potrokaratia! 100
+    commands: []
+  lightning-spell:
+    events:
+      - lightning 10 100
+      - speak &c&lActaram Strikera! 100
+
+  # Подкрепление (Зомби и Кубы)
+  reinforcements:
+    events:
+      - reinforcements ZOMBIE 10 2 30
+      - reinforcements blazing-cube 10 2 30
+      # Перевод: "Мне нужна помощь здесь!"
+      - speak &c&lКо мне! На помощь! 100
+    commands: []
+  
+  witch-reinforcements:
+    events:
+      - reinforcements WITCH 10 2 100
+      - speak &5Kardipo septum crea 100
+    commands: []
+  
+  potion:
+    events:
+      - potion-effect blindness 20 2 50
+      - potion-effect hunger 20 1 50
+      - potion-effect confusion 10 5 50
+      - potion-effect jump 15 4 50
+    commands: []
+  
+  # Фразы Огненного Стража (Босса)
+  firewarden-messages:
+    events:
+      # "Ты глупец! Тебе меня не достать!"
+      - speak Ты &4глупец! &fТебе меня не достать! 20
+      # "Ты когда-нибудь пробовал горелую кожу на вкус?"
+      - speak Тебе нравится запах &cгорелой плоти? 10
+      # "ПОЛУЧАЙ!"
+      - speak &4&lПОЛУЧАЙ! 20
+      # "Я бы хотел видеть таких, как ты, в аду!"
+      - speak Тебе самое место в &cАду! 20
+    commands: []
+  
+  death:
+    events:
+      - instant-kill 100
+      # "Как это вообще возможно?!"
+      - speak Как это вообще возможно?! 100
+    commands: []
+  
+  shadow-attack:
+    events:
+      - potion-effect blindness 20 2 100
+      # "Посмотрим, как ты справишься в тенях..."
+      - speak Посмотрим, как ты сражаешься во &5тьме... 100
+    commands: []
+  
+  fuse:
+    events:
+      # Звук крипера
+      - speak &aТсссссс... 100
+    commands: []

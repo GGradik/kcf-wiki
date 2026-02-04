@@ -1,0 +1,46 @@
+# #------------------------------------------------------------------------------------------
+# #                 author: Imperialroma10
+# #     our project: https://modrinth.com/user/imperialroma10                
+# #------------------------------------------------------------------------------------------
+# #            Our Minecraft community is waiting for you 
+# #              Discord : http://discord.gg/fsEZEnE58g
+# #------------------------------------------------------------------------------------------
+# #              If you like our plugin support us with a cup of coffee
+# #             Donate:   https://www.patreon.com/c/PluginDEV/membership
+#     
+#             If you need a custom plugin, please contact us on Discord!
+# #------------------------------------------------------------------------------------------
+
+treecuting:
+  disable:
+    title: '&bНастройка: &3Рубка деревьев'
+    lore:
+    - '  '
+    - '&7Статус: &4Отключено'
+    - '&7Отключить быструю рубку деревьев'
+  enable:
+    lore:
+    - '  '
+    - '&7Статус: §aВключено'
+    - '&7Включить быструю рубку деревьев'
+    title: '&bНастройка: &3Рубка деревьев'
+gui:
+  logscount:
+    title: '&eВы срубили {count} блоков'
+    lore:
+    - ''
+    - '&7Рейтинги лесорубов скоро появятся.'
+  # Работает только после перезагрузки сервера (полный рестарт)
+  # остальное перезагружается командой /timber reload
+  title: Меню игрока
+effects:
+  descriptionnotselected:
+  - '  '
+  - '&7Нажмите ЛКМ, чтобы открыть меню Эффектов'
+  descriptionselected:
+  - '  '
+  - '&7Нажмите ПКМ, чтобы убрать частицы'
+  selectmessage: '§bВы выбрали частицы: &a{particle}'
+  description: '&bВыбранные частицы: &a{particle}'
+  title: '&eЭффекты'
+norightmessage: '&4Нет прав.'

@@ -1,0 +1,9 @@
+schedules:
+  world:
+    days: 8
+    chance: 20.0
+    broadcast: true
+    days-left-message: 'До Кровавой Луны осталось &c%days-left% &7дн. Готовьтесь!'
+    tonight-message: '&4&lОПАСНОСТЬ! &cСегодня ночью взойдет Кровавая Луна!'
+    random-days: false
+    repeating: true

@@ -1,0 +1,494 @@
+01-06-2026 18:31 [INFO] Compat mode for v1_21_R7 loaded.
+01-06-2026 18:31 [INFO] Exp calculation mode: MyPet
+01-06-2026 18:31 [INFO] Current Exp-Cache is invalid, it will be recalculated.
+01-06-2026 18:31 [INFO] Loading WorldGroups...
+01-06-2026 18:31 [INFO]    added world to 'default' group.
+01-06-2026 18:31 [INFO]    added world_nether to 'default' group.
+01-06-2026 18:31 [INFO]    added world_the_end to 'default' group.
+01-06-2026 18:31 [INFO] Default skilltree files created.
+01-06-2026 18:31 [INFO] Connect to SQLite database...
+01-06-2026 18:31 [INFO] SQLite connection successful.
+01-06-2026 18:31 [INFO] Lands (7.22.2) hook activated.
+01-06-2026 18:31 [INFO] PlaceholderAPI (2.11.7) hook activated.
+01-06-2026 18:31 [INFO] ProtocolLib (5.4.0) hook activated.
+01-06-2026 18:31 [INFO] Vault (1.7.3-b131) (Economy: TheosisEconomy) (Permissions: LuckPerms) hook activated.
+01-06-2026 18:31 [INFO] Version 3.14.1-b8 ENABLED
+01-06-2026 18:33 [INFO] Disabling MyPet v3.14.1
+01-06-2026 18:34 [INFO] Compat mode for v1_21_R7 loaded.
+01-06-2026 18:34 [INFO] Exp calculation mode: MyPet
+01-06-2026 18:34 [INFO] Loading WorldGroups...
+01-06-2026 18:34 [INFO]    added 'world' to 'default'
+01-06-2026 18:34 [INFO]    added 'world_nether' to 'default'
+01-06-2026 18:34 [INFO]    added 'world_the_end' to 'default'
+01-06-2026 18:34 [INFO] Connect to SQLite database...
+01-06-2026 18:34 [INFO] SQLite connection successful.
+01-06-2026 18:34 [INFO] Lands (7.22.2) hook activated.
+01-06-2026 18:34 [INFO] PlaceholderAPI (2.11.7) hook activated.
+01-06-2026 18:34 [INFO] ProtocolLib (5.4.0) hook activated.
+01-06-2026 18:34 [INFO] Vault (1.7.3-b131) (Economy: TheosisEconomy) (Permissions: LuckPerms) hook activated.
+01-06-2026 18:34 [INFO] WorldGuard (7.0.14+2339-43997ec) hook activated.
+01-06-2026 18:34 [INFO] Version 3.14.1-b8 ENABLED
+01-06-2026 18:44 [INFO] Disabling MyPet v3.14.1
+01-06-2026 19:00 [INFO] Compat mode for v1_21_R7 loaded.
+01-06-2026 19:00 [INFO] Exp calculation mode: MyPet
+01-06-2026 19:00 [INFO] Loading WorldGroups...
+01-06-2026 19:00 [INFO]    added 'world' to 'default'
+01-06-2026 19:00 [INFO]    added 'world_nether' to 'default'
+01-06-2026 19:00 [INFO]    added 'world_the_end' to 'default'
+01-06-2026 19:00 [INFO] Connect to SQLite database...
+01-06-2026 19:00 [INFO] SQLite connection successful.
+01-06-2026 19:00 [INFO] Lands (7.22.2) hook activated.
+01-06-2026 19:00 [INFO] PlaceholderAPI (2.11.7) hook activated.
+01-06-2026 19:00 [INFO] ProtocolLib (5.4.0) hook activated.
+01-06-2026 19:00 [INFO] Vault (1.7.3-b131) (Economy: TheosisEconomy) (Permissions: LuckPerms) hook activated.
+01-06-2026 19:00 [INFO] WorldGuard (7.0.14+2339-43997ec) hook activated.
+01-06-2026 19:00 [INFO] Version 3.14.1-b8 ENABLED
+01-06-2026 19:01 [INFO] added spawn to 'default' group.
+01-06-2026 19:05 [INFO] Disabling MyPet v3.14.1
+01-06-2026 19:08 [INFO] Compat mode for v1_21_R7 loaded.
+01-06-2026 19:08 [INFO] Exp calculation mode: MyPet
+01-06-2026 19:08 [INFO] Loading WorldGroups...
+01-06-2026 19:08 [INFO]    added 'world' to 'default'
+01-06-2026 19:08 [INFO]    added 'world_nether' to 'default'
+01-06-2026 19:08 [INFO]    added 'world_the_end' to 'default'
+01-06-2026 19:08 [INFO] Connect to SQLite database...
+01-06-2026 19:08 [INFO] SQLite connection successful.
+01-06-2026 19:08 [INFO] Lands (7.22.2) hook activated.
+01-06-2026 19:08 [INFO] PlaceholderAPI (2.11.7) hook activated.
+01-06-2026 19:08 [INFO] ProtocolLib (5.4.0) hook activated.
+01-06-2026 19:08 [INFO] Vault (1.7.3-b131) (Economy: TheosisEconomy) (Permissions: LuckPerms) hook activated.
+01-06-2026 19:08 [INFO] WorldGuard (7.0.14+2339-43997ec) hook activated.
+01-06-2026 19:08 [INFO] Version 3.14.1-b8 ENABLED
+01-06-2026 19:08 [INFO] added spawn to 'default' group.
+01-06-2026 19:22 [INFO] Disabling MyPet v3.14.1
+01-06-2026 19:23 [INFO] Compat mode for v1_21_R7 loaded.
+01-06-2026 19:23 [INFO] Exp calculation mode: MyPet
+01-06-2026 19:23 [INFO] Loading WorldGroups...
+01-06-2026 19:23 [INFO]    added 'world' to 'default'
+01-06-2026 19:23 [INFO]    added 'world_nether' to 'default'
+01-06-2026 19:23 [INFO]    added 'world_the_end' to 'default'
+01-06-2026 19:23 [INFO] Connect to SQLite database...
+01-06-2026 19:23 [INFO] SQLite connection successful.
+01-06-2026 19:23 [INFO] Lands (7.22.2) hook activated.
+01-06-2026 19:23 [INFO] PlaceholderAPI (2.11.7) hook activated.
+01-06-2026 19:23 [INFO] ProtocolLib (5.4.0) hook activated.
+01-06-2026 19:23 [INFO] Vault (1.7.3-b131) (Economy: TheosisEconomy) (Permissions: LuckPerms) hook activated.
+01-06-2026 19:23 [INFO] WorldGuard (7.0.14+2339-43997ec) hook activated.
+01-06-2026 19:23 [INFO] Version 3.14.1-b8 ENABLED
+01-06-2026 19:23 [INFO] added spawn to 'default' group.
+01-06-2026 19:52 [INFO] Disabling MyPet v3.14.1
+01-06-2026 19:55 [INFO] Compat mode for v1_21_R7 loaded.
+01-06-2026 19:55 [INFO] Exp calculation mode: MyPet
+01-06-2026 19:55 [INFO] Loading WorldGroups...
+01-06-2026 19:55 [INFO]    added 'world' to 'default'
+01-06-2026 19:55 [INFO]    added 'world_nether' to 'default'
+01-06-2026 19:55 [INFO]    added 'world_the_end' to 'default'
+01-06-2026 19:55 [INFO] Connect to SQLite database...
+01-06-2026 19:55 [INFO] SQLite connection successful.
+01-06-2026 19:55 [INFO] Lands (7.22.2) hook activated.
+01-06-2026 19:55 [INFO] PlaceholderAPI (2.11.7) hook activated.
+01-06-2026 19:55 [INFO] ProtocolLib (5.4.0) hook activated.
+01-06-2026 19:55 [INFO] Vault (1.7.3-b131) (Economy: TheosisEconomy) (Permissions: LuckPerms) hook activated.
+01-06-2026 19:55 [INFO] WorldGuard (7.0.14+2339-43997ec) hook activated.
+01-06-2026 19:55 [INFO] Version 3.14.1-b8 ENABLED
+01-06-2026 19:55 [INFO] added spawn to 'default' group.
+01-06-2026 19:57 [INFO] Disabling MyPet v3.14.1
+01-06-2026 19:58 [INFO] Compat mode for v1_21_R7 loaded.
+01-06-2026 19:58 [INFO] Exp calculation mode: MyPet
+01-06-2026 19:58 [INFO] Loading WorldGroups...
+01-06-2026 19:58 [INFO]    added 'world' to 'default'
+01-06-2026 19:58 [INFO]    added 'world_nether' to 'default'
+01-06-2026 19:58 [INFO]    added 'world_the_end' to 'default'
+01-06-2026 19:58 [INFO] Connect to SQLite database...
+01-06-2026 19:58 [INFO] SQLite connection successful.
+01-06-2026 19:58 [INFO] Lands (7.22.2) hook activated.
+01-06-2026 19:58 [INFO] PlaceholderAPI (2.11.7) hook activated.
+01-06-2026 19:58 [INFO] ProtocolLib (5.4.0) hook activated.
+01-06-2026 19:58 [INFO] Vault (1.7.3-b131) (Economy: TheosisEconomy) (Permissions: LuckPerms) hook activated.
+01-06-2026 19:58 [INFO] WorldGuard (7.0.14+2339-43997ec) hook activated.
+01-06-2026 19:58 [INFO] Version 3.14.1-b8 ENABLED
+01-06-2026 19:58 [INFO] added spawn to 'default' group.
+01-06-2026 20:05 [INFO] Disabling MyPet v3.14.1
+01-06-2026 20:12 [INFO] Compat mode for v1_21_R7 loaded.
+01-06-2026 20:12 [INFO] Exp calculation mode: MyPet
+01-06-2026 20:12 [INFO] Loading WorldGroups...
+01-06-2026 20:12 [INFO]    added 'world' to 'default'
+01-06-2026 20:12 [INFO]    added 'world_nether' to 'default'
+01-06-2026 20:12 [INFO]    added 'world_the_end' to 'default'
+01-06-2026 20:12 [INFO] Connect to SQLite database...
+01-06-2026 20:12 [INFO] SQLite connection successful.
+01-06-2026 20:12 [INFO] Lands (7.22.2) hook activated.
+01-06-2026 20:12 [INFO] PlaceholderAPI (2.11.7) hook activated.
+01-06-2026 20:12 [INFO] ProtocolLib (5.4.0) hook activated.
+01-06-2026 20:12 [INFO] Vault (1.7.3-b131) (Economy: TheosisEconomy) (Permissions: LuckPerms) hook activated.
+01-06-2026 20:12 [INFO] WorldGuard (7.0.14+2339-43997ec) hook activated.
+01-06-2026 20:12 [INFO] Version 3.14.1-b8 ENABLED
+01-06-2026 20:12 [INFO] added spawn to 'default' group.
+01-06-2026 20:12 [INFO] Disabling MyPet v3.14.1
+01-06-2026 20:14 [INFO] Compat mode for v1_21_R7 loaded.
+01-06-2026 20:14 [INFO] Exp calculation mode: MyPet
+01-06-2026 20:14 [INFO] Loading WorldGroups...
+01-06-2026 20:14 [INFO]    added 'world' to 'default'
+01-06-2026 20:14 [INFO]    added 'world_nether' to 'default'
+01-06-2026 20:14 [INFO]    added 'world_the_end' to 'default'
+01-06-2026 20:14 [INFO] Connect to SQLite database...
+01-06-2026 20:14 [INFO] SQLite connection successful.
+01-06-2026 20:14 [INFO] Lands (7.22.2) hook activated.
+01-06-2026 20:14 [INFO] PlaceholderAPI (2.11.7) hook activated.
+01-06-2026 20:14 [INFO] ProtocolLib (5.4.0) hook activated.
+01-06-2026 20:14 [INFO] Vault (1.7.3-b131) (Economy: TheosisEconomy) (Permissions: LuckPerms) hook activated.
+01-06-2026 20:14 [INFO] WorldGuard (7.0.14+2339-43997ec) hook activated.
+01-06-2026 20:14 [INFO] Version 3.14.1-b8 ENABLED
+01-06-2026 20:14 [INFO] added spawn to 'default' group.
+01-06-2026 20:24 [INFO] Disabling MyPet v3.14.1
+01-06-2026 20:26 [INFO] Compat mode for v1_21_R7 loaded.
+01-06-2026 20:26 [INFO] Exp calculation mode: MyPet
+01-06-2026 20:26 [INFO] Loading WorldGroups...
+01-06-2026 20:26 [INFO]    added 'world' to 'default'
+01-06-2026 20:26 [INFO]    added 'world_nether' to 'default'
+01-06-2026 20:26 [INFO]    added 'world_the_end' to 'default'
+01-06-2026 20:26 [INFO] Connect to SQLite database...
+01-06-2026 20:26 [INFO] SQLite connection successful.
+01-06-2026 20:26 [INFO] Lands (7.22.2) hook activated.
+01-06-2026 20:26 [INFO] PlaceholderAPI (2.11.7) hook activated.
+01-06-2026 20:26 [INFO] ProtocolLib (5.4.0) hook activated.
+01-06-2026 20:26 [INFO] Vault (1.7.3-b131) (Economy: TheosisEconomy) (Permissions: LuckPerms) hook activated.
+01-06-2026 20:26 [INFO] WorldGuard (7.0.14+2339-43997ec) hook activated.
+01-06-2026 20:26 [INFO] Version 3.14.1-b8 ENABLED
+01-06-2026 20:26 [INFO] added spawn to 'default' group.
+01-06-2026 20:49 [INFO] Disabling MyPet v3.14.1
+01-06-2026 20:50 [INFO] Compat mode for v1_21_R7 loaded.
+01-06-2026 20:50 [INFO] Exp calculation mode: MyPet
+01-06-2026 20:50 [INFO] Loading WorldGroups...
+01-06-2026 20:50 [INFO]    added 'world' to 'default'
+01-06-2026 20:50 [INFO]    added 'world_nether' to 'default'
+01-06-2026 20:50 [INFO]    added 'world_the_end' to 'default'
+01-06-2026 20:50 [INFO] Connect to SQLite database...
+01-06-2026 20:50 [INFO] SQLite connection successful.
+01-06-2026 20:50 [INFO] Lands (7.22.2) hook activated.
+01-06-2026 20:50 [INFO] PlaceholderAPI (2.11.7) hook activated.
+01-06-2026 20:50 [INFO] ProtocolLib (5.4.0) hook activated.
+01-06-2026 20:50 [INFO] Vault (1.7.3-b131) (Economy: TheosisEconomy) (Permissions: LuckPerms) hook activated.
+01-06-2026 20:50 [INFO] WorldGuard (7.0.14+2339-43997ec) hook activated.
+01-06-2026 20:50 [INFO] Version 3.14.1-b8 ENABLED
+01-06-2026 20:50 [INFO] added spawn to 'default' group.
+01-06-2026 20:55 [INFO] Disabling MyPet v3.14.1
+01-06-2026 20:56 [INFO] Compat mode for v1_21_R7 loaded.
+01-06-2026 20:56 [INFO] Exp calculation mode: MyPet
+01-06-2026 20:56 [INFO] Loading WorldGroups...
+01-06-2026 20:56 [INFO]    added 'world' to 'default'
+01-06-2026 20:56 [INFO]    added 'world_nether' to 'default'
+01-06-2026 20:56 [INFO]    added 'world_the_end' to 'default'
+01-06-2026 20:56 [INFO] Connect to SQLite database...
+01-06-2026 20:56 [INFO] SQLite connection successful.
+01-06-2026 20:56 [INFO] Lands (7.22.2) hook activated.
+01-06-2026 20:56 [INFO] PlaceholderAPI (2.11.7) hook activated.
+01-06-2026 20:56 [INFO] ProtocolLib (5.4.0) hook activated.
+01-06-2026 20:56 [INFO] Vault (1.7.3-b131) (Economy: TheosisEconomy) (Permissions: LuckPerms) hook activated.
+01-06-2026 20:56 [INFO] WorldGuard (7.0.14+2339-43997ec) hook activated.
+01-06-2026 20:56 [INFO] Version 3.14.1-b8 ENABLED
+01-06-2026 20:56 [INFO] added spawn to 'default' group.
+01-06-2026 20:57 [INFO] Disabling MyPet v3.14.1
+01-06-2026 21:05 [INFO] Compat mode for v1_21_R7 loaded.
+01-06-2026 21:05 [INFO] Exp calculation mode: MyPet
+01-06-2026 21:05 [INFO] Loading WorldGroups...
+01-06-2026 21:05 [INFO]    added 'world' to 'default'
+01-06-2026 21:05 [INFO]    added 'world_nether' to 'default'
+01-06-2026 21:05 [INFO]    added 'world_the_end' to 'default'
+01-06-2026 21:05 [INFO] Connect to SQLite database...
+01-06-2026 21:05 [INFO] SQLite connection successful.
+01-06-2026 21:05 [INFO] Lands (7.22.2) hook activated.
+01-06-2026 21:05 [INFO] PlaceholderAPI (2.11.7) hook activated.
+01-06-2026 21:05 [INFO] ProtocolLib (5.4.0) hook activated.
+01-06-2026 21:05 [INFO] Vault (1.7.3-b131) (Economy: TheosisEconomy) (Permissions: LuckPerms) hook activated.
+01-06-2026 21:05 [INFO] WorldGuard (7.0.14+2339-43997ec) hook activated.
+01-06-2026 21:05 [INFO] Version 3.14.1-b8 ENABLED
+01-06-2026 21:18 [INFO] added spawn to 'default' group.
+01-06-2026 22:52 [INFO] Disabling MyPet v3.14.1
+01-06-2026 22:53 [INFO] Compat mode for v1_21_R7 loaded.
+01-06-2026 22:53 [INFO] Exp calculation mode: MyPet
+01-06-2026 22:53 [INFO] Loading WorldGroups...
+01-06-2026 22:53 [INFO]    added 'world' to 'default'
+01-06-2026 22:53 [INFO]    added 'world_nether' to 'default'
+01-06-2026 22:53 [INFO]    added 'world_the_end' to 'default'
+01-06-2026 22:53 [INFO]    added 'spawn' to 'default'
+01-06-2026 22:53 [INFO] Connect to SQLite database...
+01-06-2026 22:53 [INFO] SQLite connection successful.
+01-06-2026 22:53 [INFO] Lands (7.22.2) hook activated.
+01-06-2026 22:53 [INFO] PlaceholderAPI (2.11.7) hook activated.
+01-06-2026 22:53 [INFO] ProtocolLib (5.4.0) hook activated.
+01-06-2026 22:53 [INFO] Vault (1.7.3-b131) (Economy: TheosisEconomy) (Permissions: LuckPerms) hook activated.
+01-06-2026 22:53 [INFO] WorldGuard (7.0.14+2339-43997ec) hook activated.
+01-06-2026 22:53 [INFO] Version 3.14.1-b8 ENABLED
+01-06-2026 22:54 [INFO] Disabling MyPet v3.14.1
+01-06-2026 22:57 [INFO] Compat mode for v1_21_R7 loaded.
+01-06-2026 22:57 [INFO] Exp calculation mode: MyPet
+01-06-2026 22:57 [INFO] Loading WorldGroups...
+01-06-2026 22:57 [INFO]    added 'world' to 'default'
+01-06-2026 22:57 [INFO]    added 'world_nether' to 'default'
+01-06-2026 22:57 [INFO]    added 'world_the_end' to 'default'
+01-06-2026 22:57 [INFO]    added 'spawn' to 'default'
+01-06-2026 22:57 [INFO] Connect to SQLite database...
+01-06-2026 22:57 [INFO] SQLite connection successful.
+01-06-2026 22:57 [INFO] Lands (7.22.2) hook activated.
+01-06-2026 22:57 [INFO] PlaceholderAPI (2.11.7) hook activated.
+01-06-2026 22:57 [INFO] ProtocolLib (5.4.0) hook activated.
+01-06-2026 22:57 [INFO] Vault (1.7.3-b131) (Economy: TheosisEconomy) (Permissions: LuckPerms) hook activated.
+01-06-2026 22:57 [INFO] WorldGuard (7.0.14+2339-43997ec) hook activated.
+01-06-2026 22:57 [INFO] Version 3.14.1-b8 ENABLED
+01-07-2026 06:39 [INFO] Disabling MyPet v3.14.1
+01-07-2026 06:40 [INFO] Compat mode for v1_21_R7 loaded.
+01-07-2026 06:40 [INFO] Exp calculation mode: MyPet
+01-07-2026 06:40 [INFO] Loading WorldGroups...
+01-07-2026 06:40 [INFO]    added 'world' to 'default'
+01-07-2026 06:40 [INFO]    added 'world_nether' to 'default'
+01-07-2026 06:40 [INFO]    added 'world_the_end' to 'default'
+01-07-2026 06:40 [INFO]    added 'spawn' to 'default'
+01-07-2026 06:40 [INFO] Connect to SQLite database...
+01-07-2026 06:40 [INFO] SQLite connection successful.
+01-07-2026 06:40 [INFO] Lands (7.22.2) hook activated.
+01-07-2026 06:40 [INFO] PlaceholderAPI (2.11.7) hook activated.
+01-07-2026 06:40 [INFO] ProtocolLib (5.4.0) hook activated.
+01-07-2026 06:40 [INFO] Vault (1.7.3-b131) (Economy: TheosisEconomy) (Permissions: LuckPerms) hook activated.
+01-07-2026 06:40 [INFO] WorldGuard (7.0.14+2339-43997ec) hook activated.
+01-07-2026 06:40 [INFO] Version 3.14.1-b8 ENABLED
+01-07-2026 07:31 [INFO] Disabling MyPet v3.14.1
+01-07-2026 07:32 [INFO] Compat mode for v1_21_R7 loaded.
+01-07-2026 07:32 [INFO] Exp calculation mode: MyPet
+01-07-2026 07:32 [INFO] Loading WorldGroups...
+01-07-2026 07:32 [INFO]    added 'world' to 'default'
+01-07-2026 07:32 [INFO]    added 'world_nether' to 'default'
+01-07-2026 07:32 [INFO]    added 'world_the_end' to 'default'
+01-07-2026 07:32 [INFO]    added 'spawn' to 'default'
+01-07-2026 07:32 [INFO] Connect to SQLite database...
+01-07-2026 07:32 [INFO] SQLite connection successful.
+01-07-2026 07:32 [INFO] Lands (7.22.2) hook activated.
+01-07-2026 07:32 [INFO] PlaceholderAPI (2.11.7) hook activated.
+01-07-2026 07:32 [INFO] ProtocolLib (5.4.0) hook activated.
+01-07-2026 07:32 [INFO] Vault (1.7.3-b131) (Economy: TheosisEconomy) (Permissions: LuckPerms) hook activated.
+01-07-2026 07:32 [INFO] WorldGuard (7.0.14+2339-43997ec) hook activated.
+01-07-2026 07:32 [INFO] Version 3.14.1-b8 ENABLED
+01-07-2026 16:16 [INFO] Disabling MyPet v3.14.1
+01-07-2026 16:40 [INFO] Compat mode for v1_21_R7 loaded.
+01-07-2026 16:40 [INFO] Exp calculation mode: MyPet
+01-07-2026 16:40 [INFO] Loading WorldGroups...
+01-07-2026 16:40 [INFO]    added 'world' to 'default'
+01-07-2026 16:40 [INFO]    added 'world_nether' to 'default'
+01-07-2026 16:40 [INFO]    added 'world_the_end' to 'default'
+01-07-2026 16:40 [INFO]    added 'spawn' to 'default'
+01-07-2026 16:40 [INFO] Connect to SQLite database...
+01-07-2026 16:40 [INFO] SQLite connection successful.
+01-07-2026 16:40 [INFO] Lands (7.22.2) hook activated.
+01-07-2026 16:40 [INFO] PlaceholderAPI (2.11.7) hook activated.
+01-07-2026 16:40 [INFO] ProtocolLib (5.4.0) hook activated.
+01-07-2026 16:40 [INFO] Vault (1.7.3-b131) (Economy: TheosisEconomy) (Permissions: LuckPerms) hook activated.
+01-07-2026 16:40 [INFO] WorldGuard (7.0.14+2339-43997ec) hook activated.
+01-07-2026 16:40 [INFO] Version 3.14.1-b8 ENABLED
+01-07-2026 16:45 [INFO] Disabling MyPet v3.14.1
+01-07-2026 16:47 [INFO] Compat mode for v1_21_R7 loaded.
+01-07-2026 16:47 [INFO] Exp calculation mode: MyPet
+01-07-2026 16:47 [INFO] Loading WorldGroups...
+01-07-2026 16:47 [INFO]    added 'world' to 'default'
+01-07-2026 16:47 [INFO]    added 'world_nether' to 'default'
+01-07-2026 16:47 [INFO]    added 'world_the_end' to 'default'
+01-07-2026 16:47 [INFO]    added 'spawn' to 'default'
+01-07-2026 16:47 [INFO] Connect to SQLite database...
+01-07-2026 16:47 [INFO] SQLite connection successful.
+01-07-2026 16:47 [INFO] Lands (7.22.2) hook activated.
+01-07-2026 16:47 [INFO] PlaceholderAPI (2.11.7) hook activated.
+01-07-2026 16:47 [INFO] ProtocolLib (5.4.0) hook activated.
+01-07-2026 16:47 [INFO] Vault (1.7.3-b131) (Economy: TheosisEconomy) (Permissions: LuckPerms) hook activated.
+01-07-2026 16:47 [INFO] WorldGuard (7.0.14+2339-43997ec) hook activated.
+01-07-2026 16:47 [INFO] Version 3.14.1-b8 ENABLED
+01-07-2026 16:48 [INFO] Disabling MyPet v3.14.1
+01-07-2026 16:50 [INFO] Compat mode for v1_21_R7 loaded.
+01-07-2026 16:50 [INFO] Exp calculation mode: MyPet
+01-07-2026 16:50 [INFO] Loading WorldGroups...
+01-07-2026 16:50 [INFO]    added 'world' to 'default'
+01-07-2026 16:50 [INFO]    added 'world_nether' to 'default'
+01-07-2026 16:50 [INFO]    added 'world_the_end' to 'default'
+01-07-2026 16:50 [INFO]    added 'spawn' to 'default'
+01-07-2026 16:50 [INFO] Connect to SQLite database...
+01-07-2026 16:50 [INFO] SQLite connection successful.
+01-07-2026 16:50 [INFO] Lands (7.22.2) hook activated.
+01-07-2026 16:50 [INFO] PlaceholderAPI (2.11.7) hook activated.
+01-07-2026 16:50 [INFO] ProtocolLib (5.4.0) hook activated.
+01-07-2026 16:50 [INFO] Vault (1.7.3-b131) (Economy: TheosisEconomy) (Permissions: LuckPerms) hook activated.
+01-07-2026 16:50 [INFO] WorldGuard (7.0.14+2339-43997ec) hook activated.
+01-07-2026 16:50 [INFO] Version 3.14.1-b8 ENABLED
+01-07-2026 16:58 [INFO] Disabling MyPet v3.14.1
+01-07-2026 16:59 [INFO] Compat mode for v1_21_R7 loaded.
+01-07-2026 16:59 [INFO] Exp calculation mode: MyPet
+01-07-2026 16:59 [INFO] Loading WorldGroups...
+01-07-2026 16:59 [INFO]    added 'world' to 'default'
+01-07-2026 16:59 [INFO]    added 'world_nether' to 'default'
+01-07-2026 16:59 [INFO]    added 'world_the_end' to 'default'
+01-07-2026 16:59 [INFO]    added 'spawn' to 'default'
+01-07-2026 16:59 [INFO] Connect to SQLite database...
+01-07-2026 16:59 [INFO] SQLite connection successful.
+01-07-2026 16:59 [INFO] Lands (7.22.2) hook activated.
+01-07-2026 16:59 [INFO] PlaceholderAPI (2.11.7) hook activated.
+01-07-2026 16:59 [INFO] ProtocolLib (5.4.0) hook activated.
+01-07-2026 16:59 [INFO] Vault (1.7.3-b131) (Economy: TheosisEconomy) (Permissions: LuckPerms) hook activated.
+01-07-2026 16:59 [INFO] WorldGuard (7.0.14+2339-43997ec) hook activated.
+01-07-2026 16:59 [INFO] Version 3.14.1-b8 ENABLED
+01-07-2026 18:44 [INFO] Disabling MyPet v3.14.1
+01-07-2026 18:47 [INFO] Compat mode for v1_21_R7 loaded.
+01-07-2026 18:47 [INFO] Exp calculation mode: MyPet
+01-07-2026 18:47 [INFO] Loading WorldGroups...
+01-07-2026 18:47 [INFO]    added 'world' to 'default'
+01-07-2026 18:47 [INFO]    added 'world_nether' to 'default'
+01-07-2026 18:47 [INFO]    added 'world_the_end' to 'default'
+01-07-2026 18:47 [INFO]    added 'spawn' to 'default'
+01-07-2026 18:47 [INFO] Connect to SQLite database...
+01-07-2026 18:47 [INFO] SQLite connection successful.
+01-07-2026 18:47 [INFO] Lands (7.22.2) hook activated.
+01-07-2026 18:47 [INFO] PlaceholderAPI (2.11.7) hook activated.
+01-07-2026 18:47 [INFO] ProtocolLib (5.4.0) hook activated.
+01-07-2026 18:47 [INFO] Vault (1.7.3-b131) (Economy: TheosisEconomy) (Permissions: LuckPerms) hook activated.
+01-07-2026 18:47 [INFO] WorldGuard (7.0.14+2339-43997ec) hook activated.
+01-07-2026 18:47 [INFO] Version 3.14.1-b8 ENABLED
+01-08-2026 02:06 [INFO] Disabling MyPet v3.14.1
+01-08-2026 02:07 [INFO] Compat mode for v1_21_R7 loaded.
+01-08-2026 02:07 [INFO] Exp calculation mode: MyPet
+01-08-2026 02:07 [INFO] Loading WorldGroups...
+01-08-2026 02:07 [INFO]    added 'world' to 'default'
+01-08-2026 02:07 [INFO]    added 'world_nether' to 'default'
+01-08-2026 02:07 [INFO]    added 'world_the_end' to 'default'
+01-08-2026 02:07 [INFO]    added 'spawn' to 'default'
+01-08-2026 02:07 [INFO] Connect to SQLite database...
+01-08-2026 02:07 [INFO] SQLite connection successful.
+01-08-2026 02:07 [INFO] Lands (7.22.2) hook activated.
+01-08-2026 02:07 [INFO] PlaceholderAPI (2.11.7) hook activated.
+01-08-2026 02:07 [INFO] ProtocolLib (5.4.0) hook activated.
+01-08-2026 02:07 [INFO] Vault (1.7.3-b131) (Economy: TheosisEconomy) (Permissions: LuckPerms) hook activated.
+01-08-2026 02:07 [INFO] WorldGuard (7.0.14+2339-43997ec) hook activated.
+01-08-2026 02:07 [INFO] Version 3.14.1-b8 ENABLED
+01-08-2026 03:21 [INFO] Disabling MyPet v3.14.1
+01-08-2026 03:22 [INFO] Compat mode for v1_21_R7 loaded.
+01-08-2026 03:22 [INFO] Exp calculation mode: MyPet
+01-08-2026 03:22 [INFO] Loading WorldGroups...
+01-08-2026 03:22 [INFO]    added 'world' to 'default'
+01-08-2026 03:22 [INFO]    added 'world_nether' to 'default'
+01-08-2026 03:22 [INFO]    added 'world_the_end' to 'default'
+01-08-2026 03:22 [INFO]    added 'spawn' to 'default'
+01-08-2026 03:22 [INFO] Connect to SQLite database...
+01-08-2026 03:22 [INFO] SQLite connection successful.
+01-08-2026 03:22 [INFO] Lands (7.22.2) hook activated.
+01-08-2026 03:22 [INFO] PlaceholderAPI (2.11.7) hook activated.
+01-08-2026 03:22 [INFO] ProtocolLib (5.4.0) hook activated.
+01-08-2026 03:22 [INFO] Vault (1.7.3-b131) (Economy: TheosisEconomy) (Permissions: LuckPerms) hook activated.
+01-08-2026 03:22 [INFO] WorldGuard (7.0.14+2339-43997ec) hook activated.
+01-08-2026 03:22 [INFO] Version 3.14.1-b8 ENABLED
+01-08-2026 19:42 [INFO] Disabling MyPet v3.14.1
+01-08-2026 19:43 [INFO] Compat mode for v1_21_R7 loaded.
+01-08-2026 19:43 [INFO] Exp calculation mode: MyPet
+01-08-2026 19:43 [INFO] Loading WorldGroups...
+01-08-2026 19:43 [INFO]    added 'world' to 'default'
+01-08-2026 19:43 [INFO]    added 'world_nether' to 'default'
+01-08-2026 19:43 [INFO]    added 'world_the_end' to 'default'
+01-08-2026 19:43 [INFO]    added 'spawn' to 'default'
+01-08-2026 19:43 [INFO] Connect to SQLite database...
+01-08-2026 19:43 [INFO] SQLite connection successful.
+01-08-2026 19:43 [INFO] Lands (7.22.2) hook activated.
+01-08-2026 19:43 [INFO] PlaceholderAPI (2.11.7) hook activated.
+01-08-2026 19:43 [INFO] ProtocolLib (5.4.0) hook activated.
+01-08-2026 19:43 [INFO] Vault (1.7.3-b131) (Economy: TheosisEconomy) (Permissions: LuckPerms) hook activated.
+01-08-2026 19:43 [INFO] WorldGuard (7.0.14+2339-43997ec) hook activated.
+01-08-2026 19:43 [INFO] Version 3.14.1-b8 ENABLED
+01-08-2026 19:43 [INFO] Disabling MyPet v3.14.1
+01-08-2026 19:44 [INFO] Compat mode for v1_21_R7 loaded.
+01-08-2026 19:44 [INFO] Exp calculation mode: MyPet
+01-08-2026 19:44 [INFO] Loading WorldGroups...
+01-08-2026 19:44 [INFO]    added 'world' to 'default'
+01-08-2026 19:44 [INFO]    added 'world_nether' to 'default'
+01-08-2026 19:44 [INFO]    added 'world_the_end' to 'default'
+01-08-2026 19:44 [INFO]    added 'spawn' to 'default'
+01-08-2026 19:44 [INFO] Connect to SQLite database...
+01-08-2026 19:44 [INFO] SQLite connection successful.
+01-08-2026 19:44 [INFO] Lands (7.22.2) hook activated.
+01-08-2026 19:44 [INFO] PlaceholderAPI (2.11.7) hook activated.
+01-08-2026 19:44 [INFO] ProtocolLib (5.4.0) hook activated.
+01-08-2026 19:44 [INFO] Vault (1.7.3-b131) (Economy: TheosisEconomy) (Permissions: LuckPerms) hook activated.
+01-08-2026 19:44 [INFO] WorldGuard (7.0.14+2339-43997ec) hook activated.
+01-08-2026 19:44 [INFO] Version 3.14.1-b8 ENABLED
+01-08-2026 19:45 [INFO] Disabling MyPet v3.14.1
+01-08-2026 19:52 [INFO] Compat mode for v1_21_R7 loaded.
+01-08-2026 19:52 [INFO] Exp calculation mode: MyPet
+01-08-2026 19:52 [INFO] Loading WorldGroups...
+01-08-2026 19:52 [INFO]    added 'world' to 'default'
+01-08-2026 19:52 [INFO]    added 'world_nether' to 'default'
+01-08-2026 19:52 [INFO]    added 'world_the_end' to 'default'
+01-08-2026 19:52 [INFO]    added 'spawn' to 'default'
+01-08-2026 19:52 [INFO] Connect to SQLite database...
+01-08-2026 19:52 [INFO] SQLite connection successful.
+01-08-2026 19:52 [INFO] Lands (7.22.2) hook activated.
+01-08-2026 19:52 [INFO] PlaceholderAPI (2.11.7) hook activated.
+01-08-2026 19:52 [INFO] ProtocolLib (5.4.0) hook activated.
+01-08-2026 19:52 [INFO] Vault (1.7.3-b131) (Economy: TheosisEconomy) (Permissions: LuckPerms) hook activated.
+01-08-2026 19:52 [INFO] WorldGuard (7.0.14+2339-43997ec) hook activated.
+01-08-2026 19:52 [INFO] Version 3.14.1-b8 ENABLED
+01-08-2026 19:52 [INFO] Disabling MyPet v3.14.1
+01-08-2026 19:53 [INFO] Compat mode for v1_21_R7 loaded.
+01-08-2026 19:53 [INFO] Exp calculation mode: MyPet
+01-08-2026 19:53 [INFO] Loading WorldGroups...
+01-08-2026 19:53 [INFO]    added 'world' to 'default'
+01-08-2026 19:53 [INFO]    added 'world_nether' to 'default'
+01-08-2026 19:53 [INFO]    added 'world_the_end' to 'default'
+01-08-2026 19:53 [INFO]    added 'spawn' to 'default'
+01-08-2026 19:53 [INFO] Connect to SQLite database...
+01-08-2026 19:53 [INFO] SQLite connection successful.
+01-08-2026 19:53 [INFO] Lands (7.22.2) hook activated.
+01-08-2026 19:53 [INFO] PlaceholderAPI (2.11.7) hook activated.
+01-08-2026 19:53 [INFO] ProtocolLib (5.4.0) hook activated.
+01-08-2026 19:53 [INFO] Vault (1.7.3-b131) (Economy: TheosisEconomy) (Permissions: LuckPerms) hook activated.
+01-08-2026 19:53 [INFO] WorldGuard (7.0.14+2339-43997ec) hook activated.
+01-08-2026 19:53 [INFO] Version 3.14.1-b8 ENABLED
+01-08-2026 19:54 [INFO] Disabling MyPet v3.14.1
+01-08-2026 19:55 [INFO] Compat mode for v1_21_R7 loaded.
+01-08-2026 19:55 [INFO] Exp calculation mode: MyPet
+01-08-2026 19:55 [INFO] Loading WorldGroups...
+01-08-2026 19:55 [INFO]    added 'world' to 'default'
+01-08-2026 19:55 [INFO]    added 'world_nether' to 'default'
+01-08-2026 19:55 [INFO]    added 'world_the_end' to 'default'
+01-08-2026 19:55 [INFO]    added 'spawn' to 'default'
+01-08-2026 19:55 [INFO] Connect to SQLite database...
+01-08-2026 19:55 [INFO] SQLite connection successful.
+01-08-2026 19:55 [INFO] Lands (7.22.2) hook activated.
+01-08-2026 19:55 [INFO] PlaceholderAPI (2.11.7) hook activated.
+01-08-2026 19:55 [INFO] ProtocolLib (5.4.0) hook activated.
+01-08-2026 19:55 [INFO] Vault (1.7.3-b131) (Economy: TheosisEconomy) (Permissions: LuckPerms) hook activated.
+01-08-2026 19:55 [INFO] WorldGuard (7.0.14+2339-43997ec) hook activated.
+01-08-2026 19:55 [INFO] Version 3.14.1-b8 ENABLED
+01-08-2026 22:17 [INFO] Disabling MyPet v3.14.1
+01-08-2026 22:30 [INFO] Compat mode for v1_21_R7 loaded.
+01-08-2026 22:30 [INFO] Exp calculation mode: MyPet
+01-08-2026 22:30 [INFO] Loading WorldGroups...
+01-08-2026 22:30 [INFO]    added 'world' to 'default'
+01-08-2026 22:30 [INFO]    added 'world_nether' to 'default'
+01-08-2026 22:30 [INFO]    added 'world_the_end' to 'default'
+01-08-2026 22:30 [INFO]    added 'spawn' to 'default'
+01-08-2026 22:30 [INFO] Connect to SQLite database...
+01-08-2026 22:30 [INFO] SQLite connection successful.
+01-08-2026 22:30 [INFO] Lands (7.22.2) hook activated.
+01-08-2026 22:30 [INFO] PlaceholderAPI (2.11.7) hook activated.
+01-08-2026 22:30 [INFO] ProtocolLib (5.4.0) hook activated.
+01-08-2026 22:30 [INFO] Vault (1.7.3-b131) (Economy: TheosisEconomy) (Permissions: LuckPerms) hook activated.
+01-08-2026 22:30 [INFO] WorldGuard (7.0.14+2339-43997ec) hook activated.
+01-08-2026 22:30 [INFO] Version 3.14.1-b8 ENABLED
+01-08-2026 22:31 [INFO] Disabling MyPet v3.14.1
+01-08-2026 22:35 [INFO] Compat mode for v1_21_R7 loaded.
+01-08-2026 22:35 [INFO] Exp calculation mode: MyPet
+01-08-2026 22:35 [INFO] Loading WorldGroups...
+01-08-2026 22:35 [INFO]    added 'world' to 'default'
+01-08-2026 22:35 [INFO]    added 'world_nether' to 'default'
+01-08-2026 22:35 [INFO]    added 'world_the_end' to 'default'
+01-08-2026 22:35 [INFO]    added 'spawn' to 'default'
+01-08-2026 22:35 [INFO] Connect to SQLite database...
+01-08-2026 22:35 [INFO] SQLite connection successful.
+01-08-2026 22:35 [INFO] Lands (7.22.2) hook activated.
+01-08-2026 22:35 [INFO] PlaceholderAPI (2.11.7) hook activated.
+01-08-2026 22:35 [INFO] ProtocolLib (5.4.0) hook activated.
+01-08-2026 22:35 [INFO] Vault (1.7.3-b131) (Economy: TheosisEconomy) (Permissions: LuckPerms) hook activated.
+01-08-2026 22:35 [INFO] WorldGuard (7.0.14+2339-43997ec) hook activated.
+01-08-2026 22:35 [INFO] Version 3.14.1-b8 ENABLED

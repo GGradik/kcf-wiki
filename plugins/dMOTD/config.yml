@@ -1,0 +1,18 @@
+serverMOTD:
+  line-1: "                    <SOLID:FF3D3D>&lᴋ<SOLID:FA393B>&lᴄ<SOLID:F43539>&lꜰ<SOLID:EF3137>&l-<SOLID:E92D35>&ls<SOLID:E42933>&lᴇ<SOLID:DE2531>&lʀ<SOLID:D8212F>&lᴠ<SOLID:D31D2D>&lᴇ<SOLID:CD192B>&lʀ "
+  line-2: "          &f↽ <SOLID:F28A8A>з<SOLID:F38F8F>д<SOLID:F49494>ᴇ<SOLID:F59999>ᴄ<SOLID:F69E9E>ь <SOLID:F7A3A3>ʙ<SOLID:F8A8A8>ы <SOLID:F9ADAD>п<SOLID:FAB2B2>ᴏ<SOLID:FBB7B7>з<SOLID:FCBDBD>ʜ<SOLID:FBC2C2>ᴀ<SOLID:FACECE>ᴇ<SOLID:F9D3D3>т<SOLID:F8D8D8>ᴇ <SOLID:F7DDDD>и<SOLID:F6E2E2>ᴄ<SOLID:F5E7E7>ᴛ<SOLID:F4ECEC>ᴏ<SOLID:F3F1F1>ᴘ<SOLID:F2F6F6>и<SOLID:F1FAFA>ю &f⇁
+"
+CustomServerIcon:
+  enabled: true
+  icon: "server-icon2" #only .png format
+playerCount:
+  enabled: true
+  max-players: 100
+messages:
+  noPerm: " &f &fНет прав."
+  reload: " &f &fПлагин перезагружен."
+  help: "\n &f &fСписок команд плагина: \n&f\n <SOLID:AFD1C0>/motd help &f- помощь по плагину.\n <SOLID:AFD1C0>/motd reload &f- перезагрузка конфигурации.\n <SOLID:AFD1C0>/motd setplayers (число) &f- установка числа слотов.\n <SOLID:AFD1C0>/motd setline1/setline2 <motd> &f- установка мотд из игры.\n&f"
+  notArg: " &f &fВведён недопустимый аргумент."
+  notValidArg: " &f &fВведён недопустимый аргумент."
+  setedNewMaxPlayers: " &f &fКоличество слотов изменено на <SOLID:AFD1C0>%new%&f."
+  setedMotdLine: " &f &fМотд успешно установлен!:\n%line-1%\n%line-2%"

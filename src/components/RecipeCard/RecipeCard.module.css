@@ -1,0 +1,70 @@
+.recipeCard {
+    background: var(--ifm-card-background-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    overflow: hidden;
+    border: 1px solid var(--ifm-toc-border-color);
+}
+
+.header {
+    background: var(--ifm-color-primary);
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h3 {
+    margin: 0;
+    color: white;
+}
+
+.content {
+    display: flex;
+    padding: 1.5rem;
+    gap: 2rem;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.imageContainer img {
+    width: 128px;
+    height: 128px;
+    object-fit: contain;
+}
+
+.details {
+    flex: 1;
+}
+
+.details h4 {
+    margin-bottom: 0.5rem;
+}
+
+.process {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+
+.process p {
+    margin: 0.2rem 0;
+}
+
+.effectTag {
+    display: inline-block;
+    background: #e7f3ff;
+    color: #0070f3;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    margin-right: 0.5rem;
+}

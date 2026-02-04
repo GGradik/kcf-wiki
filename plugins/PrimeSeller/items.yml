@@ -1,0 +1,181 @@
+unlimited:
+  update: 86400
+  enable: true
+  items:
+    # --- ШАХТЕРСКОЕ ДЕЛО (СЫРЬЕ) ---
+    # Цены мизерные, так как это добывается стаками
+    COAL:
+      min-price: 0,1
+      max-price: 0,3
+    CHARCOAL:
+      min-price: 0,1
+      max-price: 0,2
+    RAW_IRON:
+      min-price: 0,3
+      max-price: 0,8
+    RAW_COPPER:
+      min-price: 0,05
+      max-price: 0,1
+    RAW_GOLD:
+      min-price: 1,0
+      max-price: 2,0
+    FLINT:
+      min-price: 0,1
+      max-price: 0,5
+    CLAY_BALL:
+      min-price: 0,2
+      max-price: 0,5
+    
+    # --- ДРАГОЦЕННОСТИ ---
+    DIAMOND:
+      min-price: 10,0
+      max-price: 15,0
+    EMERALD:
+      min-price: 2,0
+      max-price: 5,0
+    GOLD_INGOT:
+      min-price: 1,5
+      max-price: 3,0
+    IRON_INGOT:
+      min-price: 0,5
+      max-price: 1,5
+    LAPIS_LAZULI:
+      min-price: 0,1
+      max-price: 0,3
+    REDSTONE:
+      min-price: 0,1
+      max-price: 0,2
+    AMETHYST_SHARD:
+      min-price: 0,5
+      max-price: 1,5
+    QUARTZ:
+      min-price: 0,2
+      max-price: 0,5
+
+limited:
+  limit: 1000
+  update: 10800
+  enable: true
+  limit-per-items: 64
+  items:
+    # --- АДСКИЙ И ЭНДЕР ЛУТ ---
+    NETHERITE_INGOT:
+      min-price: 100,0
+      max-price: 150,0
+    ANCIENT_DEBRIS:
+      min-price: 25,0
+      max-price: 40,0
+    NETHER_WART:
+      min-price: 0,5
+      max-price: 1,0
+    MAGMA_CREAM:
+      min-price: 2,0
+      max-price: 4,0
+    BLAZE_ROD:
+      min-price: 3,0
+      max-price: 6,0
+    GHAST_TEAR:
+      min-price: 5,0
+      max-price: 10,0
+    ENDER_PEARL:
+      min-price: 1,0
+      max-price: 2,5
+    CHORUS_FRUIT:
+      min-price: 0,5
+      max-price: 1,5
+    SHULKER_SHELL:
+      min-price: 10,0
+      max-price: 20,0
+    ELYTRA:
+      min-price: 100,0
+      max-price: 200,0
+      
+    # --- ОХОТА НА МОБОВ ---
+    # Лимиты не дадут игрокам с авто-фермами стать миллионерами
+    SLIME_BALL:
+      min-price: 1,0
+      max-price: 2,0
+    GUNPOWDER:
+      min-price: 0,5
+      max-price: 1,0
+    SPIDER_EYE:
+      min-price: 0,5
+      max-price: 1,0
+    BONE:
+      min-price: 0,1
+      max-price: 0,3
+    INK_SAC:
+      min-price: 0,5
+      max-price: 1,0
+    GLOW_INK_SAC:
+      min-price: 1,0
+      max-price: 2,0
+    LEATHER:
+      min-price: 1,0
+      max-price: 2,0
+    RABBIT_FOOT:
+      min-price: 5,0
+      max-price: 10,0
+    PHANTOM_MEMBRANE:
+      min-price: 3,0
+      max-price: 6,0
+      
+    # --- СОКРОВИЩА И РЕДКОСТИ ---
+    HEART_OF_THE_SEA:
+      min-price: 50,0
+      max-price: 100,0
+    NAUTILUS_SHELL:
+      min-price: 3,0
+      max-price: 8,0
+    SPONGE:
+      min-price: 15,0
+      max-price: 25,0
+    TRIDENT:
+      min-price: 20,0
+      max-price: 40,0
+    NAME_TAG:
+      min-price: 5,0
+      max-price: 10,0
+    SADDLE:
+      min-price: 5,0
+      max-price: 10,0
+    TOTEM_OF_UNDYING:
+      min-price: 20,0
+      max-price: 40,0
+    GOLDEN_APPLE:
+      min-price: 5,0
+      max-price: 10,0
+    ENCHANTED_GOLDEN_APPLE:
+      min-price: 50,0
+      max-price: 100,0
+      
+    # --- РЕДКИЕ БЛОКИ ---
+    OBSIDIAN:
+      min-price: 0,5
+      max-price: 1,0
+    CRYING_OBSIDIAN:
+      min-price: 2,0
+      max-price: 5,0
+    GILDED_BLACKSTONE:
+      min-price: 3,0
+      max-price: 6,0
+    SEA_LANTERN:
+      min-price: 2,0
+      max-price: 4,0
+    SCULK_CATALYST:
+      min-price: 10,0
+      max-price: 20,0
+      
+    # --- МУЗЫКАЛЬНЫЕ ПЛАСТИНКИ ---
+    MUSIC_DISC_13:
+      min-price: 10,0
+      max-price: 20,0
+    MUSIC_DISC_CAT:
+      min-price: 10,0
+      max-price: 20,0
+    MUSIC_DISC_PIGSTEP:
+      min-price: 30,0
+      max-price: 50,0
+    MUSIC_DISC_OTHERSIDE:
+      min-price: 20,0
+      max-price: 40,0

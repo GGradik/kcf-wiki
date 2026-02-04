@@ -1,0 +1,10 @@
+admin:
+  name: Администрация
+  title: KCF Team
+  url: https://github.com/
+  image_url: https://github.com/facebook.png
+
+player:
+  name: Игрок
+  title: Житель сервера
+  image_url: https://github.com/github.png

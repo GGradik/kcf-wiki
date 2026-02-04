@@ -1,0 +1,127 @@
+{
+  "Order": 5,
+  "Name": "Поддержка",
+  "ID": "Utility",
+  "Icon": {
+    "Material": "BEACON"
+  },
+  "Description": [
+    "<gray>Специализация: <green>Баффы и Защита",
+    "",
+    "- <green><bold>Аура Регенерации",
+    "- <gray><bold>Аура Сопротивления",
+    "- <blue><bold>Отбрасывание врагов",
+    "- <yellow>Малый рюкзак",
+    "- <red>Низкий урон"
+  ],
+  "MobTypes": [
+    "*"
+  ],
+  "Skills": {
+    "Damage": {
+      "Upgrades": {
+        "10": {
+          "Damage": "+0.5"
+        },
+        "30": {
+          "Damage": "+1.0"
+        }
+      }
+    },
+    "Life": {
+      "Upgrades": {
+        "1": {
+          "Health": "+5"
+        },
+        "15": {
+          "Health": "+5"
+        },
+        "30": {
+          "Health": "+5"
+        },
+        "45": {
+          "Health": "+5"
+        }
+      }
+    },
+    "Beacon": {
+      "Upgrades": {
+        "10": {
+          "Buffs": {
+            "Resistance": "1"
+          },
+          "Duration": "10",
+          "Range": "5"
+        },
+        "30": {
+          "Buffs": {
+            "Resistance": "1",
+            "Regeneration": "1"
+          },
+          "Duration": "15",
+          "Range": "8"
+        },
+        "50": {
+          "Buffs": {
+            "Resistance": "2",
+            "Regeneration": "1"
+          },
+          "Duration": "20",
+          "Range": "10"
+        }
+      }
+    },
+    "Knockback": {
+      "Upgrades": {
+        "5": {
+          "Chance": "+10"
+        },
+        "25": {
+          "Chance": "+15"
+        }
+      }
+    },
+    "Heal": {
+      "Upgrades": {
+        "10": {
+          "Health": "+1",
+          "Time": "30s"
+        },
+        "30": {
+          "Health": "+1",
+          "Time": "15s"
+        }
+      }
+    },
+    "Backpack": {
+      "Upgrades": {
+        "20": {
+          "drop": true,
+          "rows": "1"
+        },
+        "40": {
+          "drop": true,
+          "rows": "+1"
+        }
+      }
+    },
+    "Behavior": {
+      "Upgrades": {
+        "1": {
+          "Friend": true,
+          "Farm": false,
+          "Duel": true,
+          "Aggro": true,
+          "Raid": true
+        }
+      }
+    },
+    "Control": {
+      "Upgrades": {
+        "1": {
+          "Active": true
+        }
+      }
+    }
+  }
+}

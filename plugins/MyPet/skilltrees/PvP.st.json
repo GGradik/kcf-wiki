@@ -1,0 +1,120 @@
+{
+  "Order": 3,
+  "Name": "Убийца",
+  "ID": "PvP",
+  "Icon": {
+    "Material": "GOLDEN_SWORD"
+  },
+  "Description": [
+    "<gray>Специализация: <red>Скорость и Дебаффы",
+    "",
+    "- <blue><bold>Аура Скорости (Маяк)",
+    "- <red><bold>Поджог врагов",
+    "- <aqua><bold>Замедление врагов",
+    "- <green>Спринт"
+  ],
+  "MobTypes": [
+    "*"
+  ],
+  "Skills": {
+    "Damage": {
+      "Upgrades": {
+        "1": {
+          "Damage": "+1.0"
+        },
+        "15": {
+          "Damage": "+1.5"
+        },
+        "30": {
+          "Damage": "+1.5"
+        }
+      }
+    },
+    "Sprint": {
+      "Upgrades": {
+        "5": {
+          "Active": true
+        }
+      }
+    },
+    "Fire": {
+      "Upgrades": {
+        "10": {
+          "Duration": "3",
+          "Chance": "15"
+        },
+        "35": {
+          "Duration": "+2",
+          "Chance": "+10"
+        }
+      }
+    },
+    "Slow": {
+      "Upgrades": {
+        "15": {
+          "Duration": "3",
+          "Chance": "15"
+        },
+        "40": {
+          "Duration": "+2",
+          "Chance": "+10"
+        }
+      }
+    },
+    "Beacon": {
+      "Upgrades": {
+        "20": {
+          "Buffs": {
+            "Speed": "1"
+          },
+          "Duration": "10",
+          "Range": "5"
+        },
+        "45": {
+          "Buffs": {
+            "Speed": "1",
+            "Resistance": "1"
+          },
+          "Duration": "15",
+          "Range": "8"
+        }
+      }
+    },
+    "Life": {
+      "Upgrades": {
+        "10": {
+          "Health": "+2"
+        },
+        "30": {
+          "Health": "+3"
+        }
+      }
+    },
+    "Backpack": {
+      "Upgrades": {
+        "25": {
+          "drop": true,
+          "rows": "1"
+        }
+      }
+    },
+    "Behavior": {
+      "Upgrades": {
+        "1": {
+          "Friend": true,
+          "Farm": false,
+          "Duel": true,
+          "Aggro": true,
+          "Raid": true
+        }
+      }
+    },
+    "Control": {
+      "Upgrades": {
+        "1": {
+          "Active": true
+        }
+      }
+    }
+  }
+}

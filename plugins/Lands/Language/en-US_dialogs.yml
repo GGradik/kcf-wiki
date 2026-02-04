@@ -1,0 +1,67 @@
+# Here you can edit all dialogs.
+#
+# If you encounter any issues or have questions:
+# Discord: https://discord.incredibleplugins.com
+#
+# Wiki: https://wiki.incredibleplugins.com/general/locale-and-config/dialogs
+
+dialogs:
+  input:
+    title: Input
+    inputs:
+      text:
+        label: Text
+      player:
+        label: Player
+    buttons:
+      confirm:
+        label: '&aConfirm'
+        tooltip: Click here to confirm your input.
+      discard:
+        label: '&cDiscard'
+        tooltip: Click to discard your input.
+  land_create:
+    title: Create a New Land
+    inputs:
+      name:
+        label: Name
+      tag:
+        label: Tag
+    bodies:
+      info:
+        text: Creating this land will cost you&4 {cost}&r. For your new land&3 {chunks}&r
+          chunks will be claimed, if there is enough space.
+      tag:
+        text: The tag is the short version of your land's name.
+        item:
+          material: NAME_TAG
+          hide-tooltip: true
+    buttons:
+      confirm:
+        label: '&aCreate'
+        tooltip: Click here to create a new land.
+      discard:
+        label: '&cDiscard'
+        tooltip: Click to discard the land creation.
+  nation_create:
+    title: Create a New Nation
+    inputs:
+      name:
+        label: Name
+      tag:
+        label: Tag
+    bodies:
+      info:
+        text: Creating this nation will cost you&4 {cost}&r.
+      tag:
+        text: The tag is the short version of your nation's name.
+        item:
+          material: NAME_TAG
+          hide-tooltip: true
+    buttons:
+      confirm:
+        label: '&aCreate'
+        tooltip: Click here to create a new nation.
+      discard:
+        label: '&cDiscard'
+        tooltip: Click to discard the nation creation.

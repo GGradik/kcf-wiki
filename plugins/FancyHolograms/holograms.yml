@@ -1,0 +1,61 @@
+version: 2 # DO NOT CHANGE
+holograms:
+  seller:
+    type: TEXT
+    location:
+      world: spawn
+      x: 51.5
+      y: 25.1200008392334
+      z: 27.5
+      yaw: 54.609863
+      pitch: 82.35003
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - .
+    - <gradient:#4597e1:#adc2fa><bold>✦Мудрый Уста✦</bold></gradient>
+    - (Нажми!)
+    text_shadow: true
+    see_through: false
+    text_alignment: center
+    update_text_interval: -1
+    background: transparent
+    linkedNpc: seller
+  enchant:
+    type: TEXT
+    location:
+      world: spawn
+      x: 53.5
+      y: 25.1200008392334
+      z: 36.5
+      yaw: 122.10681
+      pitch: 4.049948
+    visibility_distance: -1
+    visibility: ALL
+    persistent: true
+    scale_x: 1.0
+    scale_y: 1.0
+    scale_z: 1.0
+    translation_x: 0.0
+    translation_y: 0.0
+    translation_z: 0.0
+    shadow_radius: 0.0
+    shadow_strength: 1.0
+    text:
+    - <gradient:#e03fab:#8044f8><bold>🍃 Собиратель Шёпота 🍃</bold></gradient>
+    - (Нажми!)
+    text_shadow: false
+    see_through: false
+    text_alignment: center
+    update_text_interval: -1
+    linkedNpc: enchant
+    background: transparent

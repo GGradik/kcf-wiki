@@ -1,0 +1,116 @@
+#####################################################################
+#             This is the shop configuration of MyPet               #
+#####################################################################
+
+Shops:
+  all:
+    Name: "&8Зоомагазин"
+    Balance:
+      Type: Private
+    Position: 0
+    Icon:
+      Material: "lead"
+      Glowing: true
+    Pets:
+      # --- ФЕРМЕРСКИЕ (Для ленивых) - 500 монет ---
+      chicken:
+        Name: "&fКурица"
+        Description:
+          - <gray>Обычная домашняя курица.
+        PetType: Chicken
+        EXP: 0
+        Price: 500
+      cow:
+        Name: "&fКорова"
+        Description:
+          - <gray>Дает молоко и мычит.
+        PetType: Cow
+        EXP: 0
+        Price: 500
+      pig:
+        Name: "&fСвинья"
+        Description:
+          - <gray>Любит морковь.
+        PetType: Pig
+        EXP: 0
+        Price: 500
+      sheep:
+        Name: "&fОвца"
+        Description:
+          - <gray>Можно стричь шерсть.
+        PetType: Sheep
+        EXP: 0
+        Price: 500
+      rabbit:
+        Name: "&fКролик"
+        Description:
+          - <gray>Прыгает высоко.
+        PetType: Rabbit
+        EXP: 0
+        Price: 500
+
+      # --- КОМПАНЬОНЫ (Редкие) - 2000 монет ---
+      wolf:
+        Name: "&6Волк"
+        Description:
+          - <gray>Верный друг и защитник.
+        PetType: Wolf
+        EXP: 0
+        Price: 2000
+        Options:
+          - tamed
+      cat:
+        Name: "&6Кошка"
+        Description:
+          - <gray>Отпугивает криперов.
+        PetType: Cat
+        EXP: 0
+        Price: 2000
+        Options:
+          - tamed
+      parrot:
+        Name: "&6Попугай"
+        Description:
+          - <gray>Умеет летать и сидеть на плече.
+        PetType: Parrot
+        EXP: 0
+        Price: 3000
+        Options:
+          - tamed
+
+      # --- ЭКЗОТИКА (Очень дорогие) - 5000 монет ---
+      axolotl:
+        Name: "&bАксолотль"
+        Description:
+          - <gray>Редкий водный обитатель.
+        PetType: Axolotl
+        EXP: 0
+        Price: 5000
+      fox:
+        Name: "&6Лиса"
+        Description:
+          - <gray>Хитрая и быстрая.
+        PetType: Fox
+        EXP: 0
+        Price: 5000
+      allay:
+        Name: "&bЭллей"
+        Description:
+          - <gray>Маленький помощник.
+        PetType: Allay
+        EXP: 0
+        Price: 10000
+      turtle:
+        Name: "&aЧерепаха"
+        Description:
+          - <gray>Медленная, но бронированная.
+        PetType: Turtle
+        EXP: 0
+        Price: 5000
+      frog:
+        Name: "&2Лягушка"
+        Description:
+          - <gray>Квакает и ест слизней.
+        PetType: Frog
+        EXP: 0
+        Price: 5000

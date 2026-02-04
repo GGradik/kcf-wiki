@@ -1,0 +1,9 @@
+{
+    "label": "УНИКАЛЬНЫЕ ДОПОЛНЕНИЯ И ПРОЧИЕ ОСОБЕННОСТИ",
+    "position": 4,
+    "collapsible": false,
+    "link": {
+        "type": "generated-index",
+        "description": "Что делает наш сервер особенным"
+    }
+}

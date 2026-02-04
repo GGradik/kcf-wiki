@@ -1,0 +1,985 @@
+# # Это дополнительная конфигурация для GUI, которое видят только игроки с Bedrock.
+# # 
+# # 
+# #
+# # Каждая кнопка может иметь иконку. Можно указать URL или путь к текстуре в ресурспаке.
+# # Больше информации: https://wiki.incredibleplugins.com/general/menus/bedrock-forms
+# 
+general:
+  wYes: '&2Да'
+  wNo: '&cНет'
+  enabled: '&2Включено'
+  disabled: '&cОтключено'
+  value:
+    none: '&cНет'
+    unlimited: '&2безлимитно'
+
+common:
+  values:
+    failure_cost: '&cУ вас недостаточно средств. &rВам нужно&c {cost}&r.'
+    failure_permission: '&cСервер не разрешает вам это делать.'
+    failure_noaccess_owner:
+      title: Запрещено
+      content: Только владелец {object}&r может делать это.
+    failure_message:
+      title: Ошибка
+      content: '{message}'
+    success_message:
+      title: Успех
+      content: '{message}'
+    failure_noaccess:
+      content: |
+        &cУ вас нет прав на это. &rВладелец {object}&r может дать вашей роли разрешение.
+            &8• &rФлаг: {flag}
+      title: Запрещено
+    failure_access:
+      title: Запрещено
+      content: |
+        &cУ вас нет прав на это. &rВладелец {object}&r может дать вашей роли разрешение.
+            &8• &rФлаг: {flag}
+      failure_rented:
+        title: Арендовано или Продано
+        content: |
+          &cВы не можете менять налоги, пока область арендована или продана.
+           &8• &rАрендатор:&3 {player}
+    role:
+      failure_priority:
+        title: Приоритет роли
+        content: |
+          &cВы не можете менять настройки этой роли.
+           &8• &rЕе приоритет выше вашего или вы являетесь ее участником.
+      failure_nation:
+        title: Роль управляется Нацией
+        content: |
+          &cЭта роль частично управляется вашей нацией.
+            &8• &rТолько столица нации может менять эту настройку: &e/{cmd}
+      failure_nation_none:
+        title: Роль управляется Нацией
+        content: |
+          &cЭта роль будет управляться нацией, в которую вы, возможно, вступите в будущем.
+            &8• &rВы пока не состоите ни в одной нации.
+      failure_max-roles:
+        title: Макс. ролей
+        content: '&cЭта область достигла макс. кол-ва ролей: &4{max}&c.'
+  
+  items:
+    default:
+      back:
+        name: '&4Назад'
+      close:
+        name: '&4Закрыть'
+      refresh_page_previous:
+        name: '&4&lПредыдущая страница'
+      refresh_page_next:
+        name: '&2&lСледующая страница'
+      enable:
+        name: '&2Включить'
+      disable:
+        name: '&cВыключить'
+  entries: 25
+
+gui:
+  main:
+    title: Главное меню
+    items:
+      default:
+        lands:
+          name: |-
+            Ваши Земли
+            свои: {own}, участник: {trusted}
+          image: default
+        nations:
+          name: |-
+            Ваши Нации
+            свои: {own}, участник: {trusted}
+          image: default
+        all-lands:
+          name: |-
+            Все Земли
+            {lands}
+          image: default
+        all-nations:
+          name: |-
+            Все Нации
+            {nations}
+          image: default
+        invites:
+          name: |-
+            Приглашения
+            {invites}
+          image: default
+        flags:
+          name: Личные настройки
+          image: default
+        rentable:
+          name: Аренда
+          image: default
+        limitations:
+          name: Ваши лимиты
+          image: default
+        map:
+          name: Карта приватов
+          image: default
+  list_player_lands:
+    title: Ваши Земли
+    items:
+      default:
+        entry_land_own:
+          name: |-
+            Земля &2{land}&r
+            &8Вы владелец этой земли.
+          image: textures/blocks/grass_carried
+        entry_land:
+          name: |-
+            Земля &2{land}&r
+            &8Вы участник этой земли.
+          image: textures/blocks/grass_carried
+        entry_land_edit:
+          name: |-
+            Земля &2{land}&r
+            &8Выбрана для редактирования/команд.
+          image: textures/blocks/wool_colored_green
+        entry_camp_edit:
+          name: |-
+            Лагерь &2{land}&r
+            &8Выбран для редактирования/команд.
+          image: textures/blocks/wool_colored_green
+        entry_camp_own:
+          name: |-
+            Лагерь &2{land}&r
+            &8Истекает через:&5 ~{time}
+          image: textures/blocks/dirt
+        entry_camp:
+          name: "Лагерь &2{land}&r \n&8Истекает через:&5 ~{time}"
+          image: textures/blocks/dirt
+  land_settings:
+    title: Опции
+    items:
+      default:
+        roles:
+          name: |-
+            Роли области
+            &6{area}
+          slot: 1
+        taxes:
+          name: |-
+            Налоги области
+            &6{area}
+          slot: 3
+        land-settings:
+          name: |-
+            Природные флаги области
+            &6{area}
+          slot: 2
+        various:
+          name: |-
+            Разные настройки
+            Имя, сообщение входа и т.д.
+          slot: 5
+        relations:
+          name: Отношения
+          slot: 4
+        relations_camp:
+          name: |-
+            Отношения
+            &cУ лагерей нет отношений.
+          slot: 4
+  object_inbox-stats:
+    title: Входящие и Статистика
+    items:
+      default:
+        inbox:
+          name: События и Инфо ({amount})
+        stats:
+          name: Статистика
+  
+  mainblock:
+    title: '&8{level_prefix}{land}'
+    items:
+      default:
+        land:
+          name: Земля
+        main:
+          name: Главная
+        map:
+          name: Карта
+        mainblock:
+          name: Изменить главный блок
+  land:
+    title: '&8{level_prefix}{land}'
+    items:
+      default:
+        settings:
+          name: Настройки
+          image: default
+          slot: 3
+        areas:
+          name: Области
+          image: default
+          slot: 1
+        player-management:
+          name: Управление игроками
+          image: default
+          slot: 2
+        level:
+          name: Уровень
+          image: default
+          slot: 4
+        level_camp:
+          name: |-
+            Уровень
+            &cУ лагерей нет уровней.
+          image: default
+          slot: 4
+        spawn:
+          name: Телепортация на спавн
+          image: default
+          slot: 5
+        inbox-stats:
+          name: Входящие и Статистика
+          image: default
+          slot: 6
+        edit:
+          name: |-
+            Сделать землей для команд
+            Текущая: {status}
+          image: default
+          slot: 7
+        mainblock_set:
+          name: |-
+            &2Поставить главный блок
+            &8на вашей текущей позиции.
+          image: default
+          slot: 8
+        mainblock:
+          image: default
+          slot: 8
+      patches:
+        basic:
+          members:
+            name: Участники
+            image: ref:player-management
+            slot: 2
+  
+  land_mainblock:
+    title: Главный блок
+    items:
+      default:
+        hologram:
+          name: |-
+            Переключить голограмму:
+            {status}
+          slot: 1
+        reposition:
+          name: |-
+            &cПереместить главный блок
+            &8или удалить его.
+          slot: 2
+  player_edit-land:
+    title: Редактировать землю
+    content: Если выбрана для редактирования, команды будут применяться к этой земле.
+    items:
+      default:
+        set:
+          name: '&2Выбрать для редактирования'
+  
+  land_stats:
+    title: Статистика
+    content: |
+      Спавн: {world}, x={x}, z={z}
+      Нация: {nation}
+      Чанки: {chunks} / {chunks_max}
+      Участники: {members} / {members_max}
+      &6Экономика:
+      &8• &7Земля&r
+         Баланс: {balance}
+         Цена след. чанка: {chunk_cost}
+         Содержание&c {upkeep}&r через:
+         {upkeep_next}
+      &8• &4Вы&r
+         Баланс: {balance_player}
+         Налоги&c {taxes}&r через:
+         {taxes_next}
+  player_limitations:
+    title: Ваши лимиты
+    content: |
+      &8• &rСоздать&3 {ownlands} &rземель:
+        &e/lands create
+      &8• &rПриватить&3 {chunks} &rчанков на землю:
+        &e/lands claim
+      &8• &rИметь&3 {members} &rучастников на землю:
+        &e/lands trust
+      &8• &rВступать в&3 {lands} &rземель:
+        &e/lands accept
+      &8• &rДавать землям, где вы доверены, &3{support-chunks} &rдоп. чанков.
+  list_land_areas:
+    title: Области
+    items:
+      default:
+        create:
+          name: |-
+            Создать область
+            &8{areas} /&c {max}
+        entry_area:
+          name: |-
+            &6{area}
+            &8{description}
+        entry_area-setup:
+          name: |-
+            &c{area}
+            &8Настройка: &e/{cmd}
+  area:
+    title: '{area}'
+    items:
+      default:
+        player-management:
+          name: Управление игроками
+          slot: 1
+        settings:
+          name: Настройки
+          slot: 2
+        spawn:
+          name: Спавн
+        delete:
+          name: '&cУдалить'
+        teleport:
+          slot: 3
+  
+  area_spawn:
+    title: Спавн
+    items:
+      default:
+        teleport:
+          name: Телепорт
+          slot: 1
+        set:
+          name: Установить
+          slot: 2
+  
+  area_settings:
+    title: Настройки
+    items:
+      default:
+        roles:
+          name: Роли
+          slot: 1
+        land-settings:
+          name: Природные флаги
+          slot: 2
+        taxes:
+          name: Налоги
+          slot: 3
+        various:
+          name: |-
+            Разные настройки
+            Имя, описание, иконка
+          slot: 4
+  action-confirm:
+    title: Пожалуйста, подтвердите действие
+    items:
+      default:
+        confirm:
+          name: '&2Подтвердить'
+          slot: 1
+          sound_click: entity.player.levelup
+        cancel:
+          name: '&cОтмена'
+          slot: 2
+          sound_click: block.anvil.hit
+  
+  list_area_roles:
+    title: Роли
+    items:
+      default:
+        entry_role:
+          name: '{role}'
+        create:
+          name: |-
+            Создать новую роль
+            &8Доступно: {roles} / &c{max}
+  role:
+    title: '{role}'
+    items:
+      default:
+        members:
+          name: Участники
+          slot: 1
+        name:
+          name: |-
+            Название
+            {name}
+          slot: 4
+        flags_action:
+          name: |-
+            Флаги действий
+            Установка блоков и т.д.
+          slot: 2
+        flags_management:
+          name: |-
+            Флаги управления
+            Добавление игроков и т.д.
+          slot: 3
+        apply:
+          name: |-
+            Применять в новых областях
+            {apply}
+          slot: 6
+        taxes:
+          name: |-
+            Платит налоги
+            {current}
+          slot: 5
+        taxes_never:
+          name: |-
+            Эта роль никогда
+            не платит налоги.
+          slot: 5
+        delete:
+          name: '&cУдалить'
+          slot: end
+  
+  list_flags:
+    title: Флаги
+    items:
+      default:
+        entry_general_admin:
+          name: |-
+            {flag}
+            {enabled}
+        entry_general_player:
+          name: |-
+            {flag}
+            {enabled}
+  flag_state:
+    title: '{title}'
+    content: '{content}'
+    values:
+      flag:
+        setting_edit_various:
+          title: Ред. Разные настройки
+          content: |
+            Разрешить этой роли менять разные настройки, такие как имя и т.д.?
+               &8• &rРазблокировано: {unlocked}
+        plant:
+          title: Сажать растения
+          content: |
+            Разрешить этой роли сажать семена, саженцы, ягоды и т.д.?
+               &8• &rРазблокировано: {unlocked}
+        balance_withdraw:
+          title: Снимать деньги
+          content: |
+            Разрешить этой роли снимать деньги с банка земли?
+               &8• &rКоманда: &e/lands withdraw
+               &8• &rРазблокировано: {unlocked}
+        player_untrust:
+          title: Исключать игроков
+          content: |
+            Разрешить этой роли исключать игроков?
+               &8• Они не смогут исключать игроков с более высокой ролью или той же ролью.
+               &8• &rРазблокировано: {unlocked}
+        land_enter:
+          title: Вход в область
+          content: |
+            Разрешить этой роли входить в эту область?
+               &8• Независимо от этого флага игроки могут войти, если активен режим боя (комбат таг).
+               &8• &rРазблокировано: {unlocked}
+        land_claim:
+          content: |
+            Разрешить этой роли приватить и удалять чанки для этой земли?
+               &8• &rРазблокировано: {unlocked}
+          title: Приват и Расприват
+        ender_pearl:
+          content: |
+            Разрешить этой роли телепортироваться в эту область с помощью эндер-жемчуга и хоруса?
+               &8• &rРазблокировано: {unlocked}
+          title: Эндер-жемчуг
+        shear:
+          content: |
+            Разрешить этой роли стричь овец и т.д.?
+               &8• &rРазблокировано: {unlocked}
+          title: Стрижка
+        attack_monster:
+          content: |
+            Разрешить этой роли атаковать монстров?
+               &8• &rЕсли выключено: Монстры тоже не смогут атаковать их.
+               &8• &rРазблокировано: {unlocked}
+          title: Атака монстров
+        harvest:
+          content: |
+            Разрешить этой роли собирать урожай?
+               &8• &rРазблокировано: {unlocked}
+          title: Сбор урожая
+        fly:
+          content: |
+            Разрешить этой роли использовать &e/fly в этой области?
+               &8• &rРазблокировано: {unlocked}
+          title: Полет
+        general_admin:
+          content: |
+            Это админский флаг. Он применяется только к админ. землям и &e/lands admin wilderness&r.
+               &8• Описание:&r
+                 {desc}
+               &8• &rРазблокировано: {unlocked}
+          title: '{flag}'
+        player_trust:
+          content: |
+            Разрешить этой роли добавлять других игроков?
+               &8• &rРазблокировано: {unlocked}
+          title: Добавлять игроков
+        block_ignite:
+          content: |
+            Разрешить этой роли поджигать блоки?
+               &8• &rРазблокировано: {unlocked}
+          title: Поджигать блоки
+        war_manage:
+          content: |
+            Разрешить этой роли объявлять и управлять войнами?
+               &8• &rРазблокировано: {unlocked}'
+          title: Управление войной
+        attack_player:
+          content: |
+            Разрешить этой роли атаковать игроков?
+               &8• &rКомбат таг: Битва может быть возможна, если атака началась снаружи.
+               &8• &rВзаимный флаг: Они могут атаковать только тех, кто может атаковать их.
+               &8• &rРазблокировано: {unlocked}
+          title: Атака игроков
+        trample_farmland:
+          content: |
+            Разрешить этой роли топтать грядки?
+               &8• &rРазблокировано: {unlocked}'
+          title: Топтать грядки
+        elytra:
+          content: |
+            Разрешить этой роли использовать элитры для полета в этой области?
+               &8• &rРазблокировано: {unlocked}
+          title: Использование элитр
+        interact_villager:
+          content: |
+            Разрешить этой роли торговать с жителями?
+               &8• &rРазблокировано: {unlocked}
+          title: Торговля с жителями
+        player_setrole:
+          content: |
+            Разрешить этой роли назначать роли доверенным игрокам?
+               &8• &rОни не могут менять роли с более высоким приоритетом.
+               &8• &rРазблокировано: {unlocked}
+          title: Назначать роли
+        interact_general:
+          content: |
+            Разрешить этой роли взаимодействовать с блоками, не покрытыми другими флагами?
+               &8• &rРазблокировано: {unlocked}'
+          title: Общее взаимодействие
+        interact_mechanism:
+          content: |
+            Разрешить этой роли использовать механизмы (рычаги и т.д.)?
+               &8• &rРазблокировано: {unlocked}
+          title: Использовать редстоун
+        land_claim_border:
+          content: |
+            Разрешить этой роли приватить чанки для своих земель на границе этой земли.
+               &8• &rРазблокировано: {unlocked}
+          title: Приват на границе
+        spawn_set:
+          content: |
+            Разрешить этой роли менять точку спавна этой земли?
+               &8• &rРазблокировано: {unlocked}
+          title: Установить спавн
+        player_ban:
+          content: "Разрешить этой роли банить и разбанивать игроков? \n   &8• &rОни не\
+            \ смогут банить игроков с более высокой ролью.\n   &8• &rРазблокировано:\
+            \ {unlocked}\n"
+          title: Управление банами
+        item_pickup:
+          content: |
+            Разрешить этой роли подбирать предметы?
+               &8• &rРазблокировано: {unlocked}
+          title: Подбор предметов
+        block_place:
+          content: |
+            Разрешить этой роли ставить блоки?
+               &8• &rРазблокировано: {unlocked}
+          title: Установка блоков
+        setting_edit_land:
+          content: |
+            Разрешить этой роли менять природные флаги?
+               &8• &rРазблокировано: {unlocked}
+          title: Природные флаги
+        interact_container:
+          content: |
+            Разрешить этой роли открывать контейнеры?
+               &8• &rРазблокировано: {unlocked}
+          title: Открывать контейнеры
+        block_break:
+          content: |
+            Разрешить этой роли ломать блоки?
+               &8• &rРазблокировано: {unlocked}
+          title: Ломать блоки
+        setting_edit_role:
+          content: |
+            Разрешить этой роли менять настройки ролей и создавать новые?
+               &8• &rОни не смогут менять флаги своей роли.
+               &8• &rДавайте это право только доверенным.
+               &8• &rРазблокировано: {unlocked}
+          title: Управление ролями
+        interact_trapdoor:
+          content: |
+            Разрешить этой роли открывать люки?
+               &8• &rРазблокировано: {unlocked}
+          title: Открывать люки
+        setting_edit_taxes:
+          content: |
+            Разрешить этой роли менять налоги?
+               &8• &rДавайте это только доверенным игрокам.
+               &8• &rРазблокировано: {unlocked}
+          title: Изменять налоги
+        attack_animal:
+          content: |
+            Разрешить этой роли атаковать животных?
+               &8• &rРазблокировано: {unlocked}
+          title: Атака животных
+        spawn_teleport:
+          content: |
+            Разрешить этой роли телепортироваться на спавн земли.
+               &8• &rРазблокировано: {unlocked}
+          title: Телепорт на спавн
+        vehicle_use:
+          content: |
+            Разрешить этой роли использовать транспорт?
+               &8• &rРазблокировано: {unlocked}
+          title: Использовать транспорт
+        area_assign:
+          content: |
+            &rРазрешить этой роли создавать и изменять области?
+               &8• &rРазблокировано: {unlocked}
+          title: Создавать области
+        general_player:
+          content: |
+            &8• &rОписание:
+              {desc}
+            &8• &rРазблокировано: {unlocked}
+          title: '{flag}'
+        interact_door:
+          content: |
+            Разрешить этой роли открывать двери?
+               &8• &rРазблокировано: {unlocked}
+          title: Открывать двери
+        phantom_spawn:
+          content: |
+            Разрешить спавн фантомов.
+               &8• &rСпавнеры не подвержены этому флагу.
+               &8• &rРазблокировано: {unlocked}'
+          title: Спавн фантомов
+        monster_spawn:
+          content: |
+            Разрешить спавн монстров.
+               &8• &rСпавнеры не подвержены этому флагу.
+               &8• &rРазблокировано: {unlocked}
+          title: Спавн монстров
+        entity_griefing:
+          content: |
+            Разрешить сущностям разрушать блоки?
+               &8• &rЕсли вкл: Криперы смогут взрывать постройки и т.д.
+               &8• &rРазблокировано: {unlocked}
+          title: Гриферство сущностей
+        snow_melt:
+          content: |
+            Разрешить таяние снега и льда?
+               &8• &rЕсли выкл: Снеговики не будут оставлять снег.
+               &8• &rРазблокировано: {unlocked}
+          title: Таяние снега
+        wither_attack_animal:
+          content: |
+            Могут ли Иссушители атаковать животных?
+               &8• &rОни всегда атакуют монстров.
+               &8• &rРазблокировано: {unlocked}
+          title: Иссушитель атакует животных
+        piston_griefing:
+          content: "Разрешить поршням из дикой местности толкать в вашу землю?\n   &8•\
+            \ &rЕсли вкл: Игроки смогут гриферить поршнями снаружи.\n   &8• &rРазблокировано: {unlocked}\n"
+          title: Поршни извне
+        block_spreading:
+          title: Распространение блоков
+          content: |
+            Разрешить блокам распространяться в эту область из других?
+               &8• &rЭто влияет на блоки вроде аметиста.
+               &8• &rБлоки из дикой местности никогда не распространяются сюда.
+        fire_spread:
+          content: |
+            Разрешить распространение огня?
+               &8• &rОгонь снаружи будет переходить в землю.
+               &8• &rРазблокировано: {unlocked}
+          title: Распространение огня
+        animal_spawn:
+          content: |
+            Разрешить спавн животных?
+               &8• &rСпавнеры не подвержены этому флагу.
+               &8• &rРазблокировано: {unlocked}
+          title: Спавн животных
+        plant_growth:
+          content: |
+            Разрешить рост растений?
+               &8• &rРазблокировано: {unlocked}
+          title: Рост растений
+        tnt_griefing:
+          content: |
+            Разрешить динамиту ломать блоки?
+               &8• &rЕсли вкл: Игроки могут стрелять TNT пушками в вашу землю.
+               &8• &rРазблокировано: {unlocked}
+          title: Урон от TNT
+        leaf_decay:
+          content: |
+            Разрешить опадание листвы?
+               &8• &rРазблокировано: {unlocked}
+          title: Опадание листвы
+        waterflow_allow:
+          content: |
+            Разрешить воде втекать в землю извне?
+               &8• &rЕсли вкл: Игроки могут залить землю водой снаружи.
+               &8• &rРазблокировано: {unlocked}
+          title: Течение воды
+  
+  click-response:
+    title: '{title}'
+    content: '{content}'
+    values:
+      failure_cost:
+        title: Недостаточно денег
+        content: Вам нужно {cost}.
+      mainblock:
+        failure_mainblock_claim:
+          title: Только внутри земли
+          content: Главный блок должен быть внутри земли.
+        failure_mainblock_space:
+          title: Недостаточно места
+          content: Здесь недостаточно места для размещения.
+      spawn:
+        area:
+          failure_spawn_area:
+            title: Только внутри области
+            content: |
+              Спавн должен быть внутри области.
+               &8• &rВы сейчас не внутри нее.
+          failure_spawn_none:
+            title: Спавн не установлен
+            content: В этой области нет спавна.
+          failure_spawn_cooldown:
+            title: Задержка
+            content: Подождите&5 {time} &rперед следующей телепортацией на спавн области.
+        failure_spawn_none:
+          title: Спавн не установлен
+          content: |
+            У земли нет спавна.
+             &8• &rУстановить: &e/lands setspawn
+        failure_spawn_teleport:
+          title: Телепорт запрещен
+          content: "Вам запрещен телепорт на спавн этой земли.\
+            \ \n &8• &rВладелец может дать вам разрешение.\n"
+        failure_spawn_war:
+          title: Активная война
+          content: |
+            Вы не можете телепортироваться сейчас.
+             &8• &rИдет война, конец через&5 {time}&r.
+        failure_spawn_cooldown:
+          title: Задержка
+          content: Подождите&5 {time} &rперед следующей телепортацией на спавн.
+        failure_teleport_enter:
+          title: Вход запрещен
+          content: |
+            Вам запрещено входить в область назначения.
+             &8• &rВладелец может дать разрешение.
+        failure_spawn_cost:
+          title: Недостаточно денег
+          content: Вам нужно&c {cost}&r для телепортации.
+        success_spawn_set:
+          title: Спавн установлен
+          content: Вы установили точку спавна.
+      role:
+        flag:
+          failure_permission:
+            title: Нет прав
+            content: '&cСервер не разрешает вам переключать этот флаг ни в одной земле.'
+          failure_allow-edit:
+            title: Флаг не переключаем
+            content: '&cСервер настроил этот флаг так, что его нельзя переключать для этой роли.'
+          failure_blacklist:
+            title: Флаг управляется землей
+            content: "&cЭтот флаг не переключается нацией. \n &8• &rКаждая земля\
+              \ этой нации может настроить его индивидуально.\n"
+          failure_cancelled:
+            title: Отменено плагином
+            content: |
+              &cПереключение этого флага было отменено сторонним плагином.
+          failure_edit_owner:
+            title: Роль владельца
+            content: |
+              &cВы не можете переключать этот флаг для роли владельца.
+               &8• &rЭто предотвращает случайное лишение себя прав.
+      player:
+        untrust:
+          failure_edit:
+            content: |
+              &cВы не можете редактировать этого игрока.
+                 &8• &rЕго роль&6 {role}&r имеет приоритет выше или равный вашему.
+            title: Приоритет роли
+          failure_max-players:
+            content: |
+              Эта земля достигла максимума в&3 {max} &rучастников.
+            title: Макс. доверенных игроков
+          failure_priority:
+            content: |
+              Вам не разрешено менять настройки этой роли.
+                 &8• &rУ нее выше приоритет или вы состоите в той же роли.
+            title: Приоритет роли
+          failure_access:
+            content: |
+              &cВам не разрешено исключать игроков.
+                 &8• &rВладелец земли может дать вам разрешение.
+            name: Запрещено
+          failure_owner:
+            content: |
+              &cВладельцев нельзя исключить.
+                &8• &rНовый владелец может быть назначен через &e/{cmd}&r.
+            title: Владелец
+          failure_tenant:
+            content: |
+              &cАрендаторов нельзя исключить или сменить им роль.
+                &8• &rАрендатора можно удалить через &e/{cmd}&r.
+            title: Арендатор
+          failure_setrole:
+            content: |
+              &cВам не разрешено назначать роли.
+                 &8• &rВладелец земли может дать вам разрешение.
+            title: Запрещено
+          failure_rented:
+            content: |
+              &cВы не можете исключить арендатора&4 {player}&c из области &4{area}&c.
+                 &8• &rЧтобы убрать аренду, используйте &e/{cmd}&r находясь внутри области.
+            title: Арендовано
+          failure_self:
+            content: |
+              Чтобы покинуть землю, используйте &e/{cmd}&r.
+            title: Нельзя исключить себя
+  
+  player-management:
+    title: Управление игроками
+    items:
+      default:
+        members:
+          name: Участники
+          slot: 1
+        banned:
+          name: Забаненные игроки
+          slot: 2
+        invites:
+          name: Отправленные приглашения
+          slot: 3
+        membership-requests:
+          name: Запросы на вступление
+          slot: 4
+  
+  list_area_players:
+    title: '{area} > Доверенные игроки'
+    items:
+      default:
+        entry_player:
+          name: |-
+            {player}
+            {role}
+        trust:
+          name: |-
+            Добавить
+            {players} /&c {max}
+          slot: 2
+        toggle:
+          name: |-
+            Вид: только область
+            {current}
+          slot: 1
+  list_area_banned:
+    title: '{area} > Забаненные игроки'
+    items:
+      default:
+        unban:
+          name: '&aРазбанить игрока'
+        ban:
+          name: '&cЗабанить игрока'
+        toggle:
+          name: |-
+            Вид: только область
+            {current}
+        entry_player:
+          name: '{player}'
+  
+  toggle:
+    title: '{title}'
+    content: '{content}'
+    values:
+      area_players_display:
+        title: Режим отображения
+        content: |
+          Показывать только доверенных в этой области &8(&6{area}&8)&r?
+
+          &8• &rЕсли выкл: Отображает игроков всей земли. Также позволяет добавлять ислючать игроков всей земли.
+      area_banned_display:
+        title: Режим отображения
+        content: |
+          Показывать только забаненных в этой области &8(&6{area}&8)&r?
+
+          &8• &rЕсли выкл: Отображает забаненных во всей земле. Также позволяет банить/разбанивать во всей земле.
+  area_banned_player:
+    title: '{player}'
+    items:
+      default:
+        unban:
+          name: '&aРазбанить'
+  
+  area_players_player:
+    title: '{player}'
+    items:
+      default:
+        role:
+          name: |-
+            Роль
+            {role}
+          slot: 1
+        info:
+          name: Инфо
+          slot: 2
+        untrust:
+          name: '&cИсключить'
+          slot: 3
+  
+  player_info:
+    title: Информация
+    items:
+      default:
+        max-chunks:
+          name: |-
+            Поддерживает земли
+            {chunks} чанками
+        lands:
+          name: |-
+            Земли
+            {amount}
+        areas:
+          name: |-
+            Доверен в {amount}
+            областях земли
+        time:
+          name: |-
+            Был в сети: {seen}
+            Оффлайн с: {offline}
+  area_players_player_role:
+    title: Роль
+    values:
+      input:
+        role: Роль
+  
+  input:
+    title: Введите текст
+    values:
+      input: Текст
+common_sounds:
+  set:
+    failure: entity.villager.no
+

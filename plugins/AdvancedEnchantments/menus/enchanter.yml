@@ -1,0 +1,170 @@
+# Configuration for Enchanter
+#  Change commands how to access it in top of config.yml
+
+# set to "none" to disable
+open-sound: "ENDERDRAGON_WINGS"
+# In what worlds enchanter is disabled
+disabled-in-worlds:
+  - "bad_world"
+messages:
+  sound: ENTITY_PLAYER_LEVELUP
+right-click-to-view-enchants: true
+go-back-item:
+  enabled: true
+  item:
+    type: NETHER_STAR
+    id: 0
+    custom-model-data: 0
+  name: "&c&lНазад"
+  lore: [ ]
+# Should enchanter stay open after item is bought?
+keep-open: true
+# Enchanter inventory size
+# 9-18-27-36-45-54
+#
+# Placeholders:
+#  %group-enchant-count% - number of enchants in the group
+#  %price% - price
+#  %left% - remaining needed exp until player can purchase item
+# Economy:
+# exp, money, level, souls (works with items that are held when opening inventory), diamonds, gold (gold ingots), emeralds
+inventory:
+  size: 18
+  name: "&7Чародей"
+  settings:
+    # Which level books should enchanter give?
+    # "ALL" - gives all levels
+    # <number> - Gives specific level of enchant
+    enchanterBookLevel: "ALL"
+  items:
+    0-18:
+      item:
+        type: STAINED_GLASS_PANE
+        id: 7
+        custom-model-data: 0
+        force-glow: false
+      name: " "
+      lore: [ ]
+    2:
+      item:
+        type: STAINED_GLASS_PANE
+        id: 0
+        custom-model-data: 0
+        force-glow: false
+      enchant-group: SIMPLE
+      price: 0
+      sound: BLOCK_ANVIL_LAND
+      name: "&f&lОбычные Зачарования"
+      lore:
+        - "&7Нажмите ПКМ чтобы посмотреть список"
+        - "&fобычных &7зачарований."
+    3:
+      item:
+        type: STAINED_GLASS_PANE
+        id: 5
+        custom-model-data: 0
+        force-glow: false
+      enchant-group: UNIQUE
+      sound: BLOCK_ANVIL_LAND
+      price: 0
+      name: "&a&lРедкие Зачарования"
+      lore:
+        - "&7Нажмите ПКМ чтобы посмотреть список"
+        - "&aредких &7зачарований."
+    4:
+      item:
+        type: STAINED_GLASS_PANE
+        id: 3
+        custom-model-data: 0
+        force-glow: false
+      enchant-group: ELITE
+      price: 0
+      sound: BLOCK_ANVIL_LAND
+      name: "&b&lЭлитные Зачарования"
+      lore:
+        - "&7Нажмите ПКМ чтобы посмотреть список"
+        - "&bэлитных &7зачарований."
+    5:
+      item:
+        type: STAINED_GLASS_PANE
+        id: 4
+        custom-model-data: 0
+        force-glow: false
+      enchant-group: ULTIMATE
+      price: 0
+      sound: BLOCK_ANVIL_LAND
+      name: "&e&lЭпические Зачарования"
+      lore:
+        - "&7Нажмите ПКМ чтобы посмотреть список"
+        - "&eэпических &7зачарований."
+    6:
+      item:
+        type: STAINED_GLASS_PANE
+        id: 1
+        custom-model-data: 0
+        force-glow: false
+      enchant-group: LEGENDARY
+      price: 0
+      sound: BLOCK_ANVIL_LAND
+      name: "&6&lЛегендарные Зачарования"
+      lore:
+        - "&7Нажмите ПКМ чтобы посмотреть список"
+        - "&6легендарных &7зачарований."
+    13:
+      item:
+        type: STAINED_GLASS_PANE
+        id: 6
+        custom-model-data: 0
+        force-glow: false
+      enchant-group: FABLED
+      price: 0
+      sound: BLOCK_ANVIL_LAND
+      name: "&d&lМифические Зачарования"
+      lore:
+        - "&7Нажмите ПКМ чтобы посмотреть список"
+        - "&dмифических &7зачарований."
+    9:
+      item:
+        type: ANVIL
+        id: 0
+        custom-model-data: 0
+        force-glow: false
+      sound: BLOCK_ANVIL_USE
+      player-command:
+        - "tinkerer"
+      name: "&fОткрыть &b&lМастера &7(ПКМ)"
+      lore:
+        - "&7Обменяйте книги на Магическую Пыль и Опыт."
+        - ""
+        - "&b&lНажмите ПКМ чтобы открыть"
+    17:
+      item:
+        type: ENDER_PORTAL_FRAME
+        id: 0
+        custom-model-data: 0
+        force-glow: false
+      sound: ENTITY_ARROW_HIT
+      player-command:
+        - "alchemist"
+      name: "&fОткрыть &b&lАлхимика &7(ПКМ)"
+      lore:
+        - "&7Комбинируйте Книги и Магическую Пыль."
+        - ""
+        - "&b&lНажмите ПКМ чтобы открыть"
+
+# Confirmation inventory for enchanter payments
+# Confirm or deny the transaction, acts like 2-step confirmation
+confirmation-inventory:
+  enabled: true
+  name: "&aПодтверждение"
+  accept:
+    material: STAINED_GLASS_PANE
+    damage: 5
+    name: "&aПодтвердить Транзакцию"
+    lore:
+      - "&7Нажмите чтобы заплатить %price% используя %paymentType%"
+  cancel:
+    material: STAINED_GLASS_PANE
+    damage: 14
+    name: "&cНажмите для отмены"
+    lore: [ ]

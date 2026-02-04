@@ -1,0 +1,49 @@
+npcs:
+  4351862b-4b6c-40d0-b914-c859f86868bc:
+    name: seller
+    creator: a8f421fa-729e-3649-91b5-e2b12220fbaa
+    displayName: <empty>
+    type: PLAYER
+    location:
+      world: spawn
+      x: 51.5
+      y: 23.0
+      z: 27.5
+      yaw: 54.609863
+      pitch: 82.35003
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: true
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    skin:
+      mirrorSkin: false
+  8394b936-bec3-42d5-b05b-4d7286ed6782:
+    name: enchant
+    creator: a8f421fa-729e-3649-91b5-e2b12220fbaa
+    displayName: <empty>
+    type: PLAYER
+    location:
+      world: spawn
+      x: 53.5
+      y: 23.0
+      z: 36.5
+      yaw: 122.10681
+      pitch: 4.049948
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: true
+    turnToPlayerDistance: -1
+    interactionCooldown: 0.0
+    scale: 1.0
+    visibility_distance: -1
+    skin:
+      mirrorSkin: false

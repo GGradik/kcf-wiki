@@ -1,0 +1,151 @@
+.heroBanner {
+  padding: 6rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--color-dark-bg);
+}
+
+.heroLogo {
+  display: block;
+  margin: 0 auto 2rem;
+  max-width: 350px;
+  height: auto;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+
+.serverCards {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 60px;
+  flex-wrap: wrap;
+}
+
+.serverCard {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(4px);
+  border-radius: 8px;
+  padding: 24px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  transition: all 0.2s ease;
+  min-width: 280px;
+  cursor: pointer;
+  position: relative;
+}
+
+.serverCard:hover {
+  border-color: #fff;
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.cardIcon {
+  display: none;
+}
+
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.cardLabel {
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.cardValue {
+  font-family: 'Courier New', monospace;
+  font-size: 1.2rem;
+  color: #fff;
+  background: transparent;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.copyStatus {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+.quickStart {
+  margin-top: 48px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 32px;
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+}
+
+.quickStartTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: var(--kcf-gold);
+}
+
+.features {
+  padding: 80px 0;
+  background: var(--color-dark-bg);
+  border-top: 1px solid var(--color-border);
+}
+
+.featuresTitle {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 48px;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .heroBanner {
+    padding: 3rem 0;
+  }
+
+  .buttons {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .buttons .button {
+    width: 100%;
+  }
+
+  .serverInfo {
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 16px;
+  }
+
+  .infoCard {
+    width: 100%;
+  }
+
+  .featuresTitle {
+    font-size: 1.5rem;
+  }
+}
